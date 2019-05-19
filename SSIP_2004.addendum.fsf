@@ -1,6 +1,6 @@
 <Session>
 <DataBasket>
-<TotalVariableCount> 13 </TotalVariableCount>
+<TotalVariableCount> 17 </TotalVariableCount>
 <Version> 2 </Version>
 <Variable>
 <VarId>c777a4ae9bcff267ad7b6620506cdb7c</VarId>
@@ -4113,6 +4113,164 @@
 <ValDescription> Person Number </ValDescription>
 <OrigMinVal> 0101 </OrigMinVal>
 <OrigMaxVal> 1199 </OrigMaxVal>
+<Selected> true </Selected>
+</Range>
+</Ranges>
+</Variable>
+<Variable>
+<VarId>538580c7dc6f74329e65a5c4785f7c82</VarId>
+<Idnum> 487498 </Idnum>
+<Type> 1 </Type>
+<VarMnemonic> TPYRATE1 </VarMnemonic>
+<VarDescription> JB: Regular hourly pay rate </VarDescription>
+<Ranges>
+<RangeCount> 2 </RangeCount>
+<Range>
+<ValDescription> Not in universe or none </ValDescription>
+<Value> 0 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Dollars and cents (two implied decimals) </ValDescription>
+<OrigMinVal> 0.01 </OrigMinVal>
+<OrigMaxVal> 28.50 </OrigMaxVal>
+<Selected> true </Selected>
+</Range>
+</Ranges>
+</Variable>
+<Variable>
+<VarId>6e619904f97fd392c45202d90978f26a</VarId>
+<Idnum> 487494 </Idnum>
+<Type> 1 </Type>
+<VarMnemonic> TPMSUM1 </VarMnemonic>
+<VarDescription> JB: Earnings from job received in this month </VarDescription>
+<Ranges>
+<RangeCount> 2 </RangeCount>
+<Range>
+<ValDescription> None or not in universe </ValDescription>
+<Value> 0 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Dollar amount </ValDescription>
+<OrigMinVal> 1 </OrigMinVal>
+<OrigMaxVal> 66666 </OrigMaxVal>
+<Selected> true </Selected>
+</Range>
+</Ranges>
+</Variable>
+<Variable>
+<VarId>b2b939554d69ea3630492babe49b62ea</VarId>
+<Idnum> 487478 </Idnum>
+<Type> 1 </Type>
+<VarMnemonic> EJBHRS1 </VarMnemonic>
+<VarDescription> JB: Usual hours worked per week at this job </VarDescription>
+<Ranges>
+<RangeCount> 3 </RangeCount>
+<Range>
+<ValDescription> Hours vary </ValDescription>
+<Value> -8 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Not in Universe </ValDescription>
+<Value> -1 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> hours per week </ValDescription>
+<OrigMinVal> 01 </OrigMinVal>
+<OrigMaxVal> 99 </OrigMaxVal>
+<Selected> true </Selected>
+</Range>
+</Ranges>
+</Variable>
+<Variable>
+<VarId>c0bfeaedb68bb74c70e7eb2d19219b</VarId>
+<Idnum> 487476 </Idnum>
+<Type> 1 </Type>
+<VarMnemonic> ERSEND1 </VarMnemonic>
+<VarDescription> JB: Main reason stopped working for employer </VarDescription>
+<Ranges>
+<RangeCount> 16 </RangeCount>
+<Range>
+<ValDescription> Not in Universe </ValDescription>
+<Value> -1 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> On Layoff </ValDescription>
+<Value> 1 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Retirement or old age </ValDescription>
+<Value> 2 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Childcare problems </ValDescription>
+<Value> 3 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Other family/personal obligations </ValDescription>
+<Value> 4 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Own illness </ValDescription>
+<Value> 5 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Own injury </ValDescription>
+<Value> 6 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> School/Training </ValDescription>
+<Value> 7 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Discharged/fired </ValDescription>
+<Value> 8 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Employer bankrupt </ValDescription>
+<Value> 9 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Employer sold business </ValDescription>
+<Value> 10 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Job was temporary and ended </ValDescription>
+<Value> 11 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Quit to take another job </ValDescription>
+<Value> 12 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Slack work or business conditions </ValDescription>
+<Value> 13 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Unsatisfactory work arrangements (hours, pay, etc) </ValDescription>
+<Value> 14 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Quit for some other reason </ValDescription>
+<Value> 15 </Value>
 <Selected> true </Selected>
 </Range>
 </Ranges>
