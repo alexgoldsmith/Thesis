@@ -1,0 +1,210 @@
+DataFerrett Codebook - Created 
+
+
+Dataset: SIPP/2008 Panel/Wave 1/Core
+Topic: Sample Unit Variables
+SSUID
+SU: Sample Unit Identifier
+
+With the following Ranges:
+000000000000:999999999999  Scrambled Id
+
+
+
+Topic: Sample Unit Variables
+SPANEL
+SU: Sample Code - Indicates Panel Year
+
+With the following Ranges:
+2008  Panel Year
+
+
+
+Topic: Sample Unit Variables
+SWAVE
+SU: Wave of data collection
+
+With the following Ranges:
+1:13  Wave of data collection
+
+
+
+Topic: Sample Unit Variables
+SREFMON
+SU: Reference month of this record
+
+With the following Ranges:
+1  First Reference month
+2  Second Reference month
+3  Third Reference month
+4  Fourth Reference month
+
+
+
+Topic: Sample Unit Variables
+RHCALMN
+SU: Calendar month for this reference month.
+
+With the following Ranges:
+1  January
+2  February
+3  March
+4  April
+5  May
+6  June
+7  July
+8  August
+9  September
+10  October
+11  November
+12  December
+
+
+
+Topic: Sample Unit Variables
+RHCALYR
+SU: Calendar year for this reference month
+
+With the following Ranges:
+2008:2013  Calendar year of reference month
+
+
+
+Topic: Household Variables
+TFIPSST
+HH: FIPS State Code
+
+With the following Ranges:
+01  Alabama
+02  Alaska
+04  Arizona
+05  Arkansas
+06  California
+08  Colorado
+09  Connecticut
+10  Delaware
+11  DC
+12  Florida
+13  Georgia
+15  Hawaii
+16  Idaho
+17  Illinois
+18  Indiana
+19  Iowa
+20  Kansas
+21  Kentucky
+22  Louisiana
+23  Maine
+24  Maryland
+25  Massachusetts
+26  Michigan
+27  Minnesota
+28  Mississippi
+29  Missouri
+30  Montana
+31  Nebraska
+32  Nevada
+33  New Hampshire
+34  New Jersey
+35  New Mexico
+36  New York
+37  North Carolina
+38  North Dakota
+39  Ohio
+40  Oklahoma
+41  Oregon
+42  Pennsylvania
+44  Rhode Island
+45  South Carolina
+46  South Dakota
+47  Tennessee
+48  Texas
+49  Utah
+50  Vermont
+51  Virginia
+53  Washington
+54  West Virginia
+55  Wisconsin
+56  Wyoming
+
+
+
+Topic: Person Variables
+EPPPNUM
+PE: Person number
+
+With the following Ranges:
+0101:1399  Person number
+
+
+
+Topic: Demographic Variables
+ESEX
+PE: Sex of this person
+
+With the following Ranges:
+1  Male
+2  Female
+
+
+
+Topic: Demographic Variables
+TAGE
+PE: Age as of last birthday
+
+With the following Ranges:
+0  Less than 1 full year old
+1:90  Number of years old
+
+
+
+Topic: Weighting Variables
+WPFINWGT
+WW: Person weight
+
+With the following Ranges:
+0.0000:99999.9999  Final person weight
+
+
+
+Topic: Education Variables
+EEDUCATE
+ED: Highest Degree received or grade completed
+
+With the following Ranges:
+-1  Not in Universe
+31  Less Than 1st Grade
+32  1st, 2nd, 3rd or 4th grade
+33  5th Or 6th Grade
+34  7th Or 8th Grade
+35  9th Grade
+36  10th Grade
+37  11th Grade
+38  12th grade, no diploma
+39  High School Graduate - (diploma or GED or equivalent)
+40  Some college, but no degree
+41  Diploma or certificate from a vocational, technical, trade or business school beyond high
+43  Associate (2-yr) college degree (include academic/occupational degree)
+44  Bachelor's degree (for example: BA, AB, BS)
+45  Master's degree (For example: MA, MS, MEng, MEd, MSW, MBA)
+46  Professional School degree (for example: MD(doctor),DDS(dentist),JD(lawyer)
+47  Doctorate degree (for example: Ph.D., Ed.D)
+
+
+
+Topic: Labor Force Variables
+RMESR
+LF: Employment status recode for month
+
+With the following Ranges:
+-1  Not in Universe
+1  With a job entire month, worked all weeks.
+2  With a job entire month, absent from work without pay 1+ weeks, absence not due to layoff
+3  With a job entire month, absent from work without pay 1+ weeks, absence due to layoff
+4  With a job at least 1 but not all weeks, no time on layoff and no time looking for work
+5  With a job at least 1 but not all weeks, remaining weeks on layoff or looking for work
+6  No job all month, on layoff or looking for work all weeks.
+7  No job all month, at least one but not all weeks on layoff or looking for work
+8  No job all month, no time on layoff and no time looking for work.
+
+

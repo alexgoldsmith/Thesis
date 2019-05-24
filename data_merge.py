@@ -35,3 +35,7 @@ df = pd.merge(SIPP_base, SIPP_addendum, on = ['ssuid', 'epppnum', 'spanel', 'swa
 datetime_dict = {'birth_month': 'tm'}
 
 df.to_stata('SIPP_Stata_Dataset.dta', convert_dates = datetime_dict)
+df.to_csv('SIPP_CSV_Dataset.csv')
+
+# To Do:
+# Why do the addendum files only have wave 1 data??
