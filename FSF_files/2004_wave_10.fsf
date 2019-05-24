@@ -1,0 +1,4337 @@
+<Session>
+<DataBasket>
+<TotalVariableCount> 19 </TotalVariableCount>
+<Version> 2 </Version>
+<Variable>
+<VarId>e295df4b16c6ca699ce414987ac478ff</VarId>
+<Idnum> 487285 </Idnum>
+<Type> 1 </Type>
+<VarMnemonic> EPPPNUM </VarMnemonic>
+<VarDescription> PE: Person number </VarDescription>
+<Ranges>
+<RangeCount> 1 </RangeCount>
+<Range>
+<ValDescription> Person Number </ValDescription>
+<OrigMinVal> 0101 </OrigMinVal>
+<OrigMaxVal> 1199 </OrigMaxVal>
+<Selected> true </Selected>
+</Range>
+</Ranges>
+</Variable>
+<Variable>
+<VarId>2531c36ccbca161347c8e604673ccbf5</VarId>
+<Idnum> 487241 </Idnum>
+<Type> 1 </Type>
+<VarMnemonic> RFNKIDS </VarMnemonic>
+<VarDescription> FA: Total number of children under 18 in family </VarDescription>
+<Ranges>
+<RangeCount> 1 </RangeCount>
+<Range>
+<ValDescription> Number of children </ValDescription>
+<OrigMinVal> 0 </OrigMinVal>
+<OrigMaxVal> 30 </OrigMaxVal>
+<Selected> true </Selected>
+</Range>
+</Ranges>
+</Variable>
+<Variable>
+<VarId>c777a4ae9bcff267ad7b6620506cdb7c</VarId>
+<Idnum> 487160 </Idnum>
+<Type> 1 </Type>
+<VarMnemonic> SREFMON </VarMnemonic>
+<VarDescription> SU: Reference month of this record </VarDescription>
+<Ranges>
+<RangeCount> 4 </RangeCount>
+<Range>
+<ValDescription> First Reference month </ValDescription>
+<Value> 1 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Second Reference month </ValDescription>
+<Value> 2 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Third Reference month </ValDescription>
+<Value> 3 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Fourth Reference month </ValDescription>
+<Value> 4 </Value>
+<Selected> true </Selected>
+</Range>
+</Ranges>
+</Variable>
+<Variable>
+<VarId>f522a7adbd25fdc35997c49c30f8d8f4</VarId>
+<Idnum> 487158 </Idnum>
+<Type> 1 </Type>
+<VarMnemonic> SWAVE </VarMnemonic>
+<VarDescription> SU: Wave of data collection </VarDescription>
+<Ranges>
+<RangeCount> 1 </RangeCount>
+<Range>
+<ValDescription> Wave of data collection </ValDescription>
+<OrigMinVal> 1 </OrigMinVal>
+<OrigMaxVal> 12 </OrigMaxVal>
+<Selected> true </Selected>
+</Range>
+</Ranges>
+</Variable>
+<Variable>
+<VarId>76b07a4d3c48f602ddd1ed77caa6a57b</VarId>
+<Idnum> 487157 </Idnum>
+<Type> 1 </Type>
+<VarMnemonic> SPANEL </VarMnemonic>
+<VarDescription> SU: Sample Code - Indicates Panel Year </VarDescription>
+<Ranges>
+<RangeCount> 1 </RangeCount>
+<Range>
+<ValDescription> Panel Year </ValDescription>
+<Value> 2004 </Value>
+<Selected> true </Selected>
+</Range>
+</Ranges>
+</Variable>
+<Variable>
+<VarId>799a2429eed5b36a6f595d2ecc43d68a</VarId>
+<Idnum> 487156 </Idnum>
+<Type> 1 </Type>
+<VarMnemonic> SSUID </VarMnemonic>
+<VarDescription> SU: Sample Unit Identifier </VarDescription>
+<Ranges>
+<RangeCount> 1 </RangeCount>
+<Range>
+<ValDescription> Scrambled Id </ValDescription>
+<OrigMinVal> 000000000000 </OrigMinVal>
+<OrigMaxVal> 999999999999 </OrigMaxVal>
+<Selected> true </Selected>
+</Range>
+</Ranges>
+</Variable>
+<Variable>
+<VarId>8bae7af56a49bda721fb4da4a95ddba0</VarId>
+<Idnum> 487430 </Idnum>
+<Type> 1 </Type>
+<VarMnemonic> EDISPREV </VarMnemonic>
+<VarDescription> LF: Had work-preventing physical/mental/health condition </VarDescription>
+<Ranges>
+<RangeCount> 3 </RangeCount>
+<Range>
+<ValDescription> Not in Universe </ValDescription>
+<Value> -1 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Yes </ValDescription>
+<Value> 1 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> No </ValDescription>
+<Value> 2 </Value>
+<Selected> true </Selected>
+</Range>
+</Ranges>
+</Variable>
+<Variable>
+<VarId>6059518c124249a5f728e0b81a81f832</VarId>
+<Idnum> 487428 </Idnum>
+<Type> 1 </Type>
+<VarMnemonic> EDISABL </VarMnemonic>
+<VarDescription> LF: Had a work-limiting physical or mental condition </VarDescription>
+<Ranges>
+<RangeCount> 3 </RangeCount>
+<Range>
+<ValDescription> Not in Universe </ValDescription>
+<Value> -1 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Yes </ValDescription>
+<Value> 1 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> No </ValDescription>
+<Value> 2 </Value>
+<Selected> true </Selected>
+</Range>
+</Ranges>
+</Variable>
+<Variable>
+<VarId>9b022818917217899b6731e626b571b5</VarId>
+<Idnum> 487420 </Idnum>
+<Type> 1 </Type>
+<VarMnemonic> EPDJBTHN </VarMnemonic>
+<VarDescription> LF: Paid job during the reference period </VarDescription>
+<Ranges>
+<RangeCount> 3 </RangeCount>
+<Range>
+<ValDescription> Not in Universe </ValDescription>
+<Value> -1 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Yes </ValDescription>
+<Value> 1 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> No </ValDescription>
+<Value> 2 </Value>
+<Selected> true </Selected>
+</Range>
+</Ranges>
+</Variable>
+<Variable>
+<VarId>9b18368b4e915391bd6ceec413c48346</VarId>
+<Idnum> 487503 </Idnum>
+<Type> 1 </Type>
+<VarMnemonic> TJBOCC1 </VarMnemonic>
+<VarDescription> JB: Occupation classification code </VarDescription>
+<Ranges>
+<RangeCount> 504 </RangeCount>
+<Range>
+<ValDescription> Not in Universe </ValDescription>
+<Value> -1 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Chief executives (11-1011) </ValDescription>
+<Value> 0010 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> General and operations managers (11-1021) </ValDescription>
+<Value> 0020 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Advertising and promotions managers (11-2011) </ValDescription>
+<Value> 0040 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Marketing and sales managers (11-2020) </ValDescription>
+<Value> 0050 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Public relations managers (11-2031) </ValDescription>
+<Value> 0060 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Administrative services managers (11-3011) </ValDescription>
+<Value> 0100 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Computer and information systems managers (11-3021) </ValDescription>
+<Value> 0110 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Financial managers (11-3031) </ValDescription>
+<Value> 0120 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Human resources managers (11-3040) </ValDescription>
+<Value> 0130 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Industrial production managers(11-3051) </ValDescription>
+<Value> 0140 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Purchasing managers (11-3061) </ValDescription>
+<Value> 0150 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Transportation, storage, and distribution managers (11-3071) </ValDescription>
+<Value> 0160 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Farm, ranch, and other agricultural managers (11-9011) </ValDescription>
+<Value> 0200 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Farmers and ranchers (11-9012) </ValDescription>
+<Value> 0210 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Construction managers (11-9021) </ValDescription>
+<Value> 0220 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Education administrators (11-9030) </ValDescription>
+<Value> 0230 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Engineering managers (11-9041) </ValDescription>
+<Value> 0300 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Food service managers (11-9051) </ValDescription>
+<Value> 0310 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Funeral directors (11-9061) </ValDescription>
+<Value> 0320 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Gaming managers (11-9071) </ValDescription>
+<Value> 0330 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Lodging managers (11-9081) </ValDescription>
+<Value> 0340 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Medical and health services managers (11-9111) </ValDescription>
+<Value> 0350 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Natural sciences managers (11-9121) </ValDescription>
+<Value> 0360 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Property, real estate, and community association managers (11-9141) </ValDescription>
+<Value> 0410 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Social and community service managers (11-9151) </ValDescription>
+<Value> 0420 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Managers, all other (11-9199) </ValDescription>
+<Value> 0430 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Agents and business managers of artists, performers, and athletes (13-1011) </ValDescription>
+<Value> 0500 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Purchasing agents and buyers, farm products (13-1021) </ValDescription>
+<Value> 0510 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Wholesale and retail buyers, except farm products (13-1022) </ValDescription>
+<Value> 0520 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Purchasing agents, except wholesale, retail, and farm products (13-1023) </ValDescription>
+<Value> 0530 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Claims adjusters, appraisers, examiners, and investigators (13-1030) </ValDescription>
+<Value> 0540 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Compliance officers, except agriculture, construction, health and safety, and transporta </ValDescription>
+<Value> 0560 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Cost estimators (13-1051) </ValDescription>
+<Value> 0600 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Human resources, training, and labor relations specialists (13-1070) </ValDescription>
+<Value> 0620 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Logisticians (13-1081) </ValDescription>
+<Value> 0700 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Management analysts (13-1111) </ValDescription>
+<Value> 0710 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Meeting and convention planners (13-1121) </ValDescription>
+<Value> 0720 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Other business operations specialists (13-11XX) </ValDescription>
+<Value> 0730 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Accountants and auditors (13-2011) </ValDescription>
+<Value> 0800 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Appraisers and assessors of real estate (13-2021) </ValDescription>
+<Value> 0810 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Budget analysts (13-2031) </ValDescription>
+<Value> 0820 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Credit analysts (13-2041) </ValDescription>
+<Value> 0830 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Financial analysts (13-2051) </ValDescription>
+<Value> 0840 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Personal financial advisors (13-2052) </ValDescription>
+<Value> 0850 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Insurance underwriters (13-2053) </ValDescription>
+<Value> 0860 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Financial examiners (13-2061) </ValDescription>
+<Value> 0900 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Loan counselors and officers (13-2070) </ValDescription>
+<Value> 0910 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Tax examiners, collectors, and revenue agents (13-2081) </ValDescription>
+<Value> 0930 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Tax preparers (13-2082) </ValDescription>
+<Value> 0940 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Financial specialists, all other (13-2099) </ValDescription>
+<Value> 0950 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Computer scientists and systems analysts (15-10XX) </ValDescription>
+<Value> 1000 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Computer programmers (15-1021) </ValDescription>
+<Value> 1010 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Computer software engineers (15-1030) </ValDescription>
+<Value> 1020 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Computer support specialists (15-1041) </ValDescription>
+<Value> 1040 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Database administrators (15-1061) </ValDescription>
+<Value> 1060 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Network and computer systems administrators (15-1071) </ValDescription>
+<Value> 1100 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Network systems and data communications analysts (15-1081) </ValDescription>
+<Value> 1110 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Actuaries (15-2011) </ValDescription>
+<Value> 1200 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Mathematicians (15-2021) </ValDescription>
+<Value> 1210 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Operations research analysts (15-2031) </ValDescription>
+<Value> 1220 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Statisticians (15-2041) </ValDescription>
+<Value> 1230 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Miscellaneous mathematical science occupations (15-2090) </ValDescription>
+<Value> 1240 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Architects, except naval (17-1010) </ValDescription>
+<Value> 1300 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Surveyors, cartographers, and photogrammetrists (17-1020) </ValDescription>
+<Value> 1310 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Aerospace engineers (17-2011) </ValDescription>
+<Value> 1320 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Agricultural engineers (17-2021) </ValDescription>
+<Value> 1330 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Biomedical engineers (17-2031) </ValDescription>
+<Value> 1340 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Chemical engineers (17-2041) </ValDescription>
+<Value> 1350 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Civil engineers (17-2051) </ValDescription>
+<Value> 1360 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Computer hardware engineers (17-2061) </ValDescription>
+<Value> 1400 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Electrical and electronic engineers (17-2070) </ValDescription>
+<Value> 1410 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Environmental engineers (17-2081) </ValDescription>
+<Value> 1420 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Industrial engineers, including health and safety (17-2110) </ValDescription>
+<Value> 1430 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Marine engineers and naval architects (17-2121) </ValDescription>
+<Value> 1440 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Materials engineers (17-2131) </ValDescription>
+<Value> 1450 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Mechanical engineers (17-2141) </ValDescription>
+<Value> 1460 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Mining and geological engineers, including mining safety engineers (17-2151) </ValDescription>
+<Value> 1500 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Nuclear engineers (17-2161) </ValDescription>
+<Value> 1510 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Petroleum engineers (17-2171) </ValDescription>
+<Value> 1520 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Engineers, all other (17-2199) </ValDescription>
+<Value> 1530 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Drafters (17-3010) </ValDescription>
+<Value> 1540 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Engineering technicians, except drafters (17-3020) </ValDescription>
+<Value> 1550 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Surveying and mapping technicians (17-3031) </ValDescription>
+<Value> 1560 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Agricultural and food scientists (19-1010) </ValDescription>
+<Value> 1600 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Biological scientists (19-1020) </ValDescription>
+<Value> 1610 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Conservation scientists and foresters (19-1030) </ValDescription>
+<Value> 1640 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Medical scientists (19-1040) </ValDescription>
+<Value> 1650 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Astronomers and physicists (19-2010) </ValDescription>
+<Value> 1700 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Atmospheric and space scientists (19-2021) </ValDescription>
+<Value> 1710 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Chemists and materials scientists (19-2030) </ValDescription>
+<Value> 1720 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Environmental scientists and geoscientists (19-2040) </ValDescription>
+<Value> 1740 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Physical scientists, all other (19-2099) </ValDescription>
+<Value> 1760 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Economists (19-3011) </ValDescription>
+<Value> 1800 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Market and survey researchers (19-3020) </ValDescription>
+<Value> 1810 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Psychologists (19-3030) </ValDescription>
+<Value> 1820 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Sociologists (19-3041) </ValDescription>
+<Value> 1830 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Urban and regional planners (19-3051) </ValDescription>
+<Value> 1840 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Miscellaneous social scientists and related workers (19-3090) </ValDescription>
+<Value> 1860 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Agricultural and food science technicians (19-4011) </ValDescription>
+<Value> 1900 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Biological technicians (19-4021) </ValDescription>
+<Value> 1910 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Chemical technicians (19-4031) </ValDescription>
+<Value> 1920 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Geological and petroleum technicians (19-4041) </ValDescription>
+<Value> 1930 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Nuclear technicians (19-4051) </ValDescription>
+<Value> 1940 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Other life, physical, and social science technicians (19-40XX) </ValDescription>
+<Value> 1960 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Counselors (21-1010) </ValDescription>
+<Value> 2000 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Social workers (21-1020) </ValDescription>
+<Value> 2010 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Miscellaneous community and social service specialists (21-1090) </ValDescription>
+<Value> 2020 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Clergy (21-2011) </ValDescription>
+<Value> 2040 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Directors, religious activities and education (21-2021) </ValDescription>
+<Value> 2050 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Religious workers, all other (21-2099) </ValDescription>
+<Value> 2060 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Lawyers (23-1011) </ValDescription>
+<Value> 2100 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Paralegals and legal assistants (23-2011) </ValDescription>
+<Value> 2140 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Miscellaneous legal support workers (23-2090) </ValDescription>
+<Value> 2150 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Postsecondary teachers (25-1000) </ValDescription>
+<Value> 2200 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Preschool and kindergarten teachers (25-2010) </ValDescription>
+<Value> 2300 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Elementary and middle school teachers (25-2020) </ValDescription>
+<Value> 2310 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Secondary school teachers (25-2030) </ValDescription>
+<Value> 2320 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Special education teachers (25-2040) </ValDescription>
+<Value> 2330 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Other teachers and instructors (25-3000) </ValDescription>
+<Value> 2340 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Archivists, curators, and museum technicians (25-4010) </ValDescription>
+<Value> 2400 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Librarians (25-4021) </ValDescription>
+<Value> 2430 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Library technicians (25-4031) </ValDescription>
+<Value> 2440 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Teacher assistants (25-9041) </ValDescription>
+<Value> 2540 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Other education, training, and library workers (25-90XX) </ValDescription>
+<Value> 2550 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Artists and related workers (27-1010) </ValDescription>
+<Value> 2600 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Designers (27-1020) </ValDescription>
+<Value> 2630 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Actors (27-2011) </ValDescription>
+<Value> 2700 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Producers and directors (27-2012) </ValDescription>
+<Value> 2710 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Athletes, coaches, umpires, and related workers (27-2020) </ValDescription>
+<Value> 2720 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Dancers and choreographers (27-2030) </ValDescription>
+<Value> 2740 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Musicians, singers, and related workers (27-2040) </ValDescription>
+<Value> 2750 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Entertainers and performers, sports and related workers, all other (27-2099) </ValDescription>
+<Value> 2760 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Announcers (27-3010) </ValDescription>
+<Value> 2800 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> News analysts, reporters and correspondents (27-3020) </ValDescription>
+<Value> 2810 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Public relations specialists (27-3031) </ValDescription>
+<Value> 2820 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Editors (27-3041) </ValDescription>
+<Value> 2830 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Technical writers (27-3042) </ValDescription>
+<Value> 2840 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Writers and authors (27-3043) </ValDescription>
+<Value> 2850 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Miscellaneous media and communication workers (27-3090) </ValDescription>
+<Value> 2860 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Broadcast and sound engineering technicians and radio operators (27-4010) </ValDescription>
+<Value> 2900 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Photographers (27-4021) </ValDescription>
+<Value> 2910 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Television, video, and motion picture camera operators and editors (27-4030) </ValDescription>
+<Value> 2920 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Media and communication equipment workers, all other (27-4099) </ValDescription>
+<Value> 2960 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Chiropractors (29-1011) </ValDescription>
+<Value> 3000 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Dentists (29-1020) </ValDescription>
+<Value> 3010 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Dietitians and nutritionists (29-1031) </ValDescription>
+<Value> 3030 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Optometrists (29-1041) </ValDescription>
+<Value> 3040 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Pharmacists (29-1051) </ValDescription>
+<Value> 3050 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Physicians and surgeons (29-1060) </ValDescription>
+<Value> 3060 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Physician assistants (29-1071) </ValDescription>
+<Value> 3110 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Podiatrists (29-1081) </ValDescription>
+<Value> 3120 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Registered nurses (29-1111) </ValDescription>
+<Value> 3130 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Audiologists (29-1121) </ValDescription>
+<Value> 3140 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Occupational therapists (29-1122) </ValDescription>
+<Value> 3150 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Physical therapists (29-1123) </ValDescription>
+<Value> 3160 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Radiation therapists (29-1124) </ValDescription>
+<Value> 3200 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Recreational therapists (29-1125) </ValDescription>
+<Value> 3210 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Respiratory therapists (29-1126) </ValDescription>
+<Value> 3220 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Speech-language pathologists (29-1127) </ValDescription>
+<Value> 3230 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Therapists, all other (29-1129) </ValDescription>
+<Value> 3240 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Veterinarians (29-1131) </ValDescription>
+<Value> 3250 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Health diagnosing and treating practitioners, all other (29-1199) </ValDescription>
+<Value> 3260 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Clinical laboratory technologists and technicians (29-2010) </ValDescription>
+<Value> 3300 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Dental hygienists (29-2021) </ValDescription>
+<Value> 3310 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Diagnostic related technologists and technicians (29-2030) </ValDescription>
+<Value> 3320 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Emergency medical technicians and paramedics (29-2041) </ValDescription>
+<Value> 3400 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Health diagnosing and treating practitioner support technicians (29-2050) </ValDescription>
+<Value> 3410 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Licensed practical and licensed vocational nurses (29-2061) </ValDescription>
+<Value> 3500 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Medical records and health information technicians (29-2071) </ValDescription>
+<Value> 3510 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Opticians, dispensing (29-2081) </ValDescription>
+<Value> 3520 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Miscellaneous health technologists and technicians (29-2090) </ValDescription>
+<Value> 3530 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Other healthcare practitioners and technical occupations (29-9000) </ValDescription>
+<Value> 3540 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Nursing, psychiatric, and home health aides (31-1010) </ValDescription>
+<Value> 3600 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Occupational therapist assistants and aides (31-2010) </ValDescription>
+<Value> 3610 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Physical therapist assistants and aides (31-2020) </ValDescription>
+<Value> 3620 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Massage therapists (31-9011) </ValDescription>
+<Value> 3630 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Dental assistants (31-9091) </ValDescription>
+<Value> 3640 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Medical assistants and other healthcare support occupations (31-909X) </ValDescription>
+<Value> 3650 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> First-line supervisors/managers of correctional officers (33-1011) </ValDescription>
+<Value> 3700 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> First-line supervisors/managers of police and detectives (33-1012) </ValDescription>
+<Value> 3710 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> First-line supervisors/managers of fire fighting and prevention workers (33-1021) </ValDescription>
+<Value> 3720 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Supervisors, protective service workers, all other (33-1099) </ValDescription>
+<Value> 3730 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Fire fighters (33-2011) </ValDescription>
+<Value> 3740 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Fire inspectors (33-2020) </ValDescription>
+<Value> 3750 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Bailiffs, correctional officers, and jailers (33-3010) </ValDescription>
+<Value> 3800 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Detectives and criminal investigators (33-3021) </ValDescription>
+<Value> 3820 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Fish and game wardens (33-3031) </ValDescription>
+<Value> 3830 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Parking enforcement workers (33-3041) </ValDescription>
+<Value> 3840 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Police and sheriff's patrol officers(33-3051) </ValDescription>
+<Value> 3850 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Transit and railroad police (33-3052) </ValDescription>
+<Value> 3860 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Animal control workers (33-9011) </ValDescription>
+<Value> 3900 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Private detectives and investigators (33-9021) </ValDescription>
+<Value> 3910 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Security guards and gaming surveillance officers (33-9030) </ValDescription>
+<Value> 3920 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Crossing guards (33-9091) </ValDescription>
+<Value> 3940 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Lifeguards and other protective service workers (33-909X) </ValDescription>
+<Value> 3950 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Chefs and head cooks (35-1011) </ValDescription>
+<Value> 4000 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> First-line supervisors/managers of food preparation and serving workers (35-1012) </ValDescription>
+<Value> 4010 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Cooks (35-2010) </ValDescription>
+<Value> 4020 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Food preparation workers (35-2021) </ValDescription>
+<Value> 4030 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Bartenders (35-3011) </ValDescription>
+<Value> 4040 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Combined food preparation and serving workers, including fast food (35-3021) </ValDescription>
+<Value> 4050 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Counter attendants, cafeteria, food concession, and coffee shop (35-3022) </ValDescription>
+<Value> 4060 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Waiters and waitresses (35-3031) </ValDescription>
+<Value> 4110 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Food servers, nonrestaurant (35-3041) </ValDescription>
+<Value> 4120 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Dining room and cafeteria attendants and bartender helpers (35-9011) </ValDescription>
+<Value> 4130 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Dishwashers (35-9021) </ValDescription>
+<Value> 4140 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Hosts and hostesses, restaurant, lounge, and coffee shop (35-9031) </ValDescription>
+<Value> 4150 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Food preparation and serving related workers, all other (35-9099) </ValDescription>
+<Value> 4160 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> First-line supervisors/managers of housekeeping and janitorial workers (37-1011) </ValDescription>
+<Value> 4200 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> First-line supervisors/managers of landscaping, lawn service, and groundskeeping workers </ValDescription>
+<Value> 4210 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Janitors and building cleaners (37-201X) </ValDescription>
+<Value> 4220 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Maids and housekeeping cleaners (37-2012) </ValDescription>
+<Value> 4230 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Pest control workers (37-2021) </ValDescription>
+<Value> 4240 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Grounds maintenance workers (37-3010) </ValDescription>
+<Value> 4250 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> First-line supervisors/managers of gaming workers (39-1010) </ValDescription>
+<Value> 4300 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> First-line supervisors/managers of personal service workers (39-1021) </ValDescription>
+<Value> 4320 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Animal trainers (39-2011) </ValDescription>
+<Value> 4340 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Nonfarm animal caretakers (39-2021) </ValDescription>
+<Value> 4350 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Gaming services workers (39-3010) </ValDescription>
+<Value> 4400 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Motion picture projectionists (39-3021) </ValDescription>
+<Value> 4410 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Ushers, lobby attendants, and ticket takers (39-3031) </ValDescription>
+<Value> 4420 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Miscellaneous entertainment attendants and related workers (39-3090) </ValDescription>
+<Value> 4430 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Funeral service workers (39-4000) </ValDescription>
+<Value> 4460 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Barbers (39-5011) </ValDescription>
+<Value> 4500 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Hairdressers, hairstylists, and cosmetologists (39-5012) </ValDescription>
+<Value> 4510 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Miscellaneous personal appearance workers (39-5090) </ValDescription>
+<Value> 4520 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Baggage porters, bellhops, and concierges (39-6010) </ValDescription>
+<Value> 4530 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Tour and travel guides (39-6020) </ValDescription>
+<Value> 4540 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Transportation attendants (39-6030) </ValDescription>
+<Value> 4550 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Child care workers (39-9011) </ValDescription>
+<Value> 4600 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Personal and home care aides (39-9021) </ValDescription>
+<Value> 4610 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Recreation and fitness workers (39-9030) </ValDescription>
+<Value> 4620 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Residential advisors (39-9041) </ValDescription>
+<Value> 4640 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Personal care and service workers, all other (39-9099) </ValDescription>
+<Value> 4650 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> First-line supervisors/managers of retail sales workers (41-1011) </ValDescription>
+<Value> 4700 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> First-line supervisors/managers of non-retail sales workers (41-1012) </ValDescription>
+<Value> 4710 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Cashiers (41-2010) </ValDescription>
+<Value> 4720 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Counter and rental clerks (41-2021) </ValDescription>
+<Value> 4740 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Parts salespersons (41-2022) </ValDescription>
+<Value> 4750 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Retail salespersons (41-2031) </ValDescription>
+<Value> 4760 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Advertising sales agents (41-3011) </ValDescription>
+<Value> 4800 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Insurance sales agents (41-3021) </ValDescription>
+<Value> 4810 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Securities, commodities, and financial services sales agents (41-3031) </ValDescription>
+<Value> 4820 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Travel agents (41-3041) </ValDescription>
+<Value> 4830 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Sales representatives, services, all other (41-3099) </ValDescription>
+<Value> 4840 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Sales representatives, wholesale and manufacturing (41-4010) </ValDescription>
+<Value> 4850 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Models, demonstrators, and product promoters (41-9010) </ValDescription>
+<Value> 4900 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Real estate brokers and sales agents (41-9020) </ValDescription>
+<Value> 4920 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Sales engineers (41-9031) </ValDescription>
+<Value> 4930 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Telemarketers (41-9041) </ValDescription>
+<Value> 4940 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Door-to-door sales workers, news and street vendors, and related workers (41-9091) </ValDescription>
+<Value> 4950 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Sales and related workers, all other (41-9099) </ValDescription>
+<Value> 4960 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> First-line supervisors/managers of office and administrative support workers (43-1011) </ValDescription>
+<Value> 5000 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Switchboard operators, including answering service (43-2011) </ValDescription>
+<Value> 5010 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Telephone operators (43-2021) </ValDescription>
+<Value> 5020 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Communications equipment operators, all other (43-2099) </ValDescription>
+<Value> 5030 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Bill and account collectors (43-3011) </ValDescription>
+<Value> 5100 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Billing and posting clerks and machine operators (43-3021) </ValDescription>
+<Value> 5110 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Bookkeeping, accounting, and auditing clerks (43-3031) </ValDescription>
+<Value> 5120 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Gaming cage workers (43-3041) </ValDescription>
+<Value> 5130 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Payroll and timekeeping clerks (43-3051) </ValDescription>
+<Value> 5140 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Procurement clerks (43-3061) </ValDescription>
+<Value> 5150 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Tellers (43-3071) </ValDescription>
+<Value> 5160 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Brokerage clerks (43-4011) </ValDescription>
+<Value> 5200 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Correspondence clerks (43-4021) </ValDescription>
+<Value> 5210 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Court, municipal, and license clerks (43-4031) </ValDescription>
+<Value> 5220 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Credit authorizers, checkers, and clerks (43-4041) </ValDescription>
+<Value> 5230 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Customer service representatives (43-4051) </ValDescription>
+<Value> 5240 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Eligibility interviewers, government programs (43-4061) </ValDescription>
+<Value> 5250 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> File Clerks (43-4071) </ValDescription>
+<Value> 5260 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Hotel, motel, and resort desk clerks (43-4081) </ValDescription>
+<Value> 5300 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Interviewers, except eligibility and loan (43-4111) </ValDescription>
+<Value> 5310 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Library assistants, clerical (43-4121) </ValDescription>
+<Value> 5320 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Loan interviewers and clerks (43-4131) </ValDescription>
+<Value> 5330 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> New accounts clerks (43-4141) </ValDescription>
+<Value> 5340 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Order clerks (43-4151) </ValDescription>
+<Value> 5350 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Human resources assistants, except payroll and timekeeping (43-4161) </ValDescription>
+<Value> 5360 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Receptionists and information clerks (43-4171) </ValDescription>
+<Value> 5400 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Reservation and transportation ticket agents and travel clerks (43-4181) </ValDescription>
+<Value> 5410 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Information and record clerks, all other (43-4199) </ValDescription>
+<Value> 5420 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Cargo and freight agents (43-5011) </ValDescription>
+<Value> 5500 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Couriers and messengers (43-5021) </ValDescription>
+<Value> 5510 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Dispatchers (43-5030) </ValDescription>
+<Value> 5520 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Meter readers, utilities (43-5041) </ValDescription>
+<Value> 5530 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Postal service clerks (43-5051) </ValDescription>
+<Value> 5540 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Postal service mail carriers (43-5052) </ValDescription>
+<Value> 5550 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Postal service mail sorters, processors, and processing machine operators (43-5053) </ValDescription>
+<Value> 5560 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Production, planning, and expediting clerks (43-5061) </ValDescription>
+<Value> 5600 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Shipping, receiving, and traffic clerks (43-5071) </ValDescription>
+<Value> 5610 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Stock clerks and order fillers (43-5081) </ValDescription>
+<Value> 5620 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Weighers, measurers, checkers, and samplers, recordkeeping (43-5111) </ValDescription>
+<Value> 5630 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Secretaries and administrative assistants (43-6010) </ValDescription>
+<Value> 5700 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Computer operators (43-9011) </ValDescription>
+<Value> 5800 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Data entry keyers (43-9021) </ValDescription>
+<Value> 5810 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Word processors and typists (43-9022) </ValDescription>
+<Value> 5820 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Desktop publishers (43-9031) </ValDescription>
+<Value> 5830 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Insurance claims and policy processing clerks (43-9041) </ValDescription>
+<Value> 5840 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Mail clerks and mail machine operators, except postal service (43-9051) </ValDescription>
+<Value> 5850 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Office clerks, general (43-9061) </ValDescription>
+<Value> 5860 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Office machine operators, except computer (43-9071) </ValDescription>
+<Value> 5900 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Proofreaders and copy markers (43-9081) </ValDescription>
+<Value> 5910 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Statistical assistants (43-9111) </ValDescription>
+<Value> 5920 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Office and administrative support workers, all other (43-9199) </ValDescription>
+<Value> 5930 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> First-line supervisors/managers of farming, fishing, and forestry workers (45-1010) </ValDescription>
+<Value> 6000 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Agricultural inspectors (45-2011) </ValDescription>
+<Value> 6010 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Animal breeders (45-2021) </ValDescription>
+<Value> 6020 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Graders and sorters, agricultural products (45-2041) </ValDescription>
+<Value> 6040 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Miscellaneous agricultural workers (45-2090) </ValDescription>
+<Value> 6050 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Fishers and related fishing workers (45-3011) </ValDescription>
+<Value> 6100 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Hunters and trappers (45-3021) </ValDescription>
+<Value> 6110 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Forest and conservation workers (45-4011) </ValDescription>
+<Value> 6120 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Logging workers (45-4020) </ValDescription>
+<Value> 6130 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> First-line supervisors/managers of construction trades and extraction workers (47-1011) </ValDescription>
+<Value> 6200 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Boilermakers (47-2011) </ValDescription>
+<Value> 6210 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Brickmasons, blockmasons, and stonemasons (47-2020) </ValDescription>
+<Value> 6220 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Carpenters (47-2031) </ValDescription>
+<Value> 6230 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Carpet, floor, and tile installers and finishers (47-2040) </ValDescription>
+<Value> 6240 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Cement masons, concrete finishers, and terrazzo workers (47-2050) </ValDescription>
+<Value> 6250 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Construction laborers (47-2061) </ValDescription>
+<Value> 6260 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Paving, surfacing, and tamping equipment operators (47-2071) </ValDescription>
+<Value> 6300 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Pile-driver operators (47-2072) </ValDescription>
+<Value> 6310 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Operating engineers and other construction equipment operators (47-2073) </ValDescription>
+<Value> 6320 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Drywall installers, ceiling tile installers, and tapers (47-2080) </ValDescription>
+<Value> 6330 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Electricians (47-2111) </ValDescription>
+<Value> 6350 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Glaziers (47-2121) </ValDescription>
+<Value> 6360 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Insulation workers (47-2130) </ValDescription>
+<Value> 6400 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Painters, construction and maintenance (47-2141) </ValDescription>
+<Value> 6420 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Paperhangers (47-2142) </ValDescription>
+<Value> 6430 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Pipelayers, plumbers, pipefitters, and steamfitters (47-2150) </ValDescription>
+<Value> 6440 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Plasterers and stucco masons (47-2161) </ValDescription>
+<Value> 6460 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Reinforcing iron and rebar workers (47-2171) </ValDescription>
+<Value> 6500 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Roofers (47-2181) </ValDescription>
+<Value> 6510 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Sheet metal workers (47-2211) </ValDescription>
+<Value> 6520 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Structural iron and steel workers (47-2221) </ValDescription>
+<Value> 6530 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Helpers, construction trades (47-3010) </ValDescription>
+<Value> 6600 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Construction and building inspectors (47-4011) </ValDescription>
+<Value> 6660 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Elevator installers and repairers (47-4021) </ValDescription>
+<Value> 6700 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Fence erectors (47-4031) </ValDescription>
+<Value> 6710 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Hazardous materials removal workers (47-4041) </ValDescription>
+<Value> 6720 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Highway maintenance workers (47-4051) </ValDescription>
+<Value> 6730 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Rail-track laying and maintenance equipment operators (47-4061) </ValDescription>
+<Value> 6740 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Septic tank servicers and sewer pipe cleaners (47-4071) </ValDescription>
+<Value> 6750 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Miscellaneous construction and related workers (47-4090) </ValDescription>
+<Value> 6760 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Derrick, rotary drill, and service unit operators, oil, gas, and mining (47-5010) </ValDescription>
+<Value> 6800 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Earth drillers, except oil and gas (47-5021) </ValDescription>
+<Value> 6820 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Explosives workers, ordnance handling experts, and blasters (47-5031) </ValDescription>
+<Value> 6830 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Mining machine operators (47-5040) </ValDescription>
+<Value> 6840 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Roof bolters, mining (47-5061) </ValDescription>
+<Value> 6910 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Roustabouts, oil and gas (47-5071) </ValDescription>
+<Value> 6920 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Helpers--extraction workers (47-5081) </ValDescription>
+<Value> 6930 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Other extraction workers (47-50XX) </ValDescription>
+<Value> 6940 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> First-line supervisors/managers of mechanics, installers, and repairers (49-1011) </ValDescription>
+<Value> 7000 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Computer, automated teller, and office machine repairers (49-2011) </ValDescription>
+<Value> 7010 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Radio and telecommunications equipment installers and repairers (49-2020) </ValDescription>
+<Value> 7020 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Avionics technicians (49-2091) </ValDescription>
+<Value> 7030 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Electric motor, power tool, and related repairers (49-2092) </ValDescription>
+<Value> 7040 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Electrical and electronics installers and repairers, transportation equipment (49-2093) </ValDescription>
+<Value> 7050 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Electrical and electronics repairers, industrial and utility (49-209X) </ValDescription>
+<Value> 7100 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Electronic equipment installers and repairers, motor vehicles (49-2096) </ValDescription>
+<Value> 7110 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Electronic home entertainment equipment installers and repairers (49-2097) </ValDescription>
+<Value> 7120 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Security and fire alarm systems installers (49-2098) </ValDescription>
+<Value> 7130 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Aircraft mechanics and service technicians (49-3011) </ValDescription>
+<Value> 7140 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Automotive body and related repairers (49-3021) </ValDescription>
+<Value> 7150 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Automotive glass installers and repairers (49-3022) </ValDescription>
+<Value> 7160 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Automotive service technicians and mechanics (49-3023) </ValDescription>
+<Value> 7200 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Bus and truck mechanics and diesel engine specialists (49-3031) </ValDescription>
+<Value> 7210 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Heavy vehicle and mobile equipment service technicians and mechanics (49-3040) </ValDescription>
+<Value> 7220 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Small engine mechanics (49-3050) </ValDescription>
+<Value> 7240 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Miscellaneous vehicle and mobile equipment mechanics, installers, and repairers (49-3090 </ValDescription>
+<Value> 7260 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Control and valve installers and repairers (49-9010) </ValDescription>
+<Value> 7300 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Heating, air conditioning, and refrigeration mechanics and installers (49-9021) </ValDescription>
+<Value> 7310 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Home appliance repairers (49-9031) </ValDescription>
+<Value> 7320 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Industrial and refractory machinery mechanics (49-904X) </ValDescription>
+<Value> 7330 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Maintenance and repair workers, general (49-9042) </ValDescription>
+<Value> 7340 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Maintenance workers, machinery (49-9043) </ValDescription>
+<Value> 7350 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Millwrights (49-9044) </ValDescription>
+<Value> 7360 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Electrical power-line installers and repairers (49-9051) </ValDescription>
+<Value> 7410 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Telecommunications line installers and repairers (49-9052) </ValDescription>
+<Value> 7420 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Precision instrument and equipment repairers (49-9060) </ValDescription>
+<Value> 7430 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Coin, vending, and amusement machine servicers and repairers (49-9091) </ValDescription>
+<Value> 7510 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Commercial divers (49-9092) </ValDescription>
+<Value> 7520 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Locksmiths and safe repairers (49-9094) </ValDescription>
+<Value> 7540 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Manufactured building and mobile home installers (49-9095) </ValDescription>
+<Value> 7550 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Riggers (49-9096) </ValDescription>
+<Value> 7560 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Signal and track switch repairers (49-9097) </ValDescription>
+<Value> 7600 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Helpers--installation, maintenance, and repair workers (49-9098) </ValDescription>
+<Value> 7610 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Other installation, maintenance, and repair workers (49-909X) </ValDescription>
+<Value> 7620 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> First-line supervisors/managers of production and operating workers (51-1011) </ValDescription>
+<Value> 7700 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Aircraft structure, surfaces, rigging, and systems assemblers (51-2011) </ValDescription>
+<Value> 7710 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Electrical, electronics, and electromechanical assemblers (51-2020) </ValDescription>
+<Value> 7720 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Engine and other machine assemblers (51-2031) </ValDescription>
+<Value> 7730 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Structural metal fabricators and fitters (51-2041) </ValDescription>
+<Value> 7740 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Miscellaneous assemblers and fabricators (51-2090) </ValDescription>
+<Value> 7750 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Bakers (51-3011) </ValDescription>
+<Value> 7800 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Butchers and other meat, poultry, and fish processing workers (51-3020) </ValDescription>
+<Value> 7810 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Food and tobacco roasting, baking, and drying machine operators and tenders (51-3091) </ValDescription>
+<Value> 7830 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Food batchmakers (51-3092) </ValDescription>
+<Value> 7840 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Food cooking machine operators and tenders (51-3093) </ValDescription>
+<Value> 7850 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Computer control programmers and operators (51-4010) </ValDescription>
+<Value> 7900 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Extruding and drawing machine setters, operators, and tenders, metal and plastic (51-402 </ValDescription>
+<Value> 7920 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Forging machine setters, operators, and tenders, metal and plastic (51-4022) </ValDescription>
+<Value> 7930 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Rolling machine setters, operators, and tenders, metal and plastic (51-4023) </ValDescription>
+<Value> 7940 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Cutting, punching, and press machine setters, operators, and tenders, metal and plastic </ValDescription>
+<Value> 7950 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Drilling and boring machine tool setters, operators, and tenders, metal and plastic (51- </ValDescription>
+<Value> 7960 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Grinding, lapping, polishing, and buffing machine tool setters, operators, and tenders, </ValDescription>
+<Value> 8000 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Lathe and turning machine tool setters, operators, and tenders, metal and plastic (51-40 </ValDescription>
+<Value> 8010 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Milling and planing machine setters, operators, and tenders, metal and plastic (51-4035) </ValDescription>
+<Value> 8020 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Machinists (51-4041) </ValDescription>
+<Value> 8030 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Metal furnace and kiln operators and tenders (51-4050) </ValDescription>
+<Value> 8040 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Model makers and patternmakers, metal and plastic (51-4060) </ValDescription>
+<Value> 8060 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Molders and molding machine setters, operators, and tenders, metal and plastic (51-4070) </ValDescription>
+<Value> 8100 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Multiple machine tool setters, operators, and tenders, metal and plastic (51-4081) </ValDescription>
+<Value> 8120 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Tool and die makers (51-4111) </ValDescription>
+<Value> 8130 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Welding, soldering, and brazing workers (51-4120) </ValDescription>
+<Value> 8140 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Heat treating equipment setters, operators, and tenders, metal and plastic (51-4191) </ValDescription>
+<Value> 8150 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Lay-out workers, metal and plastic (51-4192) </ValDescription>
+<Value> 8160 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Plating and coating machine setters, operators, and tenders, metal and plastic (51-4193) </ValDescription>
+<Value> 8200 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Tool grinders, filers, and sharpeners (51-4194) </ValDescription>
+<Value> 8210 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Metalworkers and plastic workers, all other (51-4199) </ValDescription>
+<Value> 8220 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Bookbinders and bindery workers (51-5010) </ValDescription>
+<Value> 8230 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Job printers (51-5021) </ValDescription>
+<Value> 8240 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Prepress technicians and workers (51-5022) </ValDescription>
+<Value> 8250 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Printing machine operators (51-5023) </ValDescription>
+<Value> 8260 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Laundry and dry-cleaning workers (51-6011) </ValDescription>
+<Value> 8300 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Pressers, textile, garment, and related materials (51-6021) </ValDescription>
+<Value> 8310 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Sewing machine operators (51-6031) </ValDescription>
+<Value> 8320 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Shoe and leather workers and repairers (51-6041) </ValDescription>
+<Value> 8330 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Shoe machine operators and tenders (51-6042) </ValDescription>
+<Value> 8340 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Tailors, dressmakers, and sewers (51-6050) </ValDescription>
+<Value> 8350 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Textile bleaching and dyeing machine operators and tenders (51-6061) </ValDescription>
+<Value> 8360 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Textile cutting machine setters, operators, and tenders (51-6062) </ValDescription>
+<Value> 8400 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Textile knitting and weaving machine setters, operators, and tenders (51-6063) </ValDescription>
+<Value> 8410 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Textile winding, twisting, and drawing out machine setters, operators, and tenders (51-6 </ValDescription>
+<Value> 8420 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Extruding and forming machine setters, operators, and tenders, synthetic and glass fiber </ValDescription>
+<Value> 8430 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Fabric and apparel patternmakers (51-6092) </ValDescription>
+<Value> 8440 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Upholsterers (51-6093) </ValDescription>
+<Value> 8450 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Textile, apparel, and furnishings workers, all other (51-6099) </ValDescription>
+<Value> 8460 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Cabinetmakers and bench carpenters (51-7011) </ValDescription>
+<Value> 8500 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Furniture finishers (51-7021) </ValDescription>
+<Value> 8510 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Model makers and patternmakers, wood (51-7030) </ValDescription>
+<Value> 8520 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Sawing machine setters, operators, and tenders, wood (51-7041) </ValDescription>
+<Value> 8530 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Woodworking machine setters, operators, and tenders, except sawing (51-7042) </ValDescription>
+<Value> 8540 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Woodworkers, all other (51-7099) </ValDescription>
+<Value> 8550 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Power plant operators, distributors, and dispatchers (51-8010) </ValDescription>
+<Value> 8600 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Stationary engineers and boiler operators (51-8021) </ValDescription>
+<Value> 8610 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Water and liquid waste treatment plant and system operators (51-8031) </ValDescription>
+<Value> 8620 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Miscellaneous plant and system operators (51-8090) </ValDescription>
+<Value> 8630 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Chemical processing machine setters, operators, and tenders (51-9010) </ValDescription>
+<Value> 8640 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Crushing, grinding, polishing, mixing, and blending workers (51-9020) </ValDescription>
+<Value> 8650 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Cutting workers (51-9030) </ValDescription>
+<Value> 8710 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Extruding, forming, pressing, and compacting machine setters, operators, and tenders (51 </ValDescription>
+<Value> 8720 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Furnace, kiln, oven, drier, and kettle operators and tenders (51-9051) </ValDescription>
+<Value> 8730 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Inspectors, testers, sorters, samplers, and weighers (51-9061) </ValDescription>
+<Value> 8740 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Jewelers and precious stone and metal workers (51-9071) </ValDescription>
+<Value> 8750 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Medical, dental, and ophthalmic laboratory technicians (51-9080) </ValDescription>
+<Value> 8760 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Packaging and filling machine operators and tenders (51-9111) </ValDescription>
+<Value> 8800 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Painting workers (51-9120) </ValDescription>
+<Value> 8810 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Photographic process workers and processing machine operators (51-9130) </ValDescription>
+<Value> 8830 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Semiconductor processors (51-9141) </ValDescription>
+<Value> 8840 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Cementing and gluing machine operators and tenders (51-9191) </ValDescription>
+<Value> 8850 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Cleaning, washing, and metal pickling equipment operators and tenders (51-9192) </ValDescription>
+<Value> 8860 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Cooling and freezing equipment operators and tenders (51-9193) </ValDescription>
+<Value> 8900 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Etchers and engravers (51-9194) </ValDescription>
+<Value> 8910 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Molders, shapers, and casters, except metal and plastic (51-9195) </ValDescription>
+<Value> 8920 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Paper goods machine setters, operators, and tenders (51-9196) </ValDescription>
+<Value> 8930 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Tire builders (51-9197) </ValDescription>
+<Value> 8940 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Helpers--production workers (51-9198) </ValDescription>
+<Value> 8950 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Production workers, all other (51-9199) </ValDescription>
+<Value> 8960 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Supervisors, transportation and material moving workers (53-1000) </ValDescription>
+<Value> 9000 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Aircraft pilots and flight engineers (53-2010) </ValDescription>
+<Value> 9030 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Air traffic controllers and airfield operations specialists (53-2020) </ValDescription>
+<Value> 9040 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Ambulance drivers and attendants, except emergency medical technicians (53-3011) </ValDescription>
+<Value> 9110 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Bus drivers (53-3020) </ValDescription>
+<Value> 9120 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Driver/sales workers and truck drivers (53-3030) </ValDescription>
+<Value> 9130 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Taxi drivers and chauffeurs (53-3041) </ValDescription>
+<Value> 9140 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Motor vehicle operators, all other (53-3099) </ValDescription>
+<Value> 9150 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Locomotive engineers and operators (53-4010) </ValDescription>
+<Value> 9200 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Railroad brake, signal, and switch operators (53-4021) </ValDescription>
+<Value> 9230 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Railroad conductors and yardmasters (53-4031) </ValDescription>
+<Value> 9240 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Subway, streetcar, and other rail transportation workers (53-40XX) </ValDescription>
+<Value> 9260 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Sailors and marine oilers (53-5011) </ValDescription>
+<Value> 9300 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Ship and boat captains and operators (53-5020) </ValDescription>
+<Value> 9310 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Ship engineers (53-5031) </ValDescription>
+<Value> 9330 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Bridge and lock tenders (53-6011) </ValDescription>
+<Value> 9340 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Parking lot attendants (53-6021) </ValDescription>
+<Value> 9350 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Service station attendants (53-6031) </ValDescription>
+<Value> 9360 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Transportation inspectors (53-6051) </ValDescription>
+<Value> 9410 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Other transportation workers (53-60XX) </ValDescription>
+<Value> 9420 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Conveyor operators and tenders (53-7011) </ValDescription>
+<Value> 9500 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Crane and tower operators (53-7021) </ValDescription>
+<Value> 9510 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Dredge, excavating, and loading machine operators (53-7030) </ValDescription>
+<Value> 9520 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Hoist and winch operators (53-7041) </ValDescription>
+<Value> 9560 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Industrial truck and tractor operators (53-7051) </ValDescription>
+<Value> 9600 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Cleaners of vehicles and equipment (53-7061) </ValDescription>
+<Value> 9610 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Laborers and freight, stock, and material movers, hand (53-7062) </ValDescription>
+<Value> 9620 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Machine feeders and offbearers (53-7063) </ValDescription>
+<Value> 9630 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Packers and packagers, hand (53-7064) </ValDescription>
+<Value> 9640 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Pumping station operators (53-7070) </ValDescription>
+<Value> 9650 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Refuse and recyclable material collectors (53-7081) </ValDescription>
+<Value> 9720 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Shuttle car operators (53-7111) </ValDescription>
+<Value> 9730 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Tank car, truck, and ship loaders (53-7121) </ValDescription>
+<Value> 9740 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Material moving workers, all other (53-7199) </ValDescription>
+<Value> 9750 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Persons whose current labor force status is unemployed and last job was Armed Forces </ValDescription>
+<Value> 9840 </Value>
+<Selected> true </Selected>
+</Range>
+</Ranges>
+</Variable>
+<Variable>
+<VarId>a50b5212fbfd34da987ec4ae4a449731</VarId>
+<Idnum> 487501 </Idnum>
+<Type> 1 </Type>
+<VarMnemonic> EJBIND1 </VarMnemonic>
+<VarDescription> JB: Industry code </VarDescription>
+<Ranges>
+<RangeCount> 265 </RangeCount>
+<Range>
+<ValDescription> Not in Universe </ValDescription>
+<Value> -1 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Crop production (111) </ValDescription>
+<Value> 0170 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Animal production (112) </ValDescription>
+<Value> 0180 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Forestry except logging (1131,1132) </ValDescription>
+<Value> 0190 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Logging (1133) </ValDescription>
+<Value> 0270 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Fishing, hunting, and trapping (114) </ValDescription>
+<Value> 0280 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Support activities for agriculture and forestry (115) </ValDescription>
+<Value> 0290 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Oil and gas extraction (211) </ValDescription>
+<Value> 0370 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Coal mining (2121) </ValDescription>
+<Value> 0380 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Metal ore mining (2122) </ValDescription>
+<Value> 0390 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Nonmetallic mineral mining and quarrying (2123) </ValDescription>
+<Value> 0470 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Not specified type of mining (Part 21) </ValDescription>
+<Value> 0480 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Support activities for mining (213) </ValDescription>
+<Value> 0490 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Electric power generation, transmission and distribution (2211) </ValDescription>
+<Value> 0570 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Natural gas distribution (2212) </ValDescription>
+<Value> 0580 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Electric and gas, and other combinations (Parts 2211, 2212) </ValDescription>
+<Value> 0590 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Water, steam, air-conditioning, and irrigation systems (22131,22133) </ValDescription>
+<Value> 0670 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Sewage treatment facilities (22132) </ValDescription>
+<Value> 0680 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Not specified utilities (Part 22) </ValDescription>
+<Value> 0690 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Construction (23) </ValDescription>
+<Value> 0770 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Animal food, grain and oilseed milling (3111, 3112) </ValDescription>
+<Value> 1070 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Sugar and confectionery products (3113) </ValDescription>
+<Value> 1080 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Fruit and vegetable preserving and specialty food manufacturing (3114) </ValDescription>
+<Value> 1090 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Dairy product manufacturing (3115) </ValDescription>
+<Value> 1170 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Animal slaughtering and processing (3116) </ValDescription>
+<Value> 1180 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Retail bakeries (311811) </ValDescription>
+<Value> 1190 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Bakeries, except retail  (3118 exc. 311811) </ValDescription>
+<Value> 1270 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Seafood and other miscellaneous foods, n.e.c. (3117, 3119) </ValDescription>
+<Value> 1280 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Not specified food industries (Part 311) </ValDescription>
+<Value> 1290 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Beverage manufacturing (3121) </ValDescription>
+<Value> 1370 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Tobacco manufacturing (3122) </ValDescription>
+<Value> 1390 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Fiber, yarn, and thread mills (3131) </ValDescription>
+<Value> 1470 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Fabric mills, except knitting (3132 except 31324) </ValDescription>
+<Value> 1480 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Textile and fabric finishing and coating mills (3133) </ValDescription>
+<Value> 1490 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Carpet and rug mills (31411) </ValDescription>
+<Value> 1570 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Textile product mills, except carpets and rugs (314 except 31411) </ValDescription>
+<Value> 1590 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Knitting mills (31324, 3151) </ValDescription>
+<Value> 1670 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Cut and sew apparel manufacturing (3152) </ValDescription>
+<Value> 1680 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Apparel accessories and other apparel manufacturing (3159) </ValDescription>
+<Value> 1690 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Footwear manufacturing (3162) </ValDescription>
+<Value> 1770 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Leather tanning and products, except footwear manufacturing (3161, 3169) </ValDescription>
+<Value> 1790 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Pulp, paper, and paperboard mills (3221) </ValDescription>
+<Value> 1870 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Paperboard containers and boxes (32221) </ValDescription>
+<Value> 1880 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Miscellaneous paper and pulp products  (32222, 32223, 32229) </ValDescription>
+<Value> 1890 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Printing and related support activities (3231) </ValDescription>
+<Value> 1990 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Petroleum refining (32411) </ValDescription>
+<Value> 2070 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Miscellaneous petroleum and coal products (32419) </ValDescription>
+<Value> 2090 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Resin, synthetic rubber and fibers, and filaments manufacturing (3252) </ValDescription>
+<Value> 2170 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Agricultural chemical manufacturing  (3253) </ValDescription>
+<Value> 2180 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Pharmaceutical and medicine manufacturing (3254) </ValDescription>
+<Value> 2190 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Paint, coating, and adhesive manufacturing (3255) </ValDescription>
+<Value> 2270 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Soap, cleaning compound, and cosmetics manufacturing (3256) </ValDescription>
+<Value> 2280 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Industrial and miscellaneous chemicals (3251, 3259) </ValDescription>
+<Value> 2290 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Plastics product manufacturing (3261) </ValDescription>
+<Value> 2370 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Tire manufacturing (32621) </ValDescription>
+<Value> 2380 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Rubber products, except tires, manufacturing (32622, 32629) </ValDescription>
+<Value> 2390 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Pottery, ceramics, and related products manufacturing  (32711) </ValDescription>
+<Value> 2470 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Structural clay product manufacturing (32712) </ValDescription>
+<Value> 2480 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Glass and glass product manufacturing  (3272) </ValDescription>
+<Value> 2490 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Cement, concrete, lime, and gypsum product manufacturing (3273, 3274) </ValDescription>
+<Value> 2570 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Miscellaneous nonmetallic mineral product manufacturing (3279) </ValDescription>
+<Value> 2590 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Iron and steel mills and steel product manufacturing  (3311, 3312) </ValDescription>
+<Value> 2670 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Aluminum production and processing  (3313) </ValDescription>
+<Value> 2680 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Nonferrous metal, except aluminum, production and processing (3314) </ValDescription>
+<Value> 2690 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Foundries (3315) </ValDescription>
+<Value> 2770 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Metal forgings and stampings (3321) </ValDescription>
+<Value> 2780 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Cutlery and hand tool manufacturing  (3322) </ValDescription>
+<Value> 2790 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Structural metals, and tank and shipping container manufacturing (3323, 3324) </ValDescription>
+<Value> 2870 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Machine shops; turned product; screw, nut and bolt manufacturing  (3327) </ValDescription>
+<Value> 2880 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Coating, engraving, heat treating and allied activities (3328) </ValDescription>
+<Value> 2890 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Ordnance (332992, 332993, 332994, 332995  ) </ValDescription>
+<Value> 2970 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Miscellaneous fabricated metal products manufacturing (3325, 3326, 3329 except 332992, 3 </ValDescription>
+<Value> 2980 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Not specified metal industries (Part 331 and 332) </ValDescription>
+<Value> 2990 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Agricultural implement manufacturing (33311) </ValDescription>
+<Value> 3070 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Construction, mining and oil field machinery manufacturing (33312, 33313) </ValDescription>
+<Value> 3080 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Commercial and service industry machinery manufacturing (3333) </ValDescription>
+<Value> 3090 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Metalworking machinery manufacturing (3335) </ValDescription>
+<Value> 3170 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Engines, turbines, and power transmission equipment manufacturing (3336) </ValDescription>
+<Value> 3180 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Machinery manufacturing, n.e.c. (3332, 3334, 3339) </ValDescription>
+<Value> 3190 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Not specified machinery manufacturing (Part 333) </ValDescription>
+<Value> 3290 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Computer and peripheral equipment manufacturing (3341) </ValDescription>
+<Value> 3360 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Communications, audio, and video equipment manufacturing (3342, 3343) </ValDescription>
+<Value> 3370 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Navigational, measuring, electromedical, and control instruments manufacturing (3345) </ValDescription>
+<Value> 3380 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Electronic component and product manufacturing, n.e.c. (3344, 3346) </ValDescription>
+<Value> 3390 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Household appliance manufacturing (3352) </ValDescription>
+<Value> 3470 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Electrical lighting, equipment, and supplies manufacturing, n.e.c. (3351, 3353, 3359) </ValDescription>
+<Value> 3490 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Motor vehicles and motor vehicle equipment manufacturing (3361, 3362, 3363) </ValDescription>
+<Value> 3570 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Aircraft and parts manufacturing (336411, 336412, 336413) </ValDescription>
+<Value> 3580 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Aerospace products and parts manufacturing (336414, 336415, 336419) </ValDescription>
+<Value> 3590 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Railroad rolling stock manufacturing (3365) </ValDescription>
+<Value> 3670 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Ship and boat building (3366) </ValDescription>
+<Value> 3680 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Other transportation equipment manufacturing (3369) </ValDescription>
+<Value> 3690 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Sawmills and wood preservation (3211) </ValDescription>
+<Value> 3770 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Veneer, plywood, and engineered wood products (3212) </ValDescription>
+<Value> 3780 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Prefabricated wood buildings and mobile homes (321991, 321992) </ValDescription>
+<Value> 3790 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Miscellaneous wood products (3219 except 321991, 321992) </ValDescription>
+<Value> 3870 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Furniture and related product manufacturing (337) </ValDescription>
+<Value> 3890 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Medical equipment and supplies manufacturing (3391) </ValDescription>
+<Value> 3960 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Toys, amusement, and sporting goods manufacturing (33992, 33993) </ValDescription>
+<Value> 3970 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Miscellaneous manufacturing, n.e.c.  (3399 except 33992, 33993) </ValDescription>
+<Value> 3980 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Not specified manufacturing industries (Part 31, 32, 33) </ValDescription>
+<Value> 3990 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Motor vehicles, parts and supplies, merchant wholesalers  (4231) </ValDescription>
+<Value> 4070 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Furniture and home furnishing, merchant wholesalers (4232 ) </ValDescription>
+<Value> 4080 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Lumber and other construction materials, merchant wholesalers (4233) </ValDescription>
+<Value> 4090 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Professional and commercial equipment and supplies, merchant wholesalers (4234) </ValDescription>
+<Value> 4170 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Metals and minerals, except petroleum, merchant wholesalers (4235) </ValDescription>
+<Value> 4180 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Electrical goods, merchant wholesalers (4236) </ValDescription>
+<Value> 4190 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Hardware, plumbing and heating equipment, and supplies, merchant wholesalers (4237) </ValDescription>
+<Value> 4260 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Machinery, equipment, and supplies, merchant wholesalers  (4238) </ValDescription>
+<Value> 4270 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Recyclable material, merchant wholesalers (42393) </ValDescription>
+<Value> 4280 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Miscellaneous durable goods, merchant wholesalers (4239 except 42393) </ValDescription>
+<Value> 4290 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Paper and paper products, merchant wholesalers (4241) </ValDescription>
+<Value> 4370 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Drugs, sundries, and chemical and allied products, merchant wholesalers (4242, 4246) </ValDescription>
+<Value> 4380 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Apparel, fabrics, and notions, merchant wholesalers (4243) </ValDescription>
+<Value> 4390 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Groceries and related products, merchant wholesalers (4244) </ValDescription>
+<Value> 4470 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Farm product raw materials, merchant wholesalers (4245) </ValDescription>
+<Value> 4480 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Petroleum and petroleum products, merchant wholesalers (4247) </ValDescription>
+<Value> 4490 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Alcoholic beverages, merchant wholesalers (4248) </ValDescription>
+<Value> 4560 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Farm supplies, merchant wholesalers (42491) </ValDescription>
+<Value> 4570 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Miscellaneous nondurable goods, merchant wholesalers (4249 except 42491) </ValDescription>
+<Value> 4580 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Wholesale electronic markets, agents and brokers (4251) </ValDescription>
+<Value> 4585 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Not specified wholesale trade (Part 42) </ValDescription>
+<Value> 4590 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Automobile dealers (4411) </ValDescription>
+<Value> 4670 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Other motor vehicle dealers (4412) </ValDescription>
+<Value> 4680 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Auto parts, accessories, and tire stores  (4413) </ValDescription>
+<Value> 4690 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Furniture and home furnishings stores (442) </ValDescription>
+<Value> 4770 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Household appliance stores (443111) </ValDescription>
+<Value> 4780 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Radio, TV, and computer stores (443112, 44312) </ValDescription>
+<Value> 4790 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Building material and supplies dealers  (4441 except 44413) </ValDescription>
+<Value> 4870 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Hardware stores (44413) </ValDescription>
+<Value> 4880 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Lawn and garden equipment and supplies stores (4442) </ValDescription>
+<Value> 4890 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Grocery stores (4451) </ValDescription>
+<Value> 4970 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Specialty food stores (4452) </ValDescription>
+<Value> 4980 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Beer, wine, and liquor stores (4453) </ValDescription>
+<Value> 4990 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Pharmacies and drug stores (4461) </ValDescription>
+<Value> 5070 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Health and personal care, except drug, stores (446 except 44611) </ValDescription>
+<Value> 5080 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Gasoline stations (447) </ValDescription>
+<Value> 5090 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Clothing and accessories, except shoe, stores (448 except 44821, 4483) </ValDescription>
+<Value> 5170 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Shoe stores (44821) </ValDescription>
+<Value> 5180 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Jewelry, luggage, and leather goods stores (4483) </ValDescription>
+<Value> 5190 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Sporting goods, camera, and hobby and toy stores (44313, 45111, 45112) </ValDescription>
+<Value> 5270 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Sewing, needlework, and piece goods stores (45113) </ValDescription>
+<Value> 5280 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Music stores (45114, 45122) </ValDescription>
+<Value> 5290 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Book stores and news dealers (45121) </ValDescription>
+<Value> 5370 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Department stores and discount stores (45211) </ValDescription>
+<Value> 5380 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Miscellaneous general merchandise stores (4529) </ValDescription>
+<Value> 5390 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Retail florists (4531) </ValDescription>
+<Value> 5470 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Office supplies and stationery stores (45321) </ValDescription>
+<Value> 5480 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Used merchandise stores (4533) </ValDescription>
+<Value> 5490 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Gift, novelty, and souvenir shops (45322) </ValDescription>
+<Value> 5570 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Miscellaneous retail stores (4539) </ValDescription>
+<Value> 5580 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Electronic shopping   (454111) </ValDescription>
+<Value> 5590 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Electronic auctions   (454112) </ValDescription>
+<Value> 5591 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Mail order houses (454113) </ValDescription>
+<Value> 5592 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Vending machine operators (4542) </ValDescription>
+<Value> 5670 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Fuel dealers (45431) </ValDescription>
+<Value> 5680 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Other direct selling establishments (45439) </ValDescription>
+<Value> 5690 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Not specified retail trade (Part 44, 45) </ValDescription>
+<Value> 5790 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Air transportation (481) </ValDescription>
+<Value> 6070 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Rail transportation (482) </ValDescription>
+<Value> 6080 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Water transportation (483) </ValDescription>
+<Value> 6090 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Truck transportation (484) </ValDescription>
+<Value> 6170 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Bus service and urban transit (4851, 4852, 4854, 4855, 4859) </ValDescription>
+<Value> 6180 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Taxi and limousine service (4853) </ValDescription>
+<Value> 6190 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Pipeline transportation (486) </ValDescription>
+<Value> 6270 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Scenic and sightseeing transportation (487) </ValDescription>
+<Value> 6280 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Services incidental to transportation (488) </ValDescription>
+<Value> 6290 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Postal Service (491) </ValDescription>
+<Value> 6370 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Couriers and messengers (492) </ValDescription>
+<Value> 6380 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Warehousing and storage (493) </ValDescription>
+<Value> 6390 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Newspaper publishers (51111) </ValDescription>
+<Value> 6470 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Publishing, except newspapers and software (5111 except 51111) </ValDescription>
+<Value> 6480 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Software publishing (5112) </ValDescription>
+<Value> 6490 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Motion pictures and video industries (5121) </ValDescription>
+<Value> 6570 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Sound recording industries (5122) </ValDescription>
+<Value> 6590 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Radio and television broadcasting and cable (5151, 5152, 5175) </ValDescription>
+<Value> 6670 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Internet publishing and broadcasting (5161) </ValDescription>
+<Value> 6675 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Wired telecommunications carriers (5171) </ValDescription>
+<Value> 6680 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Other telecommunications services (517 except 5171, 5175) </ValDescription>
+<Value> 6690 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Internet service providers (5181) </ValDescription>
+<Value> 6692 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Data processing, hosting, and related services (5182) </ValDescription>
+<Value> 6695 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Libraries and archives (51912) </ValDescription>
+<Value> 6770 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Other information services (5191 except 51912) </ValDescription>
+<Value> 6780 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Banking and related activities (521, 52211,52219) </ValDescription>
+<Value> 6870 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Savings institutions, including credit unions (52212, 52213) </ValDescription>
+<Value> 6880 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Non-depository credit and related activities (5222, 5223) </ValDescription>
+<Value> 6890 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Securities, commodities, funds, trusts, and other financial investments (523, 525) </ValDescription>
+<Value> 6970 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Insurance carriers and related activities (524) </ValDescription>
+<Value> 6990 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Real estate (531) </ValDescription>
+<Value> 7070 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Automotive equipment rental and leasing (5321) </ValDescription>
+<Value> 7080 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Video tape and disk rental (53223) </ValDescription>
+<Value> 7170 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Other consumer goods rental (53221, 53222, 53229, 5323) </ValDescription>
+<Value> 7180 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Commercial, industrial, and other intangible assets rental and leasing (5324, 533) </ValDescription>
+<Value> 7190 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Legal services (5411) </ValDescription>
+<Value> 7270 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Accounting, tax preparation, bookkeeping, and payroll services (5412) </ValDescription>
+<Value> 7280 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Architectural, engineering, and related services (5413) </ValDescription>
+<Value> 7290 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Specialized design services (5414) </ValDescription>
+<Value> 7370 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Computer systems design and related services (5415) </ValDescription>
+<Value> 7380 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Management, scientific, and technical consulting services (5416) </ValDescription>
+<Value> 7390 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Scientific research and development services (5417) </ValDescription>
+<Value> 7460 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Advertising and related services (5418) </ValDescription>
+<Value> 7470 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Veterinary services (54194) </ValDescription>
+<Value> 7480 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Other professional, scientific, and technical services (5419 except 54194) </ValDescription>
+<Value> 7490 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Management of companies and enterprises (551) </ValDescription>
+<Value> 7570 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Employment services (5613) </ValDescription>
+<Value> 7580 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Business support services (5614) </ValDescription>
+<Value> 7590 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Travel arrangements and reservation services (5615) </ValDescription>
+<Value> 7670 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Investigation and security services (5616) </ValDescription>
+<Value> 7680 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Services to buildings and dwellings (except cleaning during construction and immediately </ValDescription>
+<Value> 7690 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Landscaping services (56173) </ValDescription>
+<Value> 7770 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Other administrative and other support services (5611, 5612, 5619) </ValDescription>
+<Value> 7780 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Waste management and remediation services (562) </ValDescription>
+<Value> 7790 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Elementary and secondary schools (6111) </ValDescription>
+<Value> 7860 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Colleges and universities, including junior colleges (6112, 6113) </ValDescription>
+<Value> 7870 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Business, technical, and trade schools and training (6114, 6115) </ValDescription>
+<Value> 7880 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Other schools, instruction, and educational services (6116, 6117) </ValDescription>
+<Value> 7890 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Offices of physicians (6211) </ValDescription>
+<Value> 7970 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Offices of dentists (6212) </ValDescription>
+<Value> 7980 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Offices of chiropractors (62131) </ValDescription>
+<Value> 7990 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Offices of optometrists (62132) </ValDescription>
+<Value> 8070 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Offices of other health practitioners (6213 except 62131, 62132) </ValDescription>
+<Value> 8080 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Outpatient care centers (6214) </ValDescription>
+<Value> 8090 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Home health care services (6216) </ValDescription>
+<Value> 8170 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Other health care services (6215, 6219) </ValDescription>
+<Value> 8180 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Hospitals (622) </ValDescription>
+<Value> 8190 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Nursing care facilities (6231) </ValDescription>
+<Value> 8270 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Residential care facilities, without nursing (6232, 6233, 6239) </ValDescription>
+<Value> 8290 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Individual and family services (6241) </ValDescription>
+<Value> 8370 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Community food and housing, and emergency services (6242) </ValDescription>
+<Value> 8380 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Vocational rehabilitation services (6243) </ValDescription>
+<Value> 8390 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Child day care services (6244) </ValDescription>
+<Value> 8470 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Independent artists, performing arts, spectator sports, and related industries (711) </ValDescription>
+<Value> 8560 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Museums, art galleries, historical sites, and similar institutions (712) </ValDescription>
+<Value> 8570 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Bowling centers (71395) </ValDescription>
+<Value> 8580 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Other amusement, gambling, and recreation industries (713 except 71395) </ValDescription>
+<Value> 8590 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Traveler accommodation (7211) </ValDescription>
+<Value> 8660 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Recreational vehicle parks and camps, and rooming and boarding houses (7212, 7213) </ValDescription>
+<Value> 8670 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Restaurants and other food services (722 except 7224) </ValDescription>
+<Value> 8680 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Drinking places, alcoholic beverages (7224) </ValDescription>
+<Value> 8690 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Automotive repair and maintenance (8111 except 811192) </ValDescription>
+<Value> 8770 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Car washes (811192) </ValDescription>
+<Value> 8780 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Electronic and precision equipment repair and maintenance (8112) </ValDescription>
+<Value> 8790 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Commercial and industrial machinery and equipment repair and maintenance (8113) </ValDescription>
+<Value> 8870 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Personal and household goods repair and maintenance (8114 except 81143) </ValDescription>
+<Value> 8880 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Footwear and leather goods repair (81143) </ValDescription>
+<Value> 8890 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Barber shops (812111) </ValDescription>
+<Value> 8970 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Beauty salons (812112) </ValDescription>
+<Value> 8980 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Nail salons and other personal care services  (812113, 81219) </ValDescription>
+<Value> 8990 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Drycleaning and laundry services (8123) </ValDescription>
+<Value> 9070 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Funeral homes, cemeteries, and crematories (8122) </ValDescription>
+<Value> 9080 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Other personal services (8129) </ValDescription>
+<Value> 9090 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Religious organizations (8131) </ValDescription>
+<Value> 9160 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Civic, social, advocacy organizations, and grantmaking and giving services (8132, 8133, </ValDescription>
+<Value> 9170 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Labor unions (81393) </ValDescription>
+<Value> 9180 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Business, professional, political, and similar organizations (8139 except 81393) </ValDescription>
+<Value> 9190 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Private households (814) </ValDescription>
+<Value> 9290 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Executive offices and legislative bodies (92111, 92112, 92114, part 92115) </ValDescription>
+<Value> 9370 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Public finance activities (92113) </ValDescription>
+<Value> 9380 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Other general government and support (92119) </ValDescription>
+<Value> 9390 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Justice, public order, and safety activities (922, part 92115) </ValDescription>
+<Value> 9470 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Administration of human resource programs  (923) </ValDescription>
+<Value> 9480 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Administration of environmental quality and housing programs (924, 925) </ValDescription>
+<Value> 9490 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Administration of economic programs and space research (926, 927) </ValDescription>
+<Value> 9570 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> National security and international affairs (928) </ValDescription>
+<Value> 9590 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Persons whose last job was Armed Forces </ValDescription>
+<Value> 9890 </Value>
+<Selected> true </Selected>
+</Range>
+</Ranges>
+</Variable>
+<Variable>
+<VarId>538580c7dc6f74329e65a5c4785f7c82</VarId>
+<Idnum> 487498 </Idnum>
+<Type> 1 </Type>
+<VarMnemonic> TPYRATE1 </VarMnemonic>
+<VarDescription> JB: Regular hourly pay rate </VarDescription>
+<Ranges>
+<RangeCount> 2 </RangeCount>
+<Range>
+<ValDescription> Not in universe or none </ValDescription>
+<Value> 0 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Dollars and cents (two implied decimals) </ValDescription>
+<OrigMinVal> 0.01 </OrigMinVal>
+<OrigMaxVal> 28.50 </OrigMaxVal>
+<Selected> true </Selected>
+</Range>
+</Ranges>
+</Variable>
+<Variable>
+<VarId>6e619904f97fd392c45202d90978f26a</VarId>
+<Idnum> 487494 </Idnum>
+<Type> 1 </Type>
+<VarMnemonic> TPMSUM1 </VarMnemonic>
+<VarDescription> JB: Earnings from job received in this month </VarDescription>
+<Ranges>
+<RangeCount> 2 </RangeCount>
+<Range>
+<ValDescription> None or not in universe </ValDescription>
+<Value> 0 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Dollar amount </ValDescription>
+<OrigMinVal> 1 </OrigMinVal>
+<OrigMaxVal> 66666 </OrigMaxVal>
+<Selected> true </Selected>
+</Range>
+</Ranges>
+</Variable>
+<Variable>
+<VarId>791288e8d72acb3ff65adbe3d64e7d0f</VarId>
+<Idnum> 487488 </Idnum>
+<Type> 1 </Type>
+<VarMnemonic> ECLWRK1 </VarMnemonic>
+<VarDescription> JB: Class of worker </VarDescription>
+<Ranges>
+<RangeCount> 7 </RangeCount>
+<Range>
+<ValDescription> Not in Universe </ValDescription>
+<Value> -1 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Private for profit employee </ValDescription>
+<Value> 1 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Private not for profit employee </ValDescription>
+<Value> 2 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Local government worker </ValDescription>
+<Value> 3 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> State government worker </ValDescription>
+<Value> 4 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Federal government worker </ValDescription>
+<Value> 5 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Family worker without pay </ValDescription>
+<Value> 6 </Value>
+<Selected> true </Selected>
+</Range>
+</Ranges>
+</Variable>
+<Variable>
+<VarId>4cb9c36ee87f25ba8ba073652aeb1468</VarId>
+<Idnum> 487486 </Idnum>
+<Type> 1 </Type>
+<VarMnemonic> EOCCTIM1 </VarMnemonic>
+<VarDescription> JB: Length of time in this occupation </VarDescription>
+<Ranges>
+<RangeCount> 2 </RangeCount>
+<Range>
+<ValDescription> Not in Universe </ValDescription>
+<Value> -1 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> months </ValDescription>
+<OrigMinVal> 1 </OrigMinVal>
+<OrigMaxVal> 999 </OrigMaxVal>
+<Selected> true </Selected>
+</Range>
+</Ranges>
+</Variable>
+<Variable>
+<VarId>b2b939554d69ea3630492babe49b62ea</VarId>
+<Idnum> 487478 </Idnum>
+<Type> 1 </Type>
+<VarMnemonic> EJBHRS1 </VarMnemonic>
+<VarDescription> JB: Usual hours worked per week at this job </VarDescription>
+<Ranges>
+<RangeCount> 3 </RangeCount>
+<Range>
+<ValDescription> Hours vary </ValDescription>
+<Value> -8 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Not in Universe </ValDescription>
+<Value> -1 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> hours per week </ValDescription>
+<OrigMinVal> 01 </OrigMinVal>
+<OrigMaxVal> 99 </OrigMaxVal>
+<Selected> true </Selected>
+</Range>
+</Ranges>
+</Variable>
+<Variable>
+<VarId>c0bfeaedb68bb74c70e7eb2d19219b</VarId>
+<Idnum> 487476 </Idnum>
+<Type> 1 </Type>
+<VarMnemonic> ERSEND1 </VarMnemonic>
+<VarDescription> JB: Main reason stopped working for employer </VarDescription>
+<Ranges>
+<RangeCount> 16 </RangeCount>
+<Range>
+<ValDescription> Not in Universe </ValDescription>
+<Value> -1 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> On Layoff </ValDescription>
+<Value> 1 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Retirement or old age </ValDescription>
+<Value> 2 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Childcare problems </ValDescription>
+<Value> 3 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Other family/personal obligations </ValDescription>
+<Value> 4 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Own illness </ValDescription>
+<Value> 5 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Own injury </ValDescription>
+<Value> 6 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> School/Training </ValDescription>
+<Value> 7 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Discharged/fired </ValDescription>
+<Value> 8 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Employer bankrupt </ValDescription>
+<Value> 9 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Employer sold business </ValDescription>
+<Value> 10 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Job was temporary and ended </ValDescription>
+<Value> 11 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Quit to take another job </ValDescription>
+<Value> 12 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Slack work or business conditions </ValDescription>
+<Value> 13 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Unsatisfactory work arrangements (hours, pay, etc) </ValDescription>
+<Value> 14 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Quit for some other reason </ValDescription>
+<Value> 15 </Value>
+<Selected> true </Selected>
+</Range>
+</Ranges>
+</Variable>
+<Variable>
+<VarId>8d6d4a5272eb48acde085d0fe37e0725</VarId>
+<Idnum> 487469 </Idnum>
+<Type> 1 </Type>
+<VarMnemonic> EENO1 </VarMnemonic>
+<VarDescription> JB: Across-wave employer index/number </VarDescription>
+<Ranges>
+<RangeCount> 2 </RangeCount>
+<Range>
+<ValDescription> Not in Universe </ValDescription>
+<Value> -1 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Job ID </ValDescription>
+<OrigMinVal> 01 </OrigMinVal>
+<OrigMaxVal> 99 </OrigMaxVal>
+<Selected> true </Selected>
+</Range>
+</Ranges>
+</Variable>
+<Variable>
+<VarId>fcf65745eac29a2967c9739c4c667936</VarId>
+<Idnum> 487470 </Idnum>
+<Type> 1 </Type>
+<VarMnemonic> ESTLEMP1 </VarMnemonic>
+<VarDescription> JB: Still working for this employer </VarDescription>
+<Ranges>
+<RangeCount> 3 </RangeCount>
+<Range>
+<ValDescription> Not in Universe </ValDescription>
+<Value> -1 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Yes </ValDescription>
+<Value> 1 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> No </ValDescription>
+<Value> 2 </Value>
+<Selected> true </Selected>
+</Range>
+</Ranges>
+</Variable>
+</DataBasket>
+<TreeInfo>
+<NumNodes> 1 </NumNodes>
+<TreeNode>
+<Survey> 2 </Survey>
+<Subsrv> 32 </Subsrv>
+<Component> 1237 </Component>
+<Instance> 5010 </Instance>
+<Longitudinal> false </Longitudinal>
+<VirtualIndicator> 0 </VirtualIndicator>
+<NodeDescription> SIPP/2004 Panel/Wave 10/Core </NodeDescription>
+</TreeNode>
+</TreeInfo>
+</Session>
