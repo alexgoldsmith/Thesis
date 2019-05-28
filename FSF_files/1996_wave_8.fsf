@@ -1,0 +1,4156 @@
+<Session>
+<DataBasket>
+<TotalVariableCount> 18 </TotalVariableCount>
+<Version> 2 </Version>
+<Variable>
+<VarId>1964bd0cccc22105a93ab03d86b2e572</VarId>
+<Idnum> 14841 </Idnum>
+<Type> 1 </Type>
+<VarMnemonic> EPPPNUM </VarMnemonic>
+<VarDescription> PE: Person number </VarDescription>
+<Ranges>
+<RangeCount> 1 </RangeCount>
+<Range>
+<ValDescription> Person number </ValDescription>
+<OrigMinVal> 101 </OrigMinVal>
+<OrigMaxVal> 1299 </OrigMaxVal>
+<Selected> true </Selected>
+</Range>
+</Ranges>
+</Variable>
+<Variable>
+<VarId>9957fa9dfa5d5702c6b1f4c52f92691e</VarId>
+<Idnum> 14709 </Idnum>
+<Type> 1 </Type>
+<VarMnemonic> SSUID </VarMnemonic>
+<VarDescription> SU: Sample Unit Identifier </VarDescription>
+<Ranges>
+<RangeCount> 1 </RangeCount>
+<Range>
+<ValDescription> Scrambled Id </ValDescription>
+<OrigMinVal> 000000000000 </OrigMinVal>
+<OrigMaxVal> 999999999999 </OrigMaxVal>
+<Selected> true </Selected>
+</Range>
+</Ranges>
+</Variable>
+<Variable>
+<VarId>bca45408f56b5449f2348bf21b23e3c4</VarId>
+<Idnum> 14710 </Idnum>
+<Type> 1 </Type>
+<VarMnemonic> SPANEL </VarMnemonic>
+<VarDescription> SU: Sample Code - Indicates Panel Year </VarDescription>
+<Ranges>
+<RangeCount> 1 </RangeCount>
+<Range>
+<ValDescription> Panel Year </ValDescription>
+<Value> 1996 </Value>
+<Selected> true </Selected>
+</Range>
+</Ranges>
+</Variable>
+<Variable>
+<VarId>c69cae88acdb7e3b1a5d62704a4b72c9</VarId>
+<Idnum> 14711 </Idnum>
+<Type> 1 </Type>
+<VarMnemonic> SWAVE </VarMnemonic>
+<VarDescription> SU: Wave of data collection </VarDescription>
+<Ranges>
+<RangeCount> 1 </RangeCount>
+<Range>
+<ValDescription> Wave of data collection </ValDescription>
+<OrigMinVal> 1 </OrigMinVal>
+<OrigMaxVal> 12 </OrigMaxVal>
+<Selected> true </Selected>
+</Range>
+</Ranges>
+</Variable>
+<Variable>
+<VarId>5b2c600503f558fed1ad4807861f747</VarId>
+<Idnum> 14713 </Idnum>
+<Type> 1 </Type>
+<VarMnemonic> SREFMON </VarMnemonic>
+<VarDescription> SU: Reference month of this record </VarDescription>
+<Ranges>
+<RangeCount> 4 </RangeCount>
+<Range>
+<ValDescription> First Reference month </ValDescription>
+<Value> 1 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Second Reference month </ValDescription>
+<Value> 2 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Third Reference month </ValDescription>
+<Value> 3 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Fourth Reference month </ValDescription>
+<Value> 4 </Value>
+<Selected> true </Selected>
+</Range>
+</Ranges>
+</Variable>
+<Variable>
+<VarId>795b76dbc71c838250033c3fa1ecdbd6</VarId>
+<Idnum> 14797 </Idnum>
+<Type> 1 </Type>
+<VarMnemonic> RFNKIDS </VarMnemonic>
+<VarDescription> FA: Total number of children under 18 in family </VarDescription>
+<Ranges>
+<RangeCount> 1 </RangeCount>
+<Range>
+<ValDescription> Number of children </ValDescription>
+<OrigMinVal> 0 </OrigMinVal>
+<OrigMaxVal> 30 </OrigMaxVal>
+<Selected> true </Selected>
+</Range>
+</Ranges>
+</Variable>
+<Variable>
+<VarId>992b5b0f9854512663725ebd1a54f2d9</VarId>
+<Idnum> 14956 </Idnum>
+<Type> 1 </Type>
+<VarMnemonic> EPDJBTHN </VarMnemonic>
+<VarDescription> LF: Paid job during the reference period </VarDescription>
+<Ranges>
+<RangeCount> 3 </RangeCount>
+<Range>
+<ValDescription> Not in Universe </ValDescription>
+<Value> -1 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Yes </ValDescription>
+<Value> 1 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> No </ValDescription>
+<Value> 2 </Value>
+<Selected> true </Selected>
+</Range>
+</Ranges>
+</Variable>
+<Variable>
+<VarId>b6c92627895def270d8440cb5050c2bb</VarId>
+<Idnum> 14963 </Idnum>
+<Type> 1 </Type>
+<VarMnemonic> EDISABL </VarMnemonic>
+<VarDescription> LF: Had a physical or mental work-limiting condition </VarDescription>
+<Ranges>
+<RangeCount> 3 </RangeCount>
+<Range>
+<ValDescription> Not in Universe </ValDescription>
+<Value> -1 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Yes </ValDescription>
+<Value> 1 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> No </ValDescription>
+<Value> 2 </Value>
+<Selected> true </Selected>
+</Range>
+</Ranges>
+</Variable>
+<Variable>
+<VarId>9131bf5d354bb05ee91b0960ad5a53f7</VarId>
+<Idnum> 14965 </Idnum>
+<Type> 1 </Type>
+<VarMnemonic> EDISPREV </VarMnemonic>
+<VarDescription> LF: Had work-preventing physical/mental/health condition </VarDescription>
+<Ranges>
+<RangeCount> 3 </RangeCount>
+<Range>
+<ValDescription> Not in Universe </ValDescription>
+<Value> -1 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Yes </ValDescription>
+<Value> 1 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> No </ValDescription>
+<Value> 2 </Value>
+<Selected> true </Selected>
+</Range>
+</Ranges>
+</Variable>
+<Variable>
+<VarId>259608c094b7791bcbd860ad935e2540</VarId>
+<Idnum> 15002 </Idnum>
+<Type> 1 </Type>
+<VarMnemonic> EENO1 </VarMnemonic>
+<VarDescription> JB: Across-wave employer index/number </VarDescription>
+<Ranges>
+<RangeCount> 2 </RangeCount>
+<Range>
+<ValDescription> Not in Universe </ValDescription>
+<Value> -1 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Job ID </ValDescription>
+<OrigMinVal> 01 </OrigMinVal>
+<OrigMaxVal> 99 </OrigMaxVal>
+<Selected> true </Selected>
+</Range>
+</Ranges>
+</Variable>
+<Variable>
+<VarId>90977199abec57f10a6ad8a2639a58c5</VarId>
+<Idnum> 15009 </Idnum>
+<Type> 1 </Type>
+<VarMnemonic> ERSEND1 </VarMnemonic>
+<VarDescription> JB: Main reason stopped working </VarDescription>
+<Ranges>
+<RangeCount> 16 </RangeCount>
+<Range>
+<ValDescription> Not in Universe </ValDescription>
+<Value> -1 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> On Layoff </ValDescription>
+<Value> 1 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Retirement or old age </ValDescription>
+<Value> 2 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Childcare problems </ValDescription>
+<Value> 3 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Other family/personal obligations </ValDescription>
+<Value> 4 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Own illness </ValDescription>
+<Value> 5 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Own injury </ValDescription>
+<Value> 6 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> School/Training </ValDescription>
+<Value> 7 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Discharged/fired </ValDescription>
+<Value> 8 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Employer bankrupt </ValDescription>
+<Value> 9 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Employer, sold business </ValDescription>
+<Value> 10 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Job was temporary and ended </ValDescription>
+<Value> 11 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Quit to take another job </ValDescription>
+<Value> 12 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Slack work or business conditions </ValDescription>
+<Value> 13 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Unsatisfactory work arrangements (hours,pay,etc) </ValDescription>
+<Value> 14 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Quit for some other reason </ValDescription>
+<Value> 15 </Value>
+<Selected> true </Selected>
+</Range>
+</Ranges>
+</Variable>
+<Variable>
+<VarId>28d53366c02725ccf892b44c0e068363</VarId>
+<Idnum> 15011 </Idnum>
+<Type> 1 </Type>
+<VarMnemonic> EJBHRS1 </VarMnemonic>
+<VarDescription> JB: Usual hours worked per week at this job </VarDescription>
+<Ranges>
+<RangeCount> 2 </RangeCount>
+<Range>
+<ValDescription> Not in Universe </ValDescription>
+<Value> -1 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> hours per week </ValDescription>
+<OrigMinVal> 01 </OrigMinVal>
+<OrigMaxVal> 99 </OrigMaxVal>
+<Selected> true </Selected>
+</Range>
+</Ranges>
+</Variable>
+<Variable>
+<VarId>4a76058aeb3549d38cfb2be40a4afe0b</VarId>
+<Idnum> 15021 </Idnum>
+<Type> 1 </Type>
+<VarMnemonic> ECLWRK1 </VarMnemonic>
+<VarDescription> JB: Class of worker </VarDescription>
+<Ranges>
+<RangeCount> 7 </RangeCount>
+<Range>
+<ValDescription> Not in Universe </ValDescription>
+<Value> -1 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Private for profit employee </ValDescription>
+<Value> 1 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Private not for profit employee </ValDescription>
+<Value> 2 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Local government worker </ValDescription>
+<Value> 3 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> State government worker </ValDescription>
+<Value> 4 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Federal government worker </ValDescription>
+<Value> 5 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Family worker without pay </ValDescription>
+<Value> 6 </Value>
+<Selected> true </Selected>
+</Range>
+</Ranges>
+</Variable>
+<Variable>
+<VarId>e846b0148ce0e47445426eb36a57cee1</VarId>
+<Idnum> 15027 </Idnum>
+<Type> 1 </Type>
+<VarMnemonic> TPMSUM1 </VarMnemonic>
+<VarDescription> JB: Earnings from job received in this month </VarDescription>
+<Ranges>
+<RangeCount> 2 </RangeCount>
+<Range>
+<ValDescription> None or not in universe </ValDescription>
+<Value> 0 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Dollars amount </ValDescription>
+<OrigMinVal> 1 </OrigMinVal>
+<OrigMaxVal> 50000 </OrigMaxVal>
+<Selected> true </Selected>
+</Range>
+</Ranges>
+</Variable>
+<Variable>
+<VarId>f3310f689038f2667ac867446dbda09f</VarId>
+<Idnum> 15031 </Idnum>
+<Type> 1 </Type>
+<VarMnemonic> TPYRATE1 </VarMnemonic>
+<VarDescription> JB: Regular hourly pay rate </VarDescription>
+<Ranges>
+<RangeCount> 2 </RangeCount>
+<Range>
+<ValDescription> Not in universe or none </ValDescription>
+<Value> 0 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Dollars and cents (two implied decimals) </ValDescription>
+<OrigMinVal> 0.01 </OrigMinVal>
+<OrigMaxVal> 30.00 </OrigMaxVal>
+<Selected> true </Selected>
+</Range>
+</Ranges>
+</Variable>
+<Variable>
+<VarId>3585fa8f50ba9d97d34d8d913eb2e625</VarId>
+<Idnum> 15034 </Idnum>
+<Type> 1 </Type>
+<VarMnemonic> EJBIND1 </VarMnemonic>
+<VarDescription> JB: Industry code </VarDescription>
+<Ranges>
+<RangeCount> 238 </RangeCount>
+<Range>
+<ValDescription> Not in Universe </ValDescription>
+<Value> -1 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Agricultural production, crops (01) </ValDescription>
+<Value> 10 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Agricltrl production, livestock (02) </ValDescription>
+<Value> 11 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Veterinary services (074) </ValDescription>
+<Value> 12 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Landscape and horticultural services (078) </ValDescription>
+<Value> 20 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Agricultural services, n.e.c. (071, 072, 075, 076) </ValDescription>
+<Value> 30 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Forestry (08) </ValDescription>
+<Value> 31 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Fishing, hunting, and trapping (09) </ValDescription>
+<Value> 32 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Metal mining (10) </ValDescription>
+<Value> 40 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Coal mining (12) </ValDescription>
+<Value> 41 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Oil and gas extraction (13) </ValDescription>
+<Value> 42 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Nonmetallic mining and quarrying, except fuel (14) </ValDescription>
+<Value> 50 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> CONSTRUCTION (15, 16, 17) </ValDescription>
+<Value> 60 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Meat products (201) </ValDescription>
+<Value> 100 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Dairy products (202) </ValDescription>
+<Value> 101 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Canned, frozen and preserved fruits and vegetables (203) </ValDescription>
+<Value> 102 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Grain mill products (204) </ValDescription>
+<Value> 110 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Bakery products (205) </ValDescription>
+<Value> 111 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Sugar and confectionery products (206) </ValDescription>
+<Value> 112 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Beverage industries (208) </ValDescription>
+<Value> 120 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Miscellaneous food preparations and kindred products (207, 209) </ValDescription>
+<Value> 121 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Not specified food industries </ValDescription>
+<Value> 122 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Tobacco manufactures (21) </ValDescription>
+<Value> 130 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Knitting mills (225) </ValDescription>
+<Value> 132 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Dyeing and finishing textiles, except wool and knit goods (226) </ValDescription>
+<Value> 140 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Carpets and rugs (227) </ValDescription>
+<Value> 141 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Yarn, thread, and fabric mills (221-224, 228) </ValDescription>
+<Value> 142 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Miscellaneous textile mill products (229) </ValDescription>
+<Value> 150 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Apparel and accessories, except knit (231-238) </ValDescription>
+<Value> 151 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Miscellaneous fabricated textile products (239) </ValDescription>
+<Value> 152 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Pulp, paper, and paperboard mills (261-263) </ValDescription>
+<Value> 160 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Miscellaneous paper and pulp products (267) </ValDescription>
+<Value> 161 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Paperboard containers and boxes (265) </ValDescription>
+<Value> 162 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Newspaper publishing and printing (271) </ValDescription>
+<Value> 171 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Printing, publishing, and allied industries, except newspapers (272-279) </ValDescription>
+<Value> 172 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Plastics, synthetics, and resins (282) </ValDescription>
+<Value> 180 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Drugs (283) </ValDescription>
+<Value> 181 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Soaps and cosmetics (284) </ValDescription>
+<Value> 182 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Paints, varnishes, and rel. products (285) </ValDescription>
+<Value> 190 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Agricultural chemicals (287) </ValDescription>
+<Value> 191 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Industrial and miscellaneous chemicals (281, 286, 289) </ValDescription>
+<Value> 192 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Petroleum refining (291) </ValDescription>
+<Value> 200 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Miscellaneous petroleum and coal products (295, 299) </ValDescription>
+<Value> 201 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Tires and inner tubes (301) </ValDescription>
+<Value> 210 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Other rubber products, and plastics footwear and belting (302-306) </ValDescription>
+<Value> 211 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Miscellaneous plastics products (308) </ValDescription>
+<Value> 212 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Leather tanning and finishing (311) </ValDescription>
+<Value> 220 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Footwear, except rubber and plastic (313, 314) </ValDescription>
+<Value> 221 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Leather products, except footwear (315-317, 319) </ValDescription>
+<Value> 222 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Logging (241) </ValDescription>
+<Value> 230 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Sawmills, planing mills, and millwork (242, 243) </ValDescription>
+<Value> 231 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Wood buildings and mobile homes (245) </ValDescription>
+<Value> 232 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Miscellaneous wood products (244, 249) </ValDescription>
+<Value> 241 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Furniture and fixtures (25) </ValDescription>
+<Value> 242 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Glass and glass products (321-323) </ValDescription>
+<Value> 250 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Cement, concrete, gypsum, and plaster products (324, 327) </ValDescription>
+<Value> 251 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Structural clay products (325) </ValDescription>
+<Value> 252 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Pottery and related products (326) </ValDescription>
+<Value> 261 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Miscellaneous nonmetallic mineral and stone products (328, 329) </ValDescription>
+<Value> 262 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Blast furnaces, steelworks, rolling and finishing mills (331) </ValDescription>
+<Value> 270 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Iron and steel foundries (332) </ValDescription>
+<Value> 271 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Primary aluminum industries (3334, part 334, 3353-3355, 3363, 3365) </ValDescription>
+<Value> 272 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Other primary metal industries (3331,3339, part 334,3351,3356-57,3364,3366,3369,339) </ValDescription>
+<Value> 280 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Cutlery, handtools, and general hardware (342) </ValDescription>
+<Value> 281 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Fabricated structural metal products (344) </ValDescription>
+<Value> 282 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Screw machine products (345) </ValDescription>
+<Value> 290 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Metal forgings and stampings (346) </ValDescription>
+<Value> 291 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Ordnance (348) </ValDescription>
+<Value> 292 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Misc fabricated metal products (341, 343, 347, 349) </ValDescription>
+<Value> 300 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Not specified metal industries </ValDescription>
+<Value> 301 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Engines and turbines (351) </ValDescription>
+<Value> 310 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Farm machinery and equipment (352) </ValDescription>
+<Value> 311 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Construction and material handling machines (353) </ValDescription>
+<Value> 312 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Metalworking machinery (354) </ValDescription>
+<Value> 320 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Office and accounting machines (3578, 3579) </ValDescription>
+<Value> 321 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Computers and rel. equipment (3571-3577) </ValDescription>
+<Value> 322 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Machinery, except electrical, n.e.c. (355, 356, 358, 359) </ValDescription>
+<Value> 331 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Not specified machinery </ValDescription>
+<Value> 332 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Household appliances (363) </ValDescription>
+<Value> 340 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Radio, TV, and communication equipment (365, 366) </ValDescription>
+<Value> 341 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Electrical machinery, equipment, and supplies, n.e.c. (361, 362, 364, 367, 369) </ValDescription>
+<Value> 342 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Not specified electrical machinery, equipment, and supplies </ValDescription>
+<Value> 350 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Motor vehicles and motor vehicle equipment (371) </ValDescription>
+<Value> 351 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Aircraft and parts (372) </ValDescription>
+<Value> 352 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Ship and boat building and repairing (373) </ValDescription>
+<Value> 360 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Railroad locomotives and equipment (374) </ValDescription>
+<Value> 361 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Guided missiles, space vehicles, and parts (376) </ValDescription>
+<Value> 362 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Cycles and miscellaneous transportation equipment (375, 379) </ValDescription>
+<Value> 370 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Scientific and controlling instruments (381, 382 except 3827) </ValDescription>
+<Value> 371 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Medical, dental, and optical instruments and supplies (3827, 384, 385) </ValDescription>
+<Value> 372 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Photographic equipment and supplies (386) </ValDescription>
+<Value> 380 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Watches, clocks, and clockwork operated devices (387) </ValDescription>
+<Value> 381 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Toys, amusement, and sporting goods (394) </ValDescription>
+<Value> 390 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Miscellaneous manufacturing industries (39 except 394) </ValDescription>
+<Value> 391 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Not spec manufacturing industries </ValDescription>
+<Value> 392 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Railroads (40) </ValDescription>
+<Value> 400 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Bus service and urban transit (41, except 412) </ValDescription>
+<Value> 401 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Taxicab service (412) </ValDescription>
+<Value> 402 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Trucking service (421, 423) </ValDescription>
+<Value> 410 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Warehousing and storage (422) </ValDescription>
+<Value> 411 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> U.S. Postal Service (43) </ValDescription>
+<Value> 412 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Water transportation (44) </ValDescription>
+<Value> 420 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Air transportation (45) </ValDescription>
+<Value> 421 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Pipe lines, except natural gas (46) </ValDescription>
+<Value> 422 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Services incidental to transportation (47) </ValDescription>
+<Value> 432 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Radio and television broadcasting and cable (483, 484) </ValDescription>
+<Value> 440 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Telephone communications (481) </ValDescription>
+<Value> 441 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Telegraph and miscellaneous communications services (482, 489) </ValDescription>
+<Value> 442 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Electric light and power (491) </ValDescription>
+<Value> 450 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Gas and steam supply systems (492, 496) </ValDescription>
+<Value> 451 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Electric and gas, and other combinations (493) </ValDescription>
+<Value> 452 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Water supply and irrigation (494, 497) </ValDescription>
+<Value> 470 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Sanitary services (495) </ValDescription>
+<Value> 471 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Not specified utilities </ValDescription>
+<Value> 472 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Motor vehcls and equipment (501) </ValDescription>
+<Value> 500 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Furniture and home furnishings (502) </ValDescription>
+<Value> 501 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Lumber and construction materials (503) </ValDescription>
+<Value> 502 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Professional and commercial equipment and supplies (504) </ValDescription>
+<Value> 510 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Metals and minerals, except petroleum (505) </ValDescription>
+<Value> 511 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Electrical goods (506) </ValDescription>
+<Value> 512 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Hardware, plumbing and heating supplies (507) </ValDescription>
+<Value> 521 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Machinery, equipment, and supplies (508) </ValDescription>
+<Value> 530 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Scrap and waste materials (5093) </ValDescription>
+<Value> 531 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Miscellaneous wholesale, durable goods (509 except 5093) </ValDescription>
+<Value> 532 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Paper and paper products (511) </ValDescription>
+<Value> 540 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Drugs, chemicals and allied products (512, 516) </ValDescription>
+<Value> 541 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Apparel, fabrics, and notions (513) </ValDescription>
+<Value> 542 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Groceries and related products (514) </ValDescription>
+<Value> 550 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Farm-product raw materials (515) </ValDescription>
+<Value> 551 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Petroleum products (517) </ValDescription>
+<Value> 552 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Alcoholic beverages (518) </ValDescription>
+<Value> 560 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Farm supplies (5191) </ValDescription>
+<Value> 561 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Misc wholesale, nondurable goods (5192-5199) </ValDescription>
+<Value> 562 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Not specified wholesale trade </ValDescription>
+<Value> 571 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Lumber and building material retailing (521, 523) </ValDescription>
+<Value> 580 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Hardware stores (525) </ValDescription>
+<Value> 581 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Stores, Retail nurseries and garden (526) </ValDescription>
+<Value> 582 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Mobile home dealers (527) </ValDescription>
+<Value> 590 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Department stores (531) </ValDescription>
+<Value> 591 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Variety stores (533) </ValDescription>
+<Value> 592 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Stores, misc general merchandise (539) </ValDescription>
+<Value> 600 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Grocery stores (541) </ValDescription>
+<Value> 601 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Stores, dairy products (545) </ValDescription>
+<Value> 602 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Retail bakeries (546) </ValDescription>
+<Value> 610 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Food stores, n.e.c. (542, 543, 544, 549) </ValDescription>
+<Value> 611 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Motor vehicle dealers (551, 552) </ValDescription>
+<Value> 612 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Stores, Auto and home supply (553) </ValDescription>
+<Value> 620 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Gasoline service stations (554) </ValDescription>
+<Value> 621 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Miscellaneous vehicle dealers (555, 556, 557, 559) </ValDescription>
+<Value> 622 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Stores, apparel and accessory, except shoe (56, except 566) </ValDescription>
+<Value> 623 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Shoe stores (566) </ValDescription>
+<Value> 630 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Stores, furniture and home furnishings (571) </ValDescription>
+<Value> 631 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Stores, household appliance (572) </ValDescription>
+<Value> 632 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Stores, radio, TV, and computer (5731, 5734) </ValDescription>
+<Value> 633 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Music stores (5735, 5736) </ValDescription>
+<Value> 640 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Eating and drinking places (58) </ValDescription>
+<Value> 641 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Drug stores (591) </ValDescription>
+<Value> 642 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Liquor stores (592) </ValDescription>
+<Value> 650 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Stores, sporting goods, bicycles, and hobby (5941, 5945, 5946) </ValDescription>
+<Value> 651 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Stores, Book and stationery (5942, 5943) </ValDescription>
+<Value> 652 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Jewelry stores (5944) </ValDescription>
+<Value> 660 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Gift, novelty, and souvenir shops (5947) </ValDescription>
+<Value> 661 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Sewing, needlework and piece goods stores (5949) </ValDescription>
+<Value> 662 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Catalog and mail order houses (5961) </ValDescription>
+<Value> 663 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Vending machine operators (5962) </ValDescription>
+<Value> 670 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Direct selling establishments (5963) </ValDescription>
+<Value> 671 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Fuel dealers (598) </ValDescription>
+<Value> 672 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Retail florists (5992) </ValDescription>
+<Value> 681 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Stores, Miscellaneous retail (593, 5948, 5993-5995, 5999) </ValDescription>
+<Value> 682 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Not specified retail trade </ValDescription>
+<Value> 691 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Banking (60 except 603 and 606) </ValDescription>
+<Value> 700 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Savings institutions, including credit unions (603, 606) </ValDescription>
+<Value> 701 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Credit agencies, n.e.c. (61) </ValDescription>
+<Value> 702 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Security, commodity brokerage, and investment companies (62, 67) </ValDescription>
+<Value> 710 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Insurance (63, 64) </ValDescription>
+<Value> 711 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Real estate, including real estate-insurance offices (65) </ValDescription>
+<Value> 712 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Advertising (731) </ValDescription>
+<Value> 721 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Services to dwellings and other buildings (734) </ValDescription>
+<Value> 722 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Personnel supply services (736) </ValDescription>
+<Value> 731 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Computer and data processing services (737) </ValDescription>
+<Value> 732 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Detective and protective services (7381, 7382) </ValDescription>
+<Value> 740 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Business services, n.e.c. (732, 733, 735, 7383-7389) </ValDescription>
+<Value> 741 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Automotive rental and leasing, w/out drivers (751) </ValDescription>
+<Value> 742 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Automotive parking and carwashes (752, 7542) </ValDescription>
+<Value> 750 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Automotive repair and rel. services (753, 7549) </ValDescription>
+<Value> 751 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Electrical repair shops (762, 7694) </ValDescription>
+<Value> 752 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Misc repair services (763, 764, 7692, 7699) </ValDescription>
+<Value> 760 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> PRIVATE HOUSEHOLDS (88) </ValDescription>
+<Value> 761 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Hotels and motels (701) </ValDescription>
+<Value> 762 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Lodging places, except hotels and motels (702, 703, 704) </ValDescription>
+<Value> 770 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Laundry, cleaning, and garment services (721 except part 7219) </ValDescription>
+<Value> 771 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Beauty shops (723) </ValDescription>
+<Value> 772 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Barber shops (724) </ValDescription>
+<Value> 780 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Funeral service and crematories (726) </ValDescription>
+<Value> 781 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Shoe repair shops (725) </ValDescription>
+<Value> 782 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Dressmaking shops (part 7219) </ValDescription>
+<Value> 790 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Misc personal services (722, 729) </ValDescription>
+<Value> 791 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Theaters and motion pictures (781-783, 792) </ValDescription>
+<Value> 800 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Video tape rental (784) </ValDescription>
+<Value> 801 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Bowling centers (793) </ValDescription>
+<Value> 802 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Miscellaneous entertainment and recreation services (791, 794, 799) </ValDescription>
+<Value> 810 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Physicians offices and clinics (801, 803) </ValDescription>
+<Value> 812 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Dentists offices and clinics (802) </ValDescription>
+<Value> 820 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Chiropractors offices and clinics (8041) </ValDescription>
+<Value> 821 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Optometrists offices and clinics (8042) </ValDescription>
+<Value> 822 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Health practitioners offices and clinics, n.e.c. (8043, 8049) </ValDescription>
+<Value> 830 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> HOSPITALS (806) </ValDescription>
+<Value> 831 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Nursing and personal care facilities (805) </ValDescription>
+<Value> 832 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Health services, n.e.c. (807, 808, 809) </ValDescription>
+<Value> 840 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Legal services (81) </ValDescription>
+<Value> 841 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Elementary and secondary schools (821) </ValDescription>
+<Value> 842 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Colleges and universities (822) </ValDescription>
+<Value> 850 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Vocational schools (824) </ValDescription>
+<Value> 851 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Libraries (823) </ValDescription>
+<Value> 852 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Educational services, n.e.c. (829) </ValDescription>
+<Value> 860 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Job training and vocational rehabilitation services (833) </ValDescription>
+<Value> 861 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Child day care services (part 835) </ValDescription>
+<Value> 862 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Family child care homes (part 835) </ValDescription>
+<Value> 863 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Residential care facilities, w/out nursing (836) </ValDescription>
+<Value> 870 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Social services, n.e.c. (832, 839) </ValDescription>
+<Value> 871 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Museums, art galleries, and zoos (84) </ValDescription>
+<Value> 872 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Labor unions (863) </ValDescription>
+<Value> 873 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Religious organizations (866) </ValDescription>
+<Value> 880 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Membership organizations, n.e.c. (861, 862, 864, 865, 869) </ValDescription>
+<Value> 881 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Engineering, architectural, and surveying services (871) </ValDescription>
+<Value> 882 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Accounting, auditing, and bookkeeping services (872) </ValDescription>
+<Value> 890 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Research, development, and testing services (873) </ValDescription>
+<Value> 891 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Management and public relations services (874) </ValDescription>
+<Value> 892 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Miscellaneous professional and rel. services (899) </ValDescription>
+<Value> 893 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Executive and legislative offices (911-913) </ValDescription>
+<Value> 900 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> General government, n.e.c. (919) </ValDescription>
+<Value> 901 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Justice, public order, and safety (92) </ValDescription>
+<Value> 910 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Public finance, taxation, and monetary policy (93) </ValDescription>
+<Value> 921 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Human resources programs administration(94) </ValDescription>
+<Value> 922 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Environmental quality and housing programs administration(95) </ValDescription>
+<Value> 930 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Economic programs administration(96) </ValDescription>
+<Value> 931 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> National security and international affairs (97) </ValDescription>
+<Value> 932 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Persons whose labor force status is unemployed and whose last job was Armed Forces </ValDescription>
+<Value> 991 </Value>
+<Selected> true </Selected>
+</Range>
+</Ranges>
+</Variable>
+<Variable>
+<VarId>fea9c2fe7e010ce863ebb8e1d779512a</VarId>
+<Idnum> 15036 </Idnum>
+<Type> 1 </Type>
+<VarMnemonic> TJBOCC1 </VarMnemonic>
+<VarDescription> JB: Occupation classification code </VarDescription>
+<Ranges>
+<RangeCount> 500 </RangeCount>
+<Range>
+<ValDescription> Not in Universe </ValDescription>
+<Value> -1 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> chief executives and general administrators, public administration (112) </ValDescription>
+<Value> 4 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> administrators and officials, public administration (1132-1139) </ValDescription>
+<Value> 5 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> administrators, protective services (1131) </ValDescription>
+<Value> 6 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> financial managers (122) </ValDescription>
+<Value> 7 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> personnel and labor relations managers (123) </ValDescription>
+<Value> 8 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> purchasing managers (124) </ValDescription>
+<Value> 9 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> managers, marketing, advertising, and public relations (125) </ValDescription>
+<Value> 13 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> admin, education and rel. fields (128) </ValDescription>
+<Value> 14 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> managers, medicine and health (131) </ValDescription>
+<Value> 15 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> managers, food serving and lodging establishments (1351) </ValDescription>
+<Value> 17 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> managers, properties and real estate (1353) </ValDescription>
+<Value> 18 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> funeral directors (part 1359) </ValDescription>
+<Value> 19 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> managers, service organizations, n.e.c. (127, 1352, 1354, part 1359) </ValDescription>
+<Value> 21 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> managers and administrators, n.e.c. (121, 126, 132-1343, 136-139) </ValDescription>
+<Value> 22 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> accountants and auditors (1412) </ValDescription>
+<Value> 23 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> underwriters (1414) </ValDescription>
+<Value> 24 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> other financial officers (1415, 1419) </ValDescription>
+<Value> 25 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> management analysts (142) </ValDescription>
+<Value> 26 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> personnel, training, and labor relations specialists (143) </ValDescription>
+<Value> 27 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> purchasing agents and buyers, farm products (1443) </ValDescription>
+<Value> 28 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> buyers, wholesale and retail trade except farm products (1442) </ValDescription>
+<Value> 29 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> purch. agents and buyers, n.e.c. (1449) </ValDescription>
+<Value> 33 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> business and promotion agents (145) </ValDescription>
+<Value> 34 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> construction inspectors (1472) </ValDescription>
+<Value> 35 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> inspectors and compliance officers, except construction (1473) </ValDescription>
+<Value> 36 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> management rel. occupations, n.e.c. (149) </ValDescription>
+<Value> 37 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> architects (161) </ValDescription>
+<Value> 43 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> aerospace engineers(1622) </ValDescription>
+<Value> 44 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> metallurgical and materials engineers (1623) </ValDescription>
+<Value> 45 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> mining engineers (1624) </ValDescription>
+<Value> 46 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> petroleum engineers (1625) </ValDescription>
+<Value> 47 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> chemical engineers (1626) </ValDescription>
+<Value> 48 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> nuclear engineers (1627) </ValDescription>
+<Value> 49 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> civil engineers (1628) </ValDescription>
+<Value> 53 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> agricultural engineers (1632) </ValDescription>
+<Value> 54 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Engineers, electrical and electronic (1633, 1636) </ValDescription>
+<Value> 55 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Engineers, industrial (1634) </ValDescription>
+<Value> 56 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Engineers, mechanical (1635) </ValDescription>
+<Value> 57 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> marine and naval architects (1637) </ValDescription>
+<Value> 58 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> engineers, n.e.c. (1639) </ValDescription>
+<Value> 59 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> surveyors and mapping scientists (164) </ValDescription>
+<Value> 63 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> computer systems analysts and scientists (171) </ValDescription>
+<Value> 64 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> operations and systems researchers and analysts (172) </ValDescription>
+<Value> 65 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Actuaries (1732) </ValDescription>
+<Value> 66 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Statisticians (1733) </ValDescription>
+<Value> 67 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Mathematical scientists, n.e.c. (1739) </ValDescription>
+<Value> 68 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Physicists and astronomers (1842, 1843) </ValDescription>
+<Value> 69 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Chemists, except biochemists (1845) </ValDescription>
+<Value> 73 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Atmospheric and space scientists (1846) </ValDescription>
+<Value> 74 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Geologists and geodesists (1847) </ValDescription>
+<Value> 75 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Physical scientists, n.e.c. (1849) </ValDescription>
+<Value> 76 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Agricultural and food scientists (1853) </ValDescription>
+<Value> 77 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Biological and life scientists (1854) </ValDescription>
+<Value> 78 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Forestry and conservation scientists (1852) </ValDescription>
+<Value> 79 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Medical scientists (1855) </ValDescription>
+<Value> 83 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Physicians (261) </ValDescription>
+<Value> 84 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Dentists (262) </ValDescription>
+<Value> 85 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Veterinarians (27) </ValDescription>
+<Value> 86 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Optometrists (281) </ValDescription>
+<Value> 87 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Podiatrists (283) </ValDescription>
+<Value> 88 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Health diagnosing practitioners, n.e.c. (289) </ValDescription>
+<Value> 89 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Registered nurses (29) </ValDescription>
+<Value> 95 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Pharmacists (301) </ValDescription>
+<Value> 96 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Dietitians (302) </ValDescription>
+<Value> 97 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Respiratory therapists (3031) </ValDescription>
+<Value> 98 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Occupational therapists (3032) </ValDescription>
+<Value> 99 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Physical therapists (3033) </ValDescription>
+<Value> 103 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Speech therapists (3034) </ValDescription>
+<Value> 104 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Therapists, n.e.c. (3039) </ValDescription>
+<Value> 105 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Physicians' assistants (304) </ValDescription>
+<Value> 106 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Earth, environmental, and marine science teachers (2212) </ValDescription>
+<Value> 113 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Biological science teachers (2213) </ValDescription>
+<Value> 114 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Chemistry teachers (2214) </ValDescription>
+<Value> 115 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Physics teachers (2215) </ValDescription>
+<Value> 116 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Natural science teachers, n.e.c. (2216) </ValDescription>
+<Value> 117 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Psychology teachers (2217) </ValDescription>
+<Value> 118 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Economics teachers (2218) </ValDescription>
+<Value> 119 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> History teachers (2222) </ValDescription>
+<Value> 123 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Political science teachers (2223) </ValDescription>
+<Value> 124 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Sociology teachers (2224) </ValDescription>
+<Value> 125 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Social science teachers, n.e.c. (2225) </ValDescription>
+<Value> 126 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Engineering teachers (2226) </ValDescription>
+<Value> 127 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Math. science teachers (2227) </ValDescription>
+<Value> 128 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Computer science teachers (2228) </ValDescription>
+<Value> 129 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Medical science teachers (2231) </ValDescription>
+<Value> 133 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Health specialties teachers (2232) </ValDescription>
+<Value> 134 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Business, commerce, and marketing teachers (2233) </ValDescription>
+<Value> 135 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Agriculture and forestry teachers (2234) </ValDescription>
+<Value> 136 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Art, drama, and music teachers (2235) </ValDescription>
+<Value> 137 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Physical education teachers (2236) </ValDescription>
+<Value> 138 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Education teachers (2237) </ValDescription>
+<Value> 139 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> English teachers (2238) </ValDescription>
+<Value> 143 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Foreign language teachers (2242) </ValDescription>
+<Value> 144 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Law teachers (2243) </ValDescription>
+<Value> 145 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Social work teachers (2244) </ValDescription>
+<Value> 146 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Theology teachers (2245) </ValDescription>
+<Value> 147 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Trade and industrial teachers (2246) </ValDescription>
+<Value> 148 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Home economics teachers (2247) </ValDescription>
+<Value> 149 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Teachers, postsecondary, n.e.c. (2249) </ValDescription>
+<Value> 153 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Postsecondary teachers, subject not specified </ValDescription>
+<Value> 154 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Teachers, prekindergarten and kindergarten (231) </ValDescription>
+<Value> 155 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Teachers, elementary school (232) </ValDescription>
+<Value> 156 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Teachers, secondary school (233) </ValDescription>
+<Value> 157 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Teachers, special education (235) </ValDescription>
+<Value> 158 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Teachers, n.e.c. (236, 239) </ValDescription>
+<Value> 159 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Counselors, Educational and Vocational (24) </ValDescription>
+<Value> 163 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Librarians (251) </ValDescription>
+<Value> 164 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Archivists and curators (252) </ValDescription>
+<Value> 165 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Economists (1912) </ValDescription>
+<Value> 166 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Psychologists (1915) </ValDescription>
+<Value> 167 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Sociologists (1916) </ValDescription>
+<Value> 168 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Social scientists, n.e.c. (1913, 1914, 1919) </ValDescription>
+<Value> 169 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Urban planners (192) </ValDescription>
+<Value> 173 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Social workers (2032) </ValDescription>
+<Value> 174 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Recreation workers (2033) </ValDescription>
+<Value> 175 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Clergy (2042) </ValDescription>
+<Value> 176 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Religious workers, n.e.c. (2049) </ValDescription>
+<Value> 177 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Lawyers and Judges </ValDescription>
+<Value> 178 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Authors (321) </ValDescription>
+<Value> 183 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Technical writers (398) </ValDescription>
+<Value> 184 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Designers (322) </ValDescription>
+<Value> 185 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Musicians and composers (323) </ValDescription>
+<Value> 186 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Actors and directors (324) </ValDescription>
+<Value> 187 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Painters, sculptors, craft-artists, and artist printmakers (325) </ValDescription>
+<Value> 188 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Photographers (326) </ValDescription>
+<Value> 189 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Dancers (327) </ValDescription>
+<Value> 193 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Artists, performers, and rel. workers, n.e.c. (328,329) </ValDescription>
+<Value> 194 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Editors and reporters (331) </ValDescription>
+<Value> 195 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Public relations specialists (332) </ValDescription>
+<Value> 197 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Announcers (333) </ValDescription>
+<Value> 198 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Athletes (34) </ValDescription>
+<Value> 199 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Clinical laboratory technologists and technicians (362) </ValDescription>
+<Value> 203 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Dental hygienists (363) </ValDescription>
+<Value> 204 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Health record technologists and technicians (364) </ValDescription>
+<Value> 205 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Radiologic technicians (365) </ValDescription>
+<Value> 206 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Licensed practical nurses (366) </ValDescription>
+<Value> 207 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Health technologists and technicians, n.e.c. (369) </ValDescription>
+<Value> 208 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Electrical and electronic technicians (3711) </ValDescription>
+<Value> 213 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Industrial engineering technicians (3712) </ValDescription>
+<Value> 214 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Mechanical engineering technicians (3713) </ValDescription>
+<Value> 215 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Engineering technicians, n.e.c. (3719) </ValDescription>
+<Value> 216 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Drafting occupations (372) </ValDescription>
+<Value> 217 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Surveying and mapping technicians (373) </ValDescription>
+<Value> 218 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Biological technicians (382) </ValDescription>
+<Value> 223 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Chemical technicians (3831) </ValDescription>
+<Value> 224 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Science technicians, n.e.c. (3832, 3833, 384, 389) </ValDescription>
+<Value> 225 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Airplane pilots and navigators (825) </ValDescription>
+<Value> 226 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Air traffic controllers (392) </ValDescription>
+<Value> 227 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Broadcast equipment operators (393) </ValDescription>
+<Value> 228 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Computer programmers (3971, 3972) </ValDescription>
+<Value> 229 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Tool programmers, numerical control (3974) </ValDescription>
+<Value> 233 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Legal assistants (396) </ValDescription>
+<Value> 234 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Technicians, n.e.c. (399) </ValDescription>
+<Value> 235 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Supervisors and Proprietors, Sales Occupations (40) </ValDescription>
+<Value> 243 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Insurance sales occupations (4122) </ValDescription>
+<Value> 253 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Real estate sales occupations (4123) </ValDescription>
+<Value> 254 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Securities and financial services sales occupations (4124) </ValDescription>
+<Value> 255 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Advertising and rel. sales occupations (4153) </ValDescription>
+<Value> 256 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Sales occupations, other business services (4152) </ValDescription>
+<Value> 257 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Sales engineers (421) </ValDescription>
+<Value> 258 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Sales representatives, mining, manufacturing, and wholesale (423, 424) </ValDescription>
+<Value> 259 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Sales workers, motor vehicles and boats (4342, 4344) </ValDescription>
+<Value> 263 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Sales workers, apparel (4346) </ValDescription>
+<Value> 264 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Sales workers, shoes (4351) </ValDescription>
+<Value> 265 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Sales workers, furniture and home furnishings (4348) </ValDescription>
+<Value> 266 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Sales workers, radio, Tv, hi-fi, and appliances (4343, 4352) </ValDescription>
+<Value> 267 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Sales workers, hardware and building supplies (4353) </ValDescription>
+<Value> 268 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Sales workers, parts (4367) </ValDescription>
+<Value> 269 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Sales workers, other commodities (4345, 4347, 4354, 4356, 4359, 4362, 4369) </ValDescription>
+<Value> 274 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Sales counter clerks (4363) </ValDescription>
+<Value> 275 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Cashiers (4364) </ValDescription>
+<Value> 276 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Street and door-to-door sales workers (4366) </ValDescription>
+<Value> 277 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> News vendors (4365) </ValDescription>
+<Value> 278 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Demonstrators, promoters and models, sales (445) </ValDescription>
+<Value> 283 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Auctioneers (447) </ValDescription>
+<Value> 284 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Sales support occupations, n.e.c. (444, 446, 449) </ValDescription>
+<Value> 285 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Supervisors, general office (4511, 4513, 4514, 4516, 4519, 4529) </ValDescription>
+<Value> 303 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Supervisors, computer equipment operators (4512) </ValDescription>
+<Value> 304 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Supervisors, financial records processing (4521) </ValDescription>
+<Value> 305 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Chief communications operators (4523) </ValDescription>
+<Value> 306 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Supervisors, distribution, scheduling, and adjusting clerks (4522, 4524-4528) </ValDescription>
+<Value> 307 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Computer operators (4612) </ValDescription>
+<Value> 308 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Peripheral equipment operators (4613) </ValDescription>
+<Value> 309 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Secretaries (4622) </ValDescription>
+<Value> 313 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Stenographers (4623) </ValDescription>
+<Value> 314 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Typists (4624) </ValDescription>
+<Value> 315 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Interviewers (4642) </ValDescription>
+<Value> 316 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Hotel clerks (4643) </ValDescription>
+<Value> 317 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Transportation ticket and reservation agents (4644) </ValDescription>
+<Value> 318 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Receptionists (4645) </ValDescription>
+<Value> 319 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Information clerks, n.e.c. (4649) </ValDescription>
+<Value> 323 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Classified-ad clerks (4662) </ValDescription>
+<Value> 325 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Correspondence clerks (4663) </ValDescription>
+<Value> 326 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Order clerks (4664) </ValDescription>
+<Value> 327 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Personnel clerks, except payroll and timekeeping (4692) </ValDescription>
+<Value> 328 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Library clerks (4694) </ValDescription>
+<Value> 329 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> File clerks (4696) </ValDescription>
+<Value> 335 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Records clerks (4699) </ValDescription>
+<Value> 336 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Bookkeepers, accounting, and auditing clerks (4712) </ValDescription>
+<Value> 337 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Payroll and timekeeping clerks (4713) </ValDescription>
+<Value> 338 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Billing clerks (4715) </ValDescription>
+<Value> 339 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Cost and rate clerks (4716) </ValDescription>
+<Value> 343 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Billing, posting, and calculating machine operators (4718) </ValDescription>
+<Value> 344 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Duplicating machine operators (4722) </ValDescription>
+<Value> 345 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Mail preparing and paper handling machine operators (4723) </ValDescription>
+<Value> 346 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Office mach. operators, n.e.c. (4729) </ValDescription>
+<Value> 347 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Telephone operators (4732) </ValDescription>
+<Value> 348 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Communications equipment operators, n.e.c. (4733, 4739) </ValDescription>
+<Value> 353 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Postal clerks, except mail carriers (4742) </ValDescription>
+<Value> 354 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Mail carriers, postal service (4743) </ValDescription>
+<Value> 355 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Mail clerks, except postal service (4744) </ValDescription>
+<Value> 356 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Messengers (4745) </ValDescription>
+<Value> 357 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Dispatchers (4751) </ValDescription>
+<Value> 359 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Production coordinators (4752) </ValDescription>
+<Value> 363 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Traffic, shipping, and receiving clerks (4753) </ValDescription>
+<Value> 364 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Stock and inventory clerks (4754) </ValDescription>
+<Value> 365 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Meter readers (4755) </ValDescription>
+<Value> 366 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Weighers, measurers, checkers, and samplers (4756, 4757) </ValDescription>
+<Value> 368 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Expediters (4758) </ValDescription>
+<Value> 373 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Material recording, scheduling, and distributing clerks, n.e.c. (4759) </ValDescription>
+<Value> 374 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Insurance adjusters, examiners, and investigators (4782) </ValDescription>
+<Value> 375 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Investigators and adjusters, except insurance (4783) </ValDescription>
+<Value> 376 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Eligibility clerks, social welfare (4784) </ValDescription>
+<Value> 377 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Bill and account collectors (4786) </ValDescription>
+<Value> 378 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> General office clerks (463) </ValDescription>
+<Value> 379 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Bank tellers (4791) </ValDescription>
+<Value> 383 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Proofreaders (4792) </ValDescription>
+<Value> 384 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Data-entry keyers (4793) </ValDescription>
+<Value> 385 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Statistical clerks (4794) </ValDescription>
+<Value> 386 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Teachers' aides (4795) </ValDescription>
+<Value> 387 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Administrative support occupations, n.e.c. (4787, 4799) </ValDescription>
+<Value> 389 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Launderers and ironers (503) </ValDescription>
+<Value> 403 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Cooks, private household (504) </ValDescription>
+<Value> 404 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Housekeepers and butlers (505) </ValDescription>
+<Value> 405 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Child care workers, private hhld (506) </ValDescription>
+<Value> 406 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Private hhld cleaners and servants (502, 507, 509) </ValDescription>
+<Value> 407 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Supervisors, firefighting and fire prevention occupations(5111) </ValDescription>
+<Value> 413 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Supervisors, police and detectives (5112) </ValDescription>
+<Value> 414 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Supervisors, guards (5113) </ValDescription>
+<Value> 415 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Fire inspection and fire prevention occupations (5122) </ValDescription>
+<Value> 416 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Firefighting occupations (5123) </ValDescription>
+<Value> 417 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Police and detectives, public service (5132) </ValDescription>
+<Value> 418 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Sheriffs, bailiffs, and other law enforcement officers(5134) </ValDescription>
+<Value> 423 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Correctional institution officers (5133) </ValDescription>
+<Value> 424 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Crossing guards (5142) </ValDescription>
+<Value> 425 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Guards and police, except public service (5144) </ValDescription>
+<Value> 426 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Protective service occupations, n.e.c. (5149) </ValDescription>
+<Value> 427 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Supervisors, food preparation and service occupations(5211) </ValDescription>
+<Value> 433 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Bartenders (5212) </ValDescription>
+<Value> 434 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Waiters and waitresses (5213) </ValDescription>
+<Value> 435 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Cooks (5214, 5215) </ValDescription>
+<Value> 436 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Food counter, fountain and rel. occupations (5216) </ValDescription>
+<Value> 438 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Kitchen workers, food preparation (5217) </ValDescription>
+<Value> 439 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Waiters'/waitresses' assistants (5218) </ValDescription>
+<Value> 443 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Miscellaneous food preparation occupations (5219) </ValDescription>
+<Value> 444 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Dental assistants (5232) </ValDescription>
+<Value> 445 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Health aides, except nursing (5233) </ValDescription>
+<Value> 446 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Nursing aides, orderlies, and attendants (5236) </ValDescription>
+<Value> 447 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Supervisors, cleaning and building service workers (5241) </ValDescription>
+<Value> 448 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Maids and housemen (5242, 5249) </ValDescription>
+<Value> 449 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Janitors and cleaners (5244) </ValDescription>
+<Value> 453 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Elevator operators (5245) </ValDescription>
+<Value> 454 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Pest control occupations (5246) </ValDescription>
+<Value> 455 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Supervisors, personal service occupations (5251) </ValDescription>
+<Value> 456 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Barbers (5252) </ValDescription>
+<Value> 457 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Hairdressers and cosmetologists (5253) </ValDescription>
+<Value> 458 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Attendants, amusement and recreation facilities (5254) </ValDescription>
+<Value> 459 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Guides (5255) </ValDescription>
+<Value> 461 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Ushers (5256) </ValDescription>
+<Value> 462 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Public transportation attendants (5257) </ValDescription>
+<Value> 463 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Baggage porters and bellhops (5262) </ValDescription>
+<Value> 464 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Welfare service aides (5263) </ValDescription>
+<Value> 465 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Family child care providers (part 5264) </ValDescription>
+<Value> 466 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Early childhood teacher's assistants (part 5264) </ValDescription>
+<Value> 467 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Child care wrkrs, n.e.c. (part 5264) </ValDescription>
+<Value> 468 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Personal service occupations, n.e.c. (5258, 5269) </ValDescription>
+<Value> 469 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Farmers, except horticultural (5512-5514) </ValDescription>
+<Value> 473 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Horticultural specialty farmers (5515) </ValDescription>
+<Value> 474 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Managers, farms, except horticultural (5522-5524) </ValDescription>
+<Value> 475 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Managers, horticultural specialty farms (5525) </ValDescription>
+<Value> 476 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Supervisors, farm workers (5611) </ValDescription>
+<Value> 477 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Farm workers (5612-5617) </ValDescription>
+<Value> 479 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Marine life cultivation workers (5618) </ValDescription>
+<Value> 483 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Nursery workers (5619) </ValDescription>
+<Value> 484 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Supervisors, rel. agricultural occupations (5621) </ValDescription>
+<Value> 485 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Groundskeepers and gardeners, except farm (5622) </ValDescription>
+<Value> 486 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Animal caretakers, except farm (5624) </ValDescription>
+<Value> 487 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Grader and sorter, agricultural products (5625) </ValDescription>
+<Value> 488 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Inspectors, agricultural products (5627) </ValDescription>
+<Value> 489 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Supervisors, forestry and logging workers (571) </ValDescription>
+<Value> 494 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Forestry workers, except logging (572) </ValDescription>
+<Value> 495 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Timber cutting and logging occupations (573, 579) </ValDescription>
+<Value> 496 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Captains and other officers, fishing vessels (part 8241) </ValDescription>
+<Value> 497 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Fishers (583) </ValDescription>
+<Value> 498 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Hunters and trappers (584) </ValDescription>
+<Value> 499 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Supervisors, mechanics and repairers (60) </ValDescription>
+<Value> 503 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Automobile mechanics (part 6111) </ValDescription>
+<Value> 505 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Auto mechanic apprentices (part 6111) </ValDescription>
+<Value> 506 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Bus, truck, and stationary engine mechanics (6112) </ValDescription>
+<Value> 507 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Aircraft engine mechanics (6113) </ValDescription>
+<Value> 508 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Small engine repairers (6114) </ValDescription>
+<Value> 509 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Automobile body and rel. repairers (6115) </ValDescription>
+<Value> 514 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Aircraft mechanics, except engine (6116) </ValDescription>
+<Value> 515 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Heavy equipment mechanics (6117) </ValDescription>
+<Value> 516 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Farm equipment mechanics (6118) </ValDescription>
+<Value> 517 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Industrial machinery repairers (613) </ValDescription>
+<Value> 518 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Machinery maintenance occupations (614) </ValDescription>
+<Value> 519 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Electronic repairers, communications and industrial equipment (6151, 6153, 6155) </ValDescription>
+<Value> 523 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Data processing equipment repairers (6154) </ValDescription>
+<Value> 525 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Hhld appliance and power tool repairers (6156) </ValDescription>
+<Value> 526 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Telephone line installers and repairers (6157) </ValDescription>
+<Value> 527 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Telephone installers and repairers (6158) </ValDescription>
+<Value> 529 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Miscellaneous electrical and electronic equipment repairers (6152, 6159) </ValDescription>
+<Value> 533 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Heating, air conditioning, and refrigeration mechanics (616) </ValDescription>
+<Value> 534 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Camera, watch, and musical instrument repairers (6171, 6172) </ValDescription>
+<Value> 535 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Locksmiths and safe repairers (6173) </ValDescription>
+<Value> 536 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Office machine repairers (6174) </ValDescription>
+<Value> 538 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Mechanical controls and valve repairers (6175) </ValDescription>
+<Value> 539 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Elevator installers and repairers (6176) </ValDescription>
+<Value> 543 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Millwrights (6178) </ValDescription>
+<Value> 544 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Specified mechanics and repairers, n.e.c. (6177, 6179) </ValDescription>
+<Value> 547 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Not specified mechanics and repairers </ValDescription>
+<Value> 549 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Supervisors, brickmasons, stonemasons, and tile setters (6312) </ValDescription>
+<Value> 553 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Supervisors, carpenters and rel. workers (6313) </ValDescription>
+<Value> 554 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Supervisors, electricians and power transmission installers (6314) </ValDescription>
+<Value> 555 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Supervisors, painters, paperhangers, and plasterers (6315) </ValDescription>
+<Value> 556 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Supervisors, plumbers, pipefitters, and steamfitters (6316) </ValDescription>
+<Value> 557 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Supervisors, construction, n.e.c. (6311, 6318) </ValDescription>
+<Value> 558 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Brickmasons and stonemasons (part 6412, part 6413) </ValDescription>
+<Value> 563 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Brickmason and stonemason apprentices (part 6412, part 6413) </ValDescription>
+<Value> 564 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Tile setters, hard and soft (part 6414, part 6462) </ValDescription>
+<Value> 565 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Carpet installers (part 6462) </ValDescription>
+<Value> 566 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Carpenters (part 6422) </ValDescription>
+<Value> 567 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Carpenter apprentices (part 6422) </ValDescription>
+<Value> 569 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Drywall installers (6424) </ValDescription>
+<Value> 573 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Electricians (part 6432) </ValDescription>
+<Value> 575 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Electrician apprentices (part 6432) </ValDescription>
+<Value> 576 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Electrical power installers and repairers (6433) </ValDescription>
+<Value> 577 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Painters, construction and maintenance (6442) </ValDescription>
+<Value> 579 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Paperhangers (6443) </ValDescription>
+<Value> 583 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Plasterers (6444) </ValDescription>
+<Value> 584 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Plumbers, pipefitters, and steamfitters (part 645) </ValDescription>
+<Value> 585 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Plumber, pipefitter, and steamfitter apprentices (part 645) </ValDescription>
+<Value> 587 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Concrete and terrazzo finishers (6463) </ValDescription>
+<Value> 588 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Glaziers (6464) </ValDescription>
+<Value> 589 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Insulation workers (6465) </ValDescription>
+<Value> 593 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Paving, surfacing, and tamping equipment operators (6466) </ValDescription>
+<Value> 594 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Roofers (6468) </ValDescription>
+<Value> 595 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Sheetmetal duct installers (6472) </ValDescription>
+<Value> 596 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Structural metal workers (6473) </ValDescription>
+<Value> 597 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Drillers, earth (6474) </ValDescription>
+<Value> 598 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Construction trades, n.e.c. (6467, 6475, 6476, 6479) </ValDescription>
+<Value> 599 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Supervisors, extractive occupations (632) </ValDescription>
+<Value> 613 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Drillers, oil well (652) </ValDescription>
+<Value> 614 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Explosives workers (653) </ValDescription>
+<Value> 615 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Mining machine operators (654) </ValDescription>
+<Value> 616 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Mining occupations, n.e.c. (656) </ValDescription>
+<Value> 617 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Supervisors, production occupations (67, 71) </ValDescription>
+<Value> 628 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Tool and die makers (part 6811) </ValDescription>
+<Value> 634 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Tool and die mkr apprentices (part 6811) </ValDescription>
+<Value> 635 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Precision assemblers, metal (6812) </ValDescription>
+<Value> 636 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Machinists (part 6813) </ValDescription>
+<Value> 637 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Machinist apprentices (part 6813) </ValDescription>
+<Value> 639 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Boilermakers (6814) </ValDescription>
+<Value> 643 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Precision grinders, filers, and tool sharpeners (6816) </ValDescription>
+<Value> 644 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Patternmakers and model makers, metal (6817) </ValDescription>
+<Value> 645 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Lay-out workers (6821) </ValDescription>
+<Value> 646 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Precious stones and metals workers (Jewelers) (6822, 6866) </ValDescription>
+<Value> 647 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Engravers, metal (6823) </ValDescription>
+<Value> 649 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Sheet metal workers (part 6824) </ValDescription>
+<Value> 653 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Sheet metal wrkr apprentices (part 6824) </ValDescription>
+<Value> 654 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Misc precision metal workers (6829) </ValDescription>
+<Value> 655 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Patternmkrs and model makers, wood (6831) </ValDescription>
+<Value> 656 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Cabinet makers and bench carpenters (6832) </ValDescription>
+<Value> 657 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Furniture and wood finishers (6835) </ValDescription>
+<Value> 658 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Misc precision woodworkers (6839) </ValDescription>
+<Value> 659 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Dressmakers (part 6852, part 7752) </ValDescription>
+<Value> 666 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Tailors (part 6852) </ValDescription>
+<Value> 667 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Upholsterers (6853) </ValDescription>
+<Value> 668 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Shoe repairers (6854) </ValDescription>
+<Value> 669 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Misc precision apparel and fabric workers (6856, 6859, part 7752) </ValDescription>
+<Value> 674 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Hand molders and shapers, except jewelers (6861) </ValDescription>
+<Value> 675 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Patternmakers, lay-out workers, and cutters (6862) </ValDescription>
+<Value> 676 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Optical goods workers (6864, part 7477, part 7677) </ValDescription>
+<Value> 677 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Dental laboratory and medical appliance technicians (6865) </ValDescription>
+<Value> 678 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Bookbinders (6844) </ValDescription>
+<Value> 679 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Electrical/electronic equipment assemblers (6867) </ValDescription>
+<Value> 683 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Msc precision workers, n.e.c. (6869) </ValDescription>
+<Value> 684 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Butchers and meat cutters (6871) </ValDescription>
+<Value> 686 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Bakers (6872) </ValDescription>
+<Value> 687 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Food batchmakers (6873, 6879) </ValDescription>
+<Value> 688 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Inspectors, testers, and graders (6881, 828) </ValDescription>
+<Value> 689 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Adjusters and calibrators (6882) </ValDescription>
+<Value> 693 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Water and sewage treatment plant operators (691) </ValDescription>
+<Value> 694 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Power plant operators (part 693) </ValDescription>
+<Value> 695 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Stationary engineers (part 693, 7668) </ValDescription>
+<Value> 696 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Miscellaneous plant and system operators (692, 694, 695, 696) </ValDescription>
+<Value> 699 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Set-up operators, lathe and turning machine (7312) </ValDescription>
+<Value> 703 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Operators, lathe and turning machine (7512) </ValDescription>
+<Value> 704 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Milling and planing machine operators (7313, 7513) </ValDescription>
+<Value> 705 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Punching and stamping press machine operators (7314, 7317, 7514, 7517) </ValDescription>
+<Value> 706 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Rolling machine operators (7316, 7516) </ValDescription>
+<Value> 707 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Drilling and boring machine operators (7318, 7518) </ValDescription>
+<Value> 708 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Grinding, abrading, buffing, and polishing machine operators (7322, 7324, 7522) </ValDescription>
+<Value> 709 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Forging machine operators (7319, 7519) </ValDescription>
+<Value> 713 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Numerical control machine operators (7326) </ValDescription>
+<Value> 714 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Miscellaneous metal, plastic, stone, and glass working machine operators (7329, 7529) </ValDescription>
+<Value> 715 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Fabricating machine operators, n.e.c. (7339, 7539) </ValDescription>
+<Value> 717 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Molding and casting machine operators (7315, 7342, 7515, 7524) </ValDescription>
+<Value> 719 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Metal plating machine operators (7343, 7543) </ValDescription>
+<Value> 723 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Heat treating equipment operators (7344, 7544) </ValDescription>
+<Value> 724 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Misc metal and plastic processing machine operators (7349, 7549) </ValDescription>
+<Value> 725 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Wood lathe, routing, and planing machine operators (7431, 7432, 7631, 7632) </ValDescription>
+<Value> 726 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Sawing machine operators (7433, 7633) </ValDescription>
+<Value> 727 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Shaping and joining machine operators (7435, 7635) </ValDescription>
+<Value> 728 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Nailing and tacking machine operators (7636) </ValDescription>
+<Value> 729 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Miscellaneous woodworking machine operators (7434, 7439, 7634, 7639) </ValDescription>
+<Value> 733 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Printing press operators (7443, 7643) </ValDescription>
+<Value> 734 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Photoengravers and lithographers (6842, 7444, 7644) </ValDescription>
+<Value> 735 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Typesetters and compositors (6841, 7642) </ValDescription>
+<Value> 736 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Miscellaneous printing machine operators (6849, 7449, 7649 </ValDescription>
+<Value> 737 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Winding and twisting machine operators (7451, 7651) </ValDescription>
+<Value> 738 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Knitting, looping, taping, and weaving machine operators (7452, 7652) </ValDescription>
+<Value> 739 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Textile cutting machine operators (7654) </ValDescription>
+<Value> 743 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Textile sewing machine operators (7655) </ValDescription>
+<Value> 744 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Shoe machine operators (7656) </ValDescription>
+<Value> 745 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Pressing machine operators (7657) </ValDescription>
+<Value> 747 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Laundering and dry cleaning machine operators (6855, 7658) </ValDescription>
+<Value> 748 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Miscellaneous textile machine operators (7459, 7659) </ValDescription>
+<Value> 749 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Cementing and gluing machine operators (7661) </ValDescription>
+<Value> 753 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Packaging and filling machine operators (7462, 7662) </ValDescription>
+<Value> 754 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Extruding and forming machine operators (7463, 7663) </ValDescription>
+<Value> 755 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Mixing and blending machine operators (7664) </ValDescription>
+<Value> 756 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Separating, filtering, and clarifying machine operators (7476, 7666, 7676) </ValDescription>
+<Value> 757 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Compressing and compacting machine operators (7467, 7667) </ValDescription>
+<Value> 758 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Painting and paint spraying machine operators (7669) </ValDescription>
+<Value> 759 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Roasting and baking machine operators, food (7472, 7672) </ValDescription>
+<Value> 763 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Washing, cleaning, and pickling machine operators (7673) </ValDescription>
+<Value> 764 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Folding machine operators (7474, 7674) </ValDescription>
+<Value> 765 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Furnace, kiln, and oven operators, except food (7675) </ValDescription>
+<Value> 766 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Crushing and grinding machine operators (part 7477, part 7677) </ValDescription>
+<Value> 768 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Slicing and cutting machine operators (7478, 7678) </ValDescription>
+<Value> 769 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Motion picture projectionists (part 7479) </ValDescription>
+<Value> 773 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Photographic process machine operators (6863, 6868, 7671) </ValDescription>
+<Value> 774 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Miscellaneous machine operators, n.e.c. (part 7479, 7665, 7679) </ValDescription>
+<Value> 777 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Machine operators, not specified </ValDescription>
+<Value> 779 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Welders and cutters (7332, 7532, 7714) </ValDescription>
+<Value> 783 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Solderers and brazers (7333, 7533, 7717) </ValDescription>
+<Value> 784 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Assemblers (772, 774) </ValDescription>
+<Value> 785 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Hand cutting and trimming occupations (7753) </ValDescription>
+<Value> 786 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Hand molding, casting, and forming occupations (7754, 7755) </ValDescription>
+<Value> 787 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Hand painting, coating, and decorating occupations (7756) </ValDescription>
+<Value> 789 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Hand engraving and printing occupations (7757) </ValDescription>
+<Value> 793 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Miscellaneous hand working occupations (7758, 7759) </ValDescription>
+<Value> 795 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Production inspectors, checkers, and examiners (782, 787) </ValDescription>
+<Value> 796 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Production testers (783) </ValDescription>
+<Value> 797 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Production samplers and weighers (784) </ValDescription>
+<Value> 798 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Graders and sorters, except agricultural (785) </ValDescription>
+<Value> 799 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Supervisors, motor vehicle operators (8111) </ValDescription>
+<Value> 803 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Truck drivers (8212-8214) </ValDescription>
+<Value> 804 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Driver-sales workers (8218) </ValDescription>
+<Value> 806 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Bus drivers (8215) </ValDescription>
+<Value> 808 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Taxicab drivers and chauffeurs (8216) </ValDescription>
+<Value> 809 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Parking lot attendants (874) </ValDescription>
+<Value> 813 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Motor transportation occupations, n.e.c. (8219) </ValDescription>
+<Value> 814 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Railroad conductors and yardmasters (8113) </ValDescription>
+<Value> 823 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Locomotive operating occupations (8232) </ValDescription>
+<Value> 824 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Railroad brake, signal, and switch operators (8233) </ValDescription>
+<Value> 825 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Rail vehicle operators, n.e.c. (8239) </ValDescription>
+<Value> 826 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Ship captains and mates, except fishing boats (part 8241, 8242) </ValDescription>
+<Value> 828 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Sailors and deckhands (8243) </ValDescription>
+<Value> 829 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Marine engineers (8244) </ValDescription>
+<Value> 833 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Bridge, lock, and lighthouse tenders (8245) </ValDescription>
+<Value> 834 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Supervisors, material moving equipment operators (812) </ValDescription>
+<Value> 843 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Operating engineers (8312) </ValDescription>
+<Value> 844 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Longshore equipment operators (8313) </ValDescription>
+<Value> 845 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Hoist and winch operators (8314) </ValDescription>
+<Value> 848 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Crane and tower operators (8315) </ValDescription>
+<Value> 849 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Excavating and loading machine operators (8316) </ValDescription>
+<Value> 853 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Grader, dozer, and scraper operators (8317) </ValDescription>
+<Value> 855 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Industrial truck and tractor equipment operators (8318) </ValDescription>
+<Value> 856 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Misc material moving equipment operators (8319) </ValDescription>
+<Value> 859 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Supervisors, handlers, equipment cleaners, and laborers, n.e.c. (85) </ValDescription>
+<Value> 864 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Helpers, mechanics, and repairers (863) </ValDescription>
+<Value> 865 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Helpers, construction trades (8641-8645, 8648) </ValDescription>
+<Value> 866 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Helpers, surveyor (8646) </ValDescription>
+<Value> 867 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Helpers, extractive occupations (865) </ValDescription>
+<Value> 868 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Construction laborers (871) </ValDescription>
+<Value> 869 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Production helpers (861, 862) </ValDescription>
+<Value> 874 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Garbage collectors (8722) </ValDescription>
+<Value> 875 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Stevedores (8723) </ValDescription>
+<Value> 876 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Stock handlers and baggers (8724) </ValDescription>
+<Value> 877 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Machine feeders and offbearers (8725) </ValDescription>
+<Value> 878 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Freight, stock, and material handlers, n.e.c. (8726) </ValDescription>
+<Value> 883 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Garage and service station rel. occupations (873) </ValDescription>
+<Value> 885 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Vehicle washers and equipment cleaners (875) </ValDescription>
+<Value> 887 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Hand packers and packagers (8761) </ValDescription>
+<Value> 888 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Laborers, except construction (8769) </ValDescription>
+<Value> 889 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Persons whose current labor force status is unemployed and last job was Armed Forces </ValDescription>
+<Value> 905 </Value>
+<Selected> true </Selected>
+</Range>
+</Ranges>
+</Variable>
+<Variable>
+<VarId>c2b7504713f4da12b77a91a7f7c0c11a</VarId>
+<Idnum> 15003 </Idnum>
+<Type> 1 </Type>
+<VarMnemonic> ESTLEMP1 </VarMnemonic>
+<VarDescription> JB: Does ... still work for this employer? </VarDescription>
+<Ranges>
+<RangeCount> 3 </RangeCount>
+<Range>
+<ValDescription> Not in Universe </ValDescription>
+<Value> -1 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> Yes </ValDescription>
+<Value> 1 </Value>
+<Selected> true </Selected>
+</Range>
+<Range>
+<ValDescription> No </ValDescription>
+<Value> 2 </Value>
+<Selected> true </Selected>
+</Range>
+</Ranges>
+</Variable>
+</DataBasket>
+<TreeInfo>
+<NumNodes> 1 </NumNodes>
+<TreeNode>
+<Survey> 2 </Survey>
+<Subsrv> 3 </Subsrv>
+<Component> 35 </Component>
+<Instance> 5008 </Instance>
+<Longitudinal> false </Longitudinal>
+<VirtualIndicator> 0 </VirtualIndicator>
+<NodeDescription> SIPP/1996 Panel/Wave 8/Core </NodeDescription>
+</TreeNode>
+</TreeInfo>
+</Session>

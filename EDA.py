@@ -32,8 +32,12 @@ print('6  No job all month, on layoff or looking for work all weeks.')
 print('7  No job all month, at least one but not all weeks on layoff or looking for work')
 print('8  No job all month, at least one but not all weeks on layoff or looking for work')
 
+df2 = pd.read_stata('US_Paid_leave_analysis_altered.dta')
+
+df2.groupby(['spanel', 'swave', 'srefmon'])
+
 # To do: 
-#   groupby ssuid and epppnum
+#   groupby 
 #   plot distributions of time invariant variables:
 #       education (eeducate)
 #       top 20 industry bins (TJBOCC1)

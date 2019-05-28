@@ -118,7 +118,7 @@ save "$datafiles\US_Paid_leave_analysis_altered.dta", replace
 clear
 set obs 49
 gen time = _n -25
-save "$datafiles/ES_DD_estimates_altered", replace emptyok
+save "$datafiles/ES_DD_estimates_altered.dta", replace emptyok
 
 ***************** Pattern of LFP around birth for mothers giving birth in CA and NJ before and after paid leave mandates  
 foreach i of numlist 1 2 {
@@ -127,7 +127,7 @@ local X1  "_IBirth_2-_IBirth_51  [fweight=end_weight] if  post_policy==1 & (stat
 local X2  "_IBirth_2-_IBirth_51  [fweight=end_weight] if  post_policy==0 & (state==6 | state==34) "
 qui reg rm_lfp `X`i'', vce(cluster sippid)
 
-use "$datafiles/ES_DD_estimates_altered", clear
+use "$datafiles/ES_DD_estimates_altered.dta", clear
 quietly {
          gen b_X`i'=.
 		 forval j=1/49{
@@ -139,14 +139,14 @@ quietly {
 							 }
 					     }
           }
-		save "$datafiles/ES_DD_estimates_altered", replace  
+		save "$datafiles/ES_DD_estimates_altered.dta", replace  
       }   
 	  
 ***************** Simple difference estimates (note that some combinations of years and relative-to-birth month do not exist (for example if a panel only included part of a year - these will be omitted)	  
 use  "$datafiles\US_Paid_leave_analysis_altered.dta", clear
 qui reg  rm_lfp i.lBirth  i.post_policy _LlBiXpos_2_1 _LlBiXpos_8_1-_LlBiXpos_50_1 [fweight=end_weight] if (state==6 | state==34),  vce(cluster sippid)
 
-use "$datafiles/ES_DD_estimates_altered", clear
+use "$datafiles/ES_DD_estimates_altered.dta", clear
 qui {
          gen b_X3=.
 		 		 forval j=1/49{       
@@ -160,7 +160,7 @@ qui {
 			}
 			}
           }
-		save "$datafiles/ES_DD_estimates_altered", replace  
+		save "$datafiles/ES_DD_estimates_altered.dta", replace  
  
 ***************** Event-Study DD estimates for full sample and by education	  
 foreach i of numlist  4 5 6  {
@@ -174,7 +174,7 @@ di "joint test for mth -3 to +3:"
 qui test _LlBiXpos_22_1 _LlBiXpos_23_1 _LlBiXpos_24_1 _LlBiXpos_25_1 _LlBiXpos_26_1 _LlBiXpos_27_1 _LlBiXpos_28_1
 di r(p)
 
-use "$datafiles/ES_DD_estimates_altered", clear
+use "$datafiles/ES_DD_estimates_altered.dta", clear
 qui {
          gen b_X`i'=.
 		 		 forval j=1/49{       
@@ -188,8 +188,8 @@ qui {
 			}
 			}
           }
-		save "$datafiles/ES_DD_estimates", replace  
-      }                    			        
+		save "$datafiles/ES_DD_estimates_altered.dta", replace  
+}
 ***************** Decomposing LFP DD estimates into component parts: "With a Job" and "Looking"  (note there are a few other small categories not included (see SIPP definitions and coding above)
 foreach i of numlist  7 8 {
 use  "$datafiles\US_Paid_leave_analysis_altered.dta", clear
@@ -200,7 +200,7 @@ di "joint test for mth +6 to +12:"
 qui test _LlBiXpos_31_1 _LlBiXpos_32_1 _LlBiXpos_33_1 _LlBiXpos_34_1 _LlBiXpos_35_1 _LlBiXpos_36_1 
 di r(p)
 
-use "$datafiles/ES_DD_estimates_altered", clear
+use "$datafiles/ES_DD_estimates_altered.dta", clear
 qui {
          gen b_X`i'=.
 		 		 forval j=1/49{       
@@ -214,7 +214,7 @@ qui {
 			}
 			}
           }
-		save "$datafiles/ES_DD_estimates_altered", replace  
+		save "$datafiles/ES_DD_estimates_altered.dta", replace  
       }                    			        
 	  
 	  
