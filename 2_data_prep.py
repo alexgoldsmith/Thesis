@@ -10,8 +10,8 @@ import pandas as pd
 import numpy as np
 import os
 
-os.chdir('C:/Users/Alex/Git_Repositories/Thesis')
-df = pd.read_csv('SIPP_CSV_Dataset.csv')
+os.chdir('D:/Users/Alex/Git_Repositories/Thesis')
+df = pd.read_stata('SIPP_Stata_Dataset.dta')
 
 # Create industry sector variable
 # TJBOCC1 : Occupation classification code
@@ -37,12 +37,39 @@ df.loc[mask, 'TJBOCC1'] = df.loc[mask, 'TJBOCC1'] * 10
 ## 3600-3650    : 31 Healthcare Support Occupations
 ## 3700-3950    : 33 Personal Care and Service Occupations
 ## 4000-4160    : 35 Food Preparation and Serving Related Occupations
+## 4200-4250    : 37 Building and Grounds Cleaning and Maintenance Occupations
+## 4300-4650    : 39 Personal Care and Service Occupations
+## 4700-4960    : 41 Sales and Related Occupations
+## 5000-5930    : 43 Office and Administrative Support Occupations
+## 6000-6130    : 45 Farming, Fishing, and Forestry Occupations
+## 6200-6940    : 47 Construction and Extraction Occupations
+## 7000-7620    : 49 Installation, Maintenance, and Repair Occupations
+## 7700-8960    : 51 Production Occuptions
+## 9000-9750    : 53 Transportation and Material Moving Occupations
+## 9840         : O Unemployed Veterans
+
 
 bins = [0, 450, 970, 1250, 1570, 1970, 2070, 2170, 2570, 2970, 3550, 3670,
-        3970, 4170, np.inf]
+        3970, 4170, 4270, 4670, 4970, 5950, 6150, 6950, 7630, 8970, 9770, np.inf]
 names = ['11', '13', '15', '17', '19', '21', '23', '25', '27', '29', '31',
-         '33', '35', 'other']
+         '33', '35', '37', '39', '41', '43', '45', '47', '49', '51', '53', 'other']
 
 df['industry'] = pd.cut(df['TJBOCC1'], bins, labels = names)
-print(df.industry.value_counts(sort = False))
-print(sum(df.industry.isnull()))
+
+# Save dataset
+datetime_dict = {'birth_month': 'tm'}
+df.to_stata('SIPP_Stata_Dataset_2.dta', convert_dates = datetime_dict)
+
+
+# Generate unique person id
+#def make_identifier(df):
+#    str_id = df.apply(lambda x: '_'.join(map(str, x)), axis=1)
+#    return pd.factorize(str_id)[0]
+
+#df['sippid'] = make_identifier(df[['spanel','ssuid','epppnum']])
+
+# Confirm unique id generation
+#print(df.groupby(['sippid', 'swave', 'srefmon']).size().max())
+
+# Create date column
+# df['date'] = pd.to_datetime(dict(year = df['rhcalyr'], month = df['rhcalmn'], day = 1), format = '%Y%m%d')

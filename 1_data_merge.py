@@ -10,7 +10,7 @@ import pandas as pd
 import os
 import glob
 
-os.chdir('C:/Users/Alex/Git_Repositories/Thesis/SIPP_Data')
+os.chdir('D:/Users/Alex/Git_Repositories/Thesis/SIPP_Data')
 
 # Create list of filenmaes
 datafiles = glob.glob('*.asc')
@@ -25,7 +25,7 @@ SIPP_addendum.drop(columns = 'RPYPER1', inplace = True)
 SIPP_addendum.rename(columns = {'SSUID': 'ssuid', 'SPANEL': 'spanel', 'SWAVE': 'swave',
                             'SREFMON': 'srefmon', 'EPPPNUM': 'epppnum'}, inplace = True)
 
-os.chdir('C:/Users/Alex/Git_Repositories/Thesis/P2016_1118_data')
+os.chdir('D:/Users/Alex/Git_Repositories/Thesis/P2016_1118_data')
 
 # Read base data
 SIPP_base = pd.read_stata('SIPP_Paid_Leave.dta')
@@ -51,13 +51,8 @@ SIPP_addendum.loc[:,['ssuid', 'spanel', 'swave', 'srefmon', 'epppnum']].head()
 df = pd.merge(SIPP_base, SIPP_addendum, on = ['ssuid', 'epppnum', 'spanel', 'swave', 'srefmon'],
               validate = '1:1')
 
-os.chdir('C:/Users/Alex/Git_Repositories/Thesis')
-
-# Write dataframe as csv
-df.to_csv('SIPP_CSV_Dataset.csv', index = False)
+os.chdir('D:/Users/Alex/Git_Repositories/Thesis')
 
 # Code birthmonth as stata time type and write as stata file
 datetime_dict = {'birth_month': 'tm'}
 df.to_stata('SIPP_Stata_Dataset.dta', convert_dates = datetime_dict)
-
-
