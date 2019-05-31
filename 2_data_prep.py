@@ -11,13 +11,47 @@ import numpy as np
 import os
 
 os.chdir('D:/Users/Alex/Git_Repositories/Thesis')
-df = pd.read_stata('SIPP_Stata_Dataset.dta', index_col = 'index')
+df = pd.read_pickle('SIPP_Dataset')
+
+# Generate unique person id
+def make_identifier(df):
+    str_id = df.apply(lambda x: '_'.join(map(str, x)), axis=1)
+    return pd.factorize(str_id)[0]
+
+df['unique_id'] = make_identifier(df[['spanel','ssuid','epppnum']])
+
+# Confirm unique id generation
+#print(df.groupby(['uniqueid', 'swave', 'srefmon']).size().max())
+
+# Create date column
+df['ref_date'] = pd.to_datetime(dict(year = df['rhcalyr'], month = df['rhcalmn'], day = 1), format = '%Y%m%d')
+
+# Create datetime objects
+df['CA_law'] = pd.to_datetime('7/1/2004')
+df['NJ_law'] = pd.to_datetime('7/1/2009')
+
+# Create binary variable to signify Paid Family Leave policy is in effect
+## New Jersey is coded as 34 while California is coded as 6
+df['policy'] = 0
+filter_1 = np.logical_and(df['tfipsst'] == 34, df['birth_month'] >= df['NJ_law'])
+df.loc[filter_1, 'policy'] = 1
+filter_2 = np.logical_and(df['tfipsst'] == 6, df['birth_month'] >= df['CA_law'])
+df.loc[filter_2, 'policy'] = 1
+
+# Create LFP variable
+df['LFP'] = np.nan
+df['LFP'].mask(df['rmesr'] <= 7, 1, inplace = True)
+df['LFP'].where(df['rmesr'] <= 7, 0, inplace = True)
+
+
+
+
 
 # Create industry sector variable
 # TJBOCC1 : Occupation classification code
 
 # Recode missing values to pandas 'NaN'
-df['TJBOCC1'].where(df['TJBOCC1'] != -1, inplace = True)
+df['TJBOCC1'].mask(df['TJBOCC1'] == -1, inplace = True)
 
 # Fix difference in coding between 1996/2001 panels and 2004/2008 panels
 mask = np.logical_or(df.spanel == 1996, df.spanel == 2001)
@@ -56,20 +90,6 @@ names = ['11', '13', '15', '17', '19', '21', '23', '25', '27', '29', '31',
 
 df['industry'] = pd.cut(df['TJBOCC1'], bins, labels = names)
 
-
-# Generate unique person id
-def make_identifier(df):
-    str_id = df.apply(lambda x: '_'.join(map(str, x)), axis=1)
-    return pd.factorize(str_id)[0]
-
-df['unique_id'] = make_identifier(df[['spanel','ssuid','epppnum']])
-
-# Confirm unique id generation
-#print(df.groupby(['uniqueid', 'swave', 'srefmon']).size().max())
-
-# Create date column
-df['ref_date'] = pd.to_datetime(dict(year = df['rhcalyr'], month = df['rhcalmn'], day = 1), format = '%Y%m%d')
-
 # Encode change of employer
 ## Recode missing values to pandas 'NaN'
 df['EENO1'].where(df['EENO1'] != -1, inplace = True)
@@ -91,10 +111,10 @@ for person in unique_persons:
     # Assign result back to original dataframe
     df.loc[df['unique_id'] == person, 'employer_change'] = employer_change
 
+# Save dataframe to pickle
+df.to_pickle('SIPP_Dataset_2')
 
-
-
-# Save dataset
+# Save dataset as stata datafile
 datetime_dict = {'birth_month': 'tm',
                  'ref_date' : 'tm'}
 
