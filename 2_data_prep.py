@@ -11,7 +11,7 @@ import numpy as np
 import os
 
 os.chdir('D:/Users/Alex/Git_Repositories/Thesis')
-df = pd.read_stata('SIPP_Stata_Dataset.dta')
+df = pd.read_stata('SIPP_Stata_Dataset.dta', index_col = 'index')
 
 # Create industry sector variable
 # TJBOCC1 : Occupation classification code
@@ -50,26 +50,53 @@ df.loc[mask, 'TJBOCC1'] = df.loc[mask, 'TJBOCC1'] * 10
 
 
 bins = [0, 450, 970, 1250, 1570, 1970, 2070, 2170, 2570, 2970, 3550, 3670,
-        3970, 4170, 4270, 4670, 4970, 5950, 6150, 6950, 7630, 8970, 9770, np.inf]
+        3970, 4170, 4270, 4670, 4970, 5950, 6150, 6950, 7630, 8970, 9770, np.inf]8
 names = ['11', '13', '15', '17', '19', '21', '23', '25', '27', '29', '31',
          '33', '35', '37', '39', '41', '43', '45', '47', '49', '51', '53', 'other']
 
 df['industry'] = pd.cut(df['TJBOCC1'], bins, labels = names)
 
-# Save dataset
-datetime_dict = {'birth_month': 'tm'}
-df.to_stata('SIPP_Stata_Dataset_2.dta', convert_dates = datetime_dict)
-
 
 # Generate unique person id
-#def make_identifier(df):
-#    str_id = df.apply(lambda x: '_'.join(map(str, x)), axis=1)
-#    return pd.factorize(str_id)[0]
+def make_identifier(df):
+    str_id = df.apply(lambda x: '_'.join(map(str, x)), axis=1)
+    return pd.factorize(str_id)[0]
 
-#df['sippid'] = make_identifier(df[['spanel','ssuid','epppnum']])
+df['unique_id'] = make_identifier(df[['spanel','ssuid','epppnum']])
 
 # Confirm unique id generation
-#print(df.groupby(['sippid', 'swave', 'srefmon']).size().max())
+#print(df.groupby(['uniqueid', 'swave', 'srefmon']).size().max())
 
 # Create date column
-# df['date'] = pd.to_datetime(dict(year = df['rhcalyr'], month = df['rhcalmn'], day = 1), format = '%Y%m%d')
+df['ref_date'] = pd.to_datetime(dict(year = df['rhcalyr'], month = df['rhcalmn'], day = 1), format = '%Y%m%d')
+
+# Encode change of employer
+## Recode missing values to pandas 'NaN'
+df['EENO1'].where(df['EENO1'] != -1, inplace = True)
+ 
+## For each unique person extract employer codes before birth and after birth
+### Create numpy array of unique person ids
+unique_persons = df['unique_id'].unique()
+ 
+### Iterate through each unique person
+for person in unique_persons:
+    # Create dataframe for each unique person
+    person_df = df[df['unique_id'] == person].loc[:,['unique_id', 'ref_date', 'birth_month', 'EENO1']]
+    # Create array of employer values for month of and after birth of child
+    post_birth_employers = person_df[person_df['ref_date'] >= person_df['birth_month']]['EENO1'].values
+    # Drop null values
+    post_birth_employers = post_birth_employers[~pd.isnull(post_birth_employers)]
+    # True if array contains multiple values
+    employer_change = int(len(set(post_birth_employers)) > 1)
+    # Assign result back to original dataframe
+    df.loc[df['unique_id'] == person, 'employer_change'] = employer_change
+
+
+
+
+# Save dataset
+datetime_dict = {'birth_month': 'tm',
+                 'ref_date' : 'tm'}
+
+df.to_stata('SIPP_Stata_Dataset_2.dta', convert_dates = datetime_dict)
+

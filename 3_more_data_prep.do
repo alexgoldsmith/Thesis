@@ -8,7 +8,7 @@ global datafiles "D:\Users\Alex\Git_Repositories\Thesis"
 
 
 * Dataset contains observations for women aged 24-45 who gave birth in CA, NJ, NY, FL, or TX during one of SIPP panels (1996, 2001, 2004 or 2008)
-use "$datafiles\SIPP_Stata_Dataset_2.dta", clear
+use "$datafiles\SIPP_Stata_Dataset.dta", clear
 
 sort ssuid epppnum spanel swave srefmon
 * create unique id for each individual
