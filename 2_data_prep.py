@@ -10,7 +10,7 @@ import pandas as pd
 import numpy as np
 import os
 
-os.chdir('D:/Users/Alex/Git_Repositories/Thesis')
+os.chdir('C:/Users/Alex/Git_Repositories/Thesis')
 df = pd.read_pickle('SIPP_Dataset')
 
 # Generate unique person id
@@ -43,8 +43,15 @@ df['LFP'] = np.nan
 df['LFP'].mask(df['rmesr'] <= 7, 1, inplace = True)
 df['LFP'].where(df['rmesr'] <= 7, 0, inplace = True)
 
+# Create variable to encode months passed since giving birth
+df['months_since_birth'] = (df['ref_date'] - df['birth_month']).astype('timedelta64[M]')
 
-
+# Create variable with month = -24 as reference
+df['birth_recode'] = np.nan
+df['birth_recode'] = df['birth_recode'].mask(df['months_since_birth'] >= -24,
+                                             df['months_since_birth'] + 25)
+df['birth_recode'] = df['birth_recode'].mask(df['months_since_birth'] < -24, 50)
+df['birth_recode'] = df['birth_recode'].mask(df['months_since_birth'] > 24, 51)
 
 
 # Create industry sector variable
@@ -84,13 +91,16 @@ df.loc[mask, 'TJBOCC1'] = df.loc[mask, 'TJBOCC1'] * 10
 
 
 bins = [0, 450, 970, 1250, 1570, 1970, 2070, 2170, 2570, 2970, 3550, 3670,
-        3970, 4170, 4270, 4670, 4970, 5950, 6150, 6950, 7630, 8970, 9770, np.inf]8
+        3970, 4170, 4270, 4670, 4970, 5950, 6150, 6950, 7630, 8970, 9770, np.inf]
 names = ['11', '13', '15', '17', '19', '21', '23', '25', '27', '29', '31',
          '33', '35', '37', '39', '41', '43', '45', '47', '49', '51', '53', 'other']
 
 df['industry'] = pd.cut(df['TJBOCC1'], bins, labels = names)
 
 # Encode change of employer
+
+#df.shift
+
 ## Recode missing values to pandas 'NaN'
 df['EENO1'].where(df['EENO1'] != -1, inplace = True)
  

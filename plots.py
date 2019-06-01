@@ -9,7 +9,7 @@ import pandas as pd
 import os
 import matplotlib.pyplot as plt
 
-os.chdir('D:/Users/Alex/Git_Repositories/Thesis')
+os.chdir('C:/Users/Alex/Git_Repositories/Thesis')
 estimates = pd.read_stata('ES_DD_estimates_altered.dta')
 
 # LFP plot
