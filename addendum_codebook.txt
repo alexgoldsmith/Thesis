@@ -976,4 +976,31 @@ With the following Ranges:
 1  Yes
 2  No
 
+Occupation Group
+industry
+# Sector codebook (Uses Standard Occupational Classification System)
+## 10-430       : 11 Management Occupations
+## 500-950      : 13 Business and Financtial Operations Occupations
+## 1000-1240    : 15 Computer and Mathematical Occupations
+## 1300-1560    : 17 Architecture and Engineering Occupations
+## 1600-1960    : 19 Life, Physical, and Social Science Occupations
+## 2000-2060    : 21 Community and Social Service Occupations
+## 2100-2150    : 23 Legal Occupations
+## 2200-2550    : 25 Education, Training, and Library Occupations
+## 2600-2960    : 27 Arts, Design, Entertainment, Sports, and Media Occupations
+## 3000-3540    : 29 Healthcare Practitioners and Technical Occupations
+## 3600-3650    : 31 Healthcare Support Occupations
+## 3700-3950    : 33 Personal Care and Service Occupations
+## 4000-4160    : 35 Food Preparation and Serving Related Occupations
+## 4200-4250    : 37 Building and Grounds Cleaning and Maintenance Occupations
+## 4300-4650    : 39 Personal Care and Service Occupations
+## 4700-4960    : 41 Sales and Related Occupations
+## 5000-5930    : 43 Office and Administrative Support Occupations
+## 6000-6130    : 45 Farming, Fishing, and Forestry Occupations
+## 6200-6940    : 47 Construction and Extraction Occupations
+## 7000-7620    : 49 Installation, Maintenance, and Repair Occupations
+## 7700-8960    : 51 Production Occuptions
+## 9000-9750    : 53 Transportation and Material Moving Occupations
+## 9840         : O Unemployed Veterans
+
 

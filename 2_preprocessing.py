@@ -107,19 +107,6 @@ df['EENO1'].where(df['EENO1'] != -1, inplace = True)
 ## For each unique person extract employer codes before birth and after birth
 ### Create numpy array of unique person ids
 unique_persons = df['unique_id'].unique()
- 
-### Iterate through each unique person
-for person in unique_persons:
-    # Create dataframe for each unique person
-    person_df = df[df['unique_id'] == person].loc[:,['unique_id', 'ref_date', 'birth_month', 'EENO1']]
-    # Create array of employer values for month of and after birth of child
-    post_birth_employers = person_df[person_df['ref_date'] >= person_df['birth_month']]['EENO1'].values
-    # Drop null values
-    post_birth_employers = post_birth_employers[~pd.isnull(post_birth_employers)]
-    # True if array contains multiple values
-    employer_change = int(len(set(post_birth_employers)) > 1)
-    # Assign result back to original dataframe
-    df.loc[df['unique_id'] == person, 'employer_change'] = employer_change
 
 # Save dataframe to pickle
 df.to_pickle('SIPP_Dataset_2')
