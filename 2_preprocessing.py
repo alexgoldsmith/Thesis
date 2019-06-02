@@ -97,23 +97,10 @@ names = ['11', '13', '15', '17', '19', '21', '23', '25', '27', '29', '31',
 
 df['industry'] = pd.cut(df['TJBOCC1'], bins, labels = names)
 
-# Encode change of employer
-
-#df.shift
-
 ## Recode missing values to pandas 'NaN'
 df['EENO1'].where(df['EENO1'] != -1, inplace = True)
  
-## For each unique person extract employer codes before birth and after birth
-### Create numpy array of unique person ids
-unique_persons = df['unique_id'].unique()
 
 # Save dataframe to pickle
 df.to_pickle('SIPP_Dataset_2')
-
-# Save dataset as stata datafile
-datetime_dict = {'birth_month': 'tm',
-                 'ref_date' : 'tm'}
-
-df.to_stata('SIPP_Stata_Dataset_2.dta', convert_dates = datetime_dict)
 
