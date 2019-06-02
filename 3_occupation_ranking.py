@@ -10,32 +10,29 @@ import numpy as np
 import os
 
 os.chdir('D:/Users/Alex/Git_Repositories/Thesis')
-occ_codes = pd.read_excel('2008-sipp-pums-occ-code-list.xlsx')
-occ_wages = pd.read_excel('national_M2018_dl.xlsx', na_values = ['*', '#'])
+column_titles = ['SIPP_name', 'TJBOCC1', 'occ_code']
+occ_codes = pd.read_excel('2008_SIPP_SOC_crosswalk.xls', header = None,
+                          names = column_titles)
+occ_wages = pd.read_excel('national_M2008_dl.xls', na_values = ['*', '#'])
 
 
 # Check for duplciates
-print(occ_codes[occ_codes.duplicated('OCC_CODE', keep = False)])
-print(occ_wages[occ_wages.duplicated('OCC_CODE', keep = False)])
+print(occ_codes[occ_codes.duplicated('occ_code', keep = False)])
+print(occ_wages[occ_wages.duplicated('occ_code', keep = False)])
 
-# Drop duplicates
-occ_wages = occ_wages.drop_duplicates('OCC_CODE', keep = 'last')
-print(occ_wages[occ_wages.duplicated('OCC_CODE', keep = False)])
+# Strip whitespace
+occ_codes['occ_code'] = occ_codes['occ_code'].str.strip()
+occ_wages['occ_code'] = occ_wages['occ_code'].str.strip()
 
 # Merge
-occ_merged = pd.merge(occ_codes, occ_wages, on = ['OCC_CODE'], validate = '1:1')
-
-# Deal with duplicates again
-occ_merged.sort_values('H_MEDIAN', ascending = False, inplace = True)
-occ_merged = occ_merged.drop_duplicates('TJBOCC1', keep = 'last')
-print(occ_merged[occ_merged.duplicated('TJBOCC1', keep = False)])
+occ_merged = pd.merge(occ_codes, occ_wages, how = 'left', on = ['occ_code'], validate = '1:1')
 
 # Rank occupations
 # Warning: Ranking by hourly rather than annual wages leads to missing data
-occ_merged['occ_rank'] = occ_merged['H_MEDIAN'].rank(ascending = False)
+occ_merged['occ_rank'] = occ_merged['h_median'].rank(ascending = False)
 
 # Drop superfluous columns
-occ_small = occ_merged[['TJBOCC1', 'SIPP_names', 'occ_rank']]
+occ_small = occ_merged[['TJBOCC1', 'SIPP_name', 'occ_rank']]
 
 # Read SIPP dataset
 SIPP_Data = pd.read_pickle('SIPP_Dataset_2')
@@ -45,6 +42,7 @@ df = pd.merge(SIPP_Data, occ_small, how = 'left', on = ['TJBOCC1'], validate = '
 
 print(sum(df['occ_rank'].isna()))
 
+df.to_pickle('SIPP_Dataset_3')
 
-
+occ_codes.loc[15, 'occ_code'] == occ_wages.loc[22, 'occ_code']
 

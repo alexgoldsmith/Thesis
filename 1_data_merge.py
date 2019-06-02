@@ -7,6 +7,7 @@ Created on Sat May 18 17:13:49 2019
 
 # Import packages
 import pandas as pd
+import numpy as np
 import os
 import glob
 
@@ -16,7 +17,7 @@ os.chdir('D:/Users/Alex/Git_Repositories/Thesis/SIPP_Data')
 datafiles = glob.glob('*.asc')
 
 # Read and concatenate datafiles
-SIPP_addendum = pd.concat(pd.read_csv(f) for f in datafiles)
+SIPP_addendum = pd.concat(pd.read_csv(f, na_values = '-1') for f in datafiles)
 
 # Drop extra column
 SIPP_addendum.drop(columns = 'RPYPER1', inplace = True)
@@ -41,9 +42,6 @@ SIPP_base['spanel'] = SIPP_base['spanel'].astype('int64')
 SIPP_base['swave'] = SIPP_base['swave'].astype('int64')
 SIPP_base['srefmon'] = SIPP_base['srefmon'].astype('int64')
 SIPP_base['epppnum'] = SIPP_base['epppnum'].astype('int64')
-
-
-
 
 SIPP_addendum.loc[:,['ssuid', 'spanel', 'swave', 'srefmon', 'epppnum']].head()
 

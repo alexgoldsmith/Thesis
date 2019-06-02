@@ -10,7 +10,7 @@ import pandas as pd
 import numpy as np
 import os
 
-os.chdir('C:/Users/Alex/Git_Repositories/Thesis')
+os.chdir('D:/Users/Alex/Git_Repositories/Thesis')
 df = pd.read_pickle('SIPP_Dataset')
 
 # Generate unique person id
@@ -59,10 +59,6 @@ df['birth_recode'] = df['birth_recode'].mask(df['months_since_birth'] > 24, 51)
 
 # Recode missing values to pandas 'NaN'
 df['TJBOCC1'].mask(df['TJBOCC1'] == -1, inplace = True)
-
-# Fix difference in coding between 1996/2001 panels and 2004/2008 panels
-mask = np.logical_or(df.spanel == 1996, df.spanel == 2001)
-df.loc[mask, 'TJBOCC1'] = df.loc[mask, 'TJBOCC1'] * 10
 
 # Sector codebook (Uses Standard Occupational Classification System)
 ## 10-430       : 11 Management Occupations
