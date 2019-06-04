@@ -38,11 +38,19 @@ occ_small = occ_merged[['TJBOCC1', 'SIPP_name', 'occ_rank']]
 SIPP_Data = pd.read_pickle('SIPP_Dataset_2')
 
 # Merge
-df = pd.merge(SIPP_Data, occ_small, on = ['TJBOCC1'], validate = 'm:1')
+df = pd.merge(SIPP_Data, occ_small, how = 'left', on = ['TJBOCC1'], validate = 'm:1')
 
-print(sum(df['occ_rank'].isna()))
+# Sort 
+df.sort_values(['unique_id', 'ref_date'], inplace=True)
+
+# Take first differences of rank
+df['rank_diff'] = df.groupby('unique_id')['occ_rank'].diff()
+
+# Codify to moving up or down rank
+df['occ_change'] = np.nan
+df['occ_change'].mask(df['rank_diff'] == 0, 0, inplace = True)
+df['occ_change'].mask(df['rank_diff'] < 0, 1, inplace = True)
+df['occ_change'].mask(df['rank_diff'] > 0, -1, inplace = True)
+
 
 df.to_pickle('SIPP_Dataset_3')
-
-occ_codes.loc[37, 'occ_code'] == occ_wages.loc[22, 'occ_code']
-
