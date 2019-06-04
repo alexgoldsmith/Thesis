@@ -9,7 +9,7 @@ import pandas as pd
 import numpy as np
 import os
 
-os.chdir('D:/Users/Alex/Git_Repositories/Thesis')
+os.chdir('C:/Users/Alex/Git_Repositories/Thesis')
 column_titles = ['SIPP_name', 'TJBOCC1', 'occ_code']
 occ_codes = pd.read_excel('2008_SIPP_SOC_crosswalk.xls', header = None,
                           names = column_titles)
@@ -54,3 +54,8 @@ df['occ_change'].mask(df['rank_diff'] > 0, -1, inplace = True)
 
 
 df.to_pickle('SIPP_Dataset_3')
+
+table = pd.crosstab(df['months_since_birth'],df['occ_change'])
+table[-24:24]
+
+# Create cross tab of occ change by months since birth for policy enacted and non policy enacted
