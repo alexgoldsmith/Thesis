@@ -52,10 +52,16 @@ df['occ_change'].mask(df['rank_diff'] == 0, 0, inplace = True)
 df['occ_change'].mask(df['rank_diff'] < 0, 1, inplace = True)
 df['occ_change'].mask(df['rank_diff'] > 0, -1, inplace = True)
 
+# Dummy variable to indicate occupation rank increase
+df['occ_rank_increase'] = np.nan
+df['occ_rank_increase'].mask(df['rank_diff'] == 0, 0, inplace = True)
+df['occ_rank_increase'].mask(df['rank_diff'] > 0, 0, inplace = True)
+df['occ_rank_increase'].mask(df['rank_diff'] < 0, 1, inplace = True)
+
+# Dummy variable to indicate occupation rank decrease
+df['occ_rank_decrease'] = np.nan
+df['occ_rank_decrease'].mask(df['rank_diff'] == 0, 0, inplace = True)
+df['occ_rank_decrease'].mask(df['rank_diff'] < 0, 0, inplace = True)
+df['occ_rank_decrease'].mask(df['rank_diff'] > 0, 1, inplace = True)
 
 df.to_pickle('SIPP_Dataset_3')
-
-table = pd.crosstab(df['months_since_birth'],df['occ_change'])
-table[-24:24]
-
-# Create cross tab of occ change by months since birth for policy enacted and non policy enacted
