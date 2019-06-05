@@ -9,7 +9,7 @@ import pandas as pd
 import numpy as np
 import os
 
-os.chdir('C:/Users/Alex/Git_Repositories/Thesis')
+os.chdir('D:/Users/Alex/Git_Repositories/Thesis')
 column_titles = ['SIPP_name', 'TJBOCC1', 'occ_code']
 occ_codes = pd.read_excel('2008_SIPP_SOC_crosswalk.xls', header = None,
                           names = column_titles)
@@ -52,6 +52,10 @@ df['occ_change'].mask(df['rank_diff'] == 0, 0, inplace = True)
 df['occ_change'].mask(df['rank_diff'] < 0, 1, inplace = True)
 df['occ_change'].mask(df['rank_diff'] > 0, -1, inplace = True)
 
+# Create binary to indicate post birth
+df['post_birth'] = np.nan
+df['post_birth'].mask(df['months_since_birth'] <= 0, 0, inplace = True)
+df['post_birth'].mask(df['months_since_birth'] > 0, 1, inplace = True)
 
 df.to_pickle('SIPP_Dataset_3')
 
