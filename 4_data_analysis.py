@@ -9,9 +9,9 @@ Created on Fri May 31 14:25:38 2019
 import pandas as pd
 import numpy as np
 import os
-import statsmodels
+import statsmodels.api as sm
 
-os.chdir('C:/Users/Alex/Git_Repositories/Thesis')
+os.chdir('D:/Users/Alex/Git_Repositories/Thesis')
 df = pd.read_pickle('SIPP_Dataset_3')
 
 # Separate dataframe
@@ -33,3 +33,10 @@ policy_counts = pd.crosstab(policy_df['months_since_birth'],
 policy_props = pd.crosstab(policy_df['months_since_birth'],
                            policy_df['occ_change'],
                            normalize = 'index')[-24:24]*100
+
+# Save dataframes
+non_policy_props.to_pickle('non_policy_props')
+policy_props.to_pickle('policy_props')
+                           
+# Regressions
+

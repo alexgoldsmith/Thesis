@@ -8,7 +8,7 @@ Created on Sun Jun  2 12:46:25 2019
 import pandas as pd
 import os
 
-os.chdir('C:/Users/Alex/Git_Repositories/Thesis')
+os.chdir('D:/Users/Alex/Git_Repositories/Thesis')
 df = pd.read_pickle('SIPP_Dataset_3')
 
 df.isnull().sum()
