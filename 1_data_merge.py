@@ -53,7 +53,3 @@ os.chdir('D:/Users/Alex/Git_Repositories/Thesis')
 
 # Save dataframe to pickle
 df.to_pickle('SIPP_Dataset')
-
-# Code birthmonth as stata time type and write as stata file
-datetime_dict = {'birth_month': 'tm'}
-df.to_stata('SIPP_Stata_Dataset.dta', convert_dates = datetime_dict)

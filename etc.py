@@ -19,3 +19,12 @@ for person in unique_persons:
     post_birth_occs_binary = int(len(set(post_birth_employers)) > 1)
     # Assign result back to original dataframe
     df.loc[df['unique_id'] == person, 'ever_occs_change'] = post_birth_occs_binary
+    
+unique_persons = df['unique_id'].unique()
+df['industry_T0'] = np.nan
+for person in unique_persons:
+    # Create dataframe for each unique person
+    person_df = df[df['unique_id'] == person].loc[:,['unique_id', 'months_since_birth', 'industry']]
+    # Assign result back to original dataframe
+    result = person_df.loc[df['months_since_birth'] == 0, 'industry'].values[0]
+    df['industry_T0'].mask(df['unique_id'] == person, result, inplace = True)

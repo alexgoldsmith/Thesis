@@ -82,26 +82,30 @@ df['birth_recode'] = df['birth_recode'].mask(df['months_since_birth'] > 24, 51)
 ## 7000-7620    : 49 Installation, Maintenance, and Repair Occupations
 ## 7700-8960    : 51 Production Occuptions
 ## 9000-9750    : 53 Transportation and Material Moving Occupations
-## 9840         : O Unemployed Veterans
+## 9840         : 0 Unemployed Veterans
 
 
 bins = [0, 450, 970, 1250, 1570, 1970, 2070, 2170, 2570, 2970, 3550, 3670,
         3970, 4170, 4270, 4670, 4970, 5950, 6150, 6950, 7630, 8970, 9770, np.inf]
 names = ['11', '13', '15', '17', '19', '21', '23', '25', '27', '29', '31',
-         '33', '35', '37', '39', '41', '43', '45', '47', '49', '51', '53', 'other']
+         '33', '35', '37', '39', '41', '43', '45', '47', '49', '51', '53', '0']
 
 df['industry'] = pd.cut(df['TJBOCC1'], bins, labels = names)
  
 # Generate variable for industry at time of birth
 unique_persons = df['unique_id'].unique()
-df['industry_T0'] = np.nan
+df['industry_mode'] = np.nan
 for person in unique_persons:
     # Create dataframe for each unique person
     person_df = df[df['unique_id'] == person].loc[:,['unique_id', 'months_since_birth', 'industry']]
     # Assign result back to original dataframe
-    result = person_df.loc[df['months_since_birth'] == 0, 'industry'].values[0]
-    df['industry_T0'].mask(df['unique_id'] == person, result, inplace = True)
+    if person_df['industry'].notnull().values.any() == True:
+        mode = person_df['industry'].mode().values[0]
+        df['industry_mode'].mask(df['unique_id'] == person, mode, inplace = True) 
 
 # Save dataframe to pickle
 df.to_pickle('SIPP_Dataset_2')
 
+# Code birthmonth as stata time type and write as stata file
+datetime_dict = {'birth_month': 'tm'}
+df.to_stata('SIPP_Stata_Dataset.dta', convert_dates = datetime_dict)
