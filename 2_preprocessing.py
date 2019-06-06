@@ -44,7 +44,8 @@ df['LFP'].mask(df['rmesr'] <= 7, 1, inplace = True)
 df['LFP'].where(df['rmesr'] <= 7, 0, inplace = True)
 
 # Create variable to encode months passed since giving birth
-df['months_since_birth'] = (df['ref_date'] - df['birth_month']).astype('timedelta64[M]')
+df['months_since_birth'] = (df['ref_date'].dt.year - df['birth_month'].dt.year) * 12 + \
+    (df['ref_date'].dt.month - df['birth_month'].dt.month)
 
 # Create variable with month = -24 as reference
 df['birth_recode'] = np.nan
@@ -57,8 +58,6 @@ df['birth_recode'] = df['birth_recode'].mask(df['months_since_birth'] > 24, 51)
 # Create industry sector variable
 # TJBOCC1 : Occupation classification code
 
-# Recode missing values to pandas 'NaN'
-df['TJBOCC1'].mask(df['TJBOCC1'] == -1, inplace = True)
 
 # Sector codebook (Uses Standard Occupational Classification System)
 ## 10-430       : 11 Management Occupations
@@ -92,10 +91,16 @@ names = ['11', '13', '15', '17', '19', '21', '23', '25', '27', '29', '31',
          '33', '35', '37', '39', '41', '43', '45', '47', '49', '51', '53', 'other']
 
 df['industry'] = pd.cut(df['TJBOCC1'], bins, labels = names)
-
-## Recode missing values to pandas 'NaN'
-df['EENO1'].where(df['EENO1'] != -1, inplace = True)
  
+# Generate variable for industry at time of birth
+unique_persons = df['unique_id'].unique()
+df['industry_T0'] = np.nan
+for person in unique_persons:
+    # Create dataframe for each unique person
+    person_df = df[df['unique_id'] == person].loc[:,['unique_id', 'months_since_birth', 'industry']]
+    # Assign result back to original dataframe
+    result = person_df.loc[df['months_since_birth'] == 0, 'industry'].values[0]
+    df['industry_T0'].mask(df['unique_id'] == person, result, inplace = True)
 
 # Save dataframe to pickle
 df.to_pickle('SIPP_Dataset_2')

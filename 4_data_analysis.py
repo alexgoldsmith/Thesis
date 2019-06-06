@@ -11,7 +11,7 @@ import numpy as np
 import os
 import statsmodels.api as sm
 
-os.chdir('C:/Users/Alex/Git_Repositories/Thesis')
+os.chdir('D:/Users/Alex/Git_Repositories/Thesis')
 df = pd.read_pickle('SIPP_Dataset_3')
 
 # Separate dataframe
@@ -39,3 +39,6 @@ non_policy_props.to_pickle('non_policy_props')
 policy_props.to_pickle('policy_props')
                            
 
+# Regressions
+# res = sm.formula.ols('LFP ~ C(rhcalyr) + C(months_since_birth) * policy', data = df).fit()
+# print(res.summary())

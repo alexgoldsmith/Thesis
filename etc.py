@@ -5,6 +5,8 @@ Created on Fri May 31 20:14:57 2019
 @author: Alex
 """
 
+unique_persons = df['unique_id'].unique()
+
 ### Iterate through each unique person
 for person in unique_persons:
     # Create dataframe for each unique person
