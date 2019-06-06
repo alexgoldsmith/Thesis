@@ -28,6 +28,7 @@ ax.set_ylabel('Labor-force participation')
 ax.legend()
 plt.show()
 
+
 # Summary statistics
 df = pd.read_pickle('SIPP_Dataset_3')
 education_counts = df.groupby('unique_id').first()['eeducate'].value_counts(sort = False)
