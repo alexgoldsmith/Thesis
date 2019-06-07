@@ -37,8 +37,3 @@ policy_props = pd.crosstab(policy_df['months_since_birth'],
 # Save dataframes
 non_policy_props.to_pickle('non_policy_props')
 policy_props.to_pickle('policy_props')
-                           
-
-# Regressions
-# res = sm.formula.ols('LFP ~ C(rhcalyr) + C(months_since_birth) * policy', data = df).fit()
-# print(res.summary())
