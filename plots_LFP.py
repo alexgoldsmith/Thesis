@@ -60,7 +60,7 @@ fgrid.map(plt.plot, 'months_since_birth', 'LFP')
 fgrid.set_titles(col_template = "{col_name}")
 plt.subplots_adjust(top = .95, wspace = .2, hspace = .3)
 fgrid.add_legend()
-fgrid.fig.suptitle('Labor Force Participation Pattern by Industry')
+fgrid.fig.suptitle('Labor Force Participation Pattern by Occupation Group')
 fgrid.set_xlabels('Months Since Birth')
 plt.show()
 
