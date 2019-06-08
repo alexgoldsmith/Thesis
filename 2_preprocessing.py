@@ -55,7 +55,7 @@ df['birth_recode'] = df['birth_recode'].mask(df['months_since_birth'] < -24, 50)
 df['birth_recode'] = df['birth_recode'].mask(df['months_since_birth'] > 24, 51)
 
 
-# Create industry sector variable
+# Create occupation group variable
 # TJBOCC1 : Occupation classification code
 
 
@@ -92,16 +92,27 @@ names = ['11', '13', '15', '17', '19', '21', '23', '25', '27', '29', '31',
 
 df['industry'] = pd.cut(df['TJBOCC1'], bins, labels = names)
  
-# Generate variable for industry at time of birth
+# Generate variable for mode and post birth occupation group
 unique_persons = df['unique_id'].unique()
 df['industry_mode'] = np.nan
+df['industry_post_birth'] = np.nan
 for person in unique_persons:
     # Create dataframe for each unique person
     person_df = df[df['unique_id'] == person].loc[:,['unique_id', 'months_since_birth', 'industry']]
-    # Assign result back to original dataframe
+    # If array contains at least one non-null value, find the desired value and assign it back to the df
     if person_df['industry'].notnull().values.any() == True:
-        mode = person_df['industry'].mode().values[0]
-        df['industry_mode'].mask(df['unique_id'] == person, mode, inplace = True) 
+        # Get mode occupation group and assign it to df variable
+        mode_occ = person_df['industry'].mode().values[0]
+        df['industry_mode'].mask(df['unique_id'] == person, mode_occ, inplace = True)
+        
+    if person_df[person_df['months_since_birth'] >= 0]['industry'].notnull().values.any() == True:
+        # Get array of all occupations (group) held post birth
+        post_birth_occs = person_df[person_df['months_since_birth'] >= 0]['industry']
+        # Drop null values
+        post_birth_occs = post_birth_occs[~pd.isnull(post_birth_occs)]
+        # Get first value in array and assign it to df varible
+        birth_occ = post_birth_occs.values[0]
+        df['industry_post_birth'].mask(df['unique_id'] == person, birth_occ, inplace = True)
 
 # Save dataframe to pickle
 df.to_pickle('SIPP_Dataset_2')
