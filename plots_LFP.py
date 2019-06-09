@@ -86,9 +86,24 @@ plt.show()
 
 fgrid2.savefig('LFP_by_post_birth_occupation_group.png')
 
+'''Code for LFP by post birth occupation group'''
+# Create dataframe of only the 12 highest populated industries (in sample)
+df_of_12_pre_birth = df[df['industry_pre_birth'].isin(industry_list)]
+lfp_by_12_pre_birth = (df_of_12_pre_birth.groupby(['months_since_birth', 'industry_pre_birth', 'policy'])['LFP']
+                .mean().loc[-24:24].reset_index())
 
+# Map titles to occupation group codes
+lfp_by_12_pre_birth['titles_pre_birth'] = lfp_by_12_pre_birth['industry_pre_birth'].map(title_dict)
 
+# Plot facet grid for post birth occupation group
+fgrid3 = sns.FacetGrid(lfp_by_12_pre_birth, col = 'titles_pre_birth', hue = 'policy', sharex = False,
+                      col_wrap = 3, height = 4, aspect = 1)
+fgrid3.map(plt.plot, 'months_since_birth', 'LFP')
+fgrid3.set_titles(col_template = "{col_name}")
+plt.subplots_adjust(top = .95, wspace = .2, hspace = .3)
+fgrid3.add_legend()
+fgrid3.fig.suptitle('Labor Force Participation Pattern by Pre Birth Occupation Group')
+fgrid3.set_xlabels('Months Since Birth')
+plt.show()
 
-
-
-
+fgrid3.savefig('LFP_by_pre_birth_occupation_group.png')
