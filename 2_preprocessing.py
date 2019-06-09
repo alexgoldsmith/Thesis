@@ -13,6 +13,10 @@ import os
 os.chdir('D:/Users/Alex/Git_Repositories/Thesis')
 df = pd.read_pickle('SIPP_Dataset')
 
+# Convert missing values
+df['eeducate'].mask(df['eeducate'] == -1, np.nan, inplace = True)
+df['rmesr'].mask(df['rmesr'] == -1, np.nan, inplace = True)
+
 # Generate unique person id
 def make_identifier(df):
     str_id = df.apply(lambda x: '_'.join(map(str, x)), axis=1)
@@ -123,6 +127,8 @@ for person in unique_persons:
         # Get last value in array and assign it to df varible
         pre_birth_occ = pre_birth_occs.values[-1]
         df['industry_pre_birth'].mask(df['unique_id'] == person, pre_birth_occ, inplace = True)
+
+
 
 # Save dataframe to pickle
 df.to_pickle('SIPP_Dataset_2')

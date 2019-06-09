@@ -69,4 +69,13 @@ df['occ_rank_decrease'].mask(df['rank_diff'] == 0, 0, inplace = True)
 df['occ_rank_decrease'].mask(df['rank_diff'] < 0, 0, inplace = True)
 df['occ_rank_decrease'].mask(df['rank_diff'] > 0, 1, inplace = True)
 
+# Generate variable to indicate employer change
+# Note: does not record change if missing data separates employer change
+df['employer_change'] = df.groupby('unique_id')['EENO1'].diff()
+df['employer_change'].mask(
+        np.logical_and(df['employer_change'] != 0,
+                       df['employer_change'].isnull() == False),
+        1, inplace = True)
+
+
 df.to_pickle('SIPP_Dataset_3')
