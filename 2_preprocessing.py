@@ -128,11 +128,16 @@ for person in unique_persons:
         pre_birth_occ = pre_birth_occs.values[-1]
         df['industry_pre_birth'].mask(df['unique_id'] == person, pre_birth_occ, inplace = True)
 
-
+# Generate dummy for blue collar occupation
+blue_collar_groups = ['33', '35', '37', '39', '45', '47', '49', '51', '53']
+white_collar_groups = ['11', '13', '15', '17', '19', '21', '23', '25', '27', '29', '31', '41', '43']
+df['blue_collar'] = np.nan
+df['blue_collar'].mask(df['industry_pre_birth'].isin(blue_collar_groups), 1, inplace = True)
+df['blue_collar'].mask(df['industry_pre_birth'].isin(white_collar_groups), 0, inplace = True)
 
 # Save dataframe to pickle
 df.to_pickle('SIPP_Dataset_2')
 
 # Code birthmonth as stata time type and write as stata file
-datetime_dict = {'birth_month': 'tm'}
-df.to_stata('SIPP_Stata_Dataset.dta', convert_dates = datetime_dict)
+#datetime_dict = {'birth_month': 'tm'}
+#df.to_stata('SIPP_Stata_Dataset.dta', convert_dates = datetime_dict)
