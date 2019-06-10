@@ -7,9 +7,7 @@ Created on Fri May 31 14:25:38 2019
 
 # Import packages
 import pandas as pd
-import numpy as np
 import os
-import statsmodels.api as sm
 
 os.chdir('D:/Users/Alex/Git_Repositories/Thesis')
 df = pd.read_pickle('SIPP_Dataset_3')
