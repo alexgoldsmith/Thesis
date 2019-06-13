@@ -47,6 +47,18 @@ df['LFP'] = np.nan
 df['LFP'].mask(df['rmesr'] <= 7, 1, inplace = True)
 df['LFP'].where(df['rmesr'] <= 7, 0, inplace = True)
 
+# Create working variable (includes being on paid leave)
+df['working'] = np.nan
+df['working'].mask(df['rmesr'] == 1, 1, inplace = True)
+df['working'].where(df['rmesr'] == 1, 0, inplace = True)
+
+# Create looking for work variable
+df['looking'] = np.nan
+looking_codes = [5, 6, 7]
+not_looking_codes = [1, 2, 3, 4, 8]
+df['looking'].mask(df['rmesr'].isin(working_codes), 1, inplace = True)
+df['looking'].mask(df['rmesr'].isin(not_working_codes), 0, inplace = True)
+
 # Create variable to encode months passed since giving birth
 df['months_since_birth'] = (df['ref_date'].dt.year - df['birth_month'].dt.year) * 12 + \
     (df['ref_date'].dt.month - df['birth_month'].dt.month)

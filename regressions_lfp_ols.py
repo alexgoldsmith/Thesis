@@ -16,20 +16,6 @@ df = pd.read_pickle('SIPP_Dataset_3')
 headers = ['model_1', 'model_2', 'model_3', 'model_4', 'model_5']
 ols_results = pd.DataFrame(columns = headers)
 
-# Codes / labels translator
-occ_dict   = {'11' : 'Management',
-              '13' : 'Business and Finance',
-              '21' : 'Community and Social Service',
-              '25' : 'Education, Training, and Library',
-              '29' : 'Healthcare Practitioners and Technicians',
-              '31' : 'Healthcare Support',
-              '35' : 'Food Preparation and Servers',
-              '37' : 'Building and Grounds Cleaning and Maintenance',
-              '39' : 'Personal Care and Service',
-              '41' : 'Sales and Related Occupations',
-              '43' : 'Office and Administrative Support',
-              '51' : 'Production Occuptions'}
-
 # Three month joint hypothesis
 joint_hypothesis = ('(C(birth_recode)[T.22.0]:policy = 0), '
                     '(C(birth_recode)[T.23.0]:policy = 0), '
@@ -89,15 +75,3 @@ print(f_test_5)
 # Save coefficients from regressions
 ols_results.reset_index(inplace = True)
 ols_results.to_pickle('ols_results')
-
-# Occupation group regressions
-#group_models_results = [smf.ols(formula = 
-#    'LFP ~ C(rhcalyr) + C(tfipsst) + C(birth_recode) * policy',
-#    data = df[df['industry_pre_birth'] == i]).fit(cov_type = 'cluster',
-#    cov_kwds={'groups': df[df['industry_pre_birth'] == i]['ssuid']}) for i in occ_dict]
-
-# Summary of management regression
-#print(group_models_results[2].summary())
-
-
-

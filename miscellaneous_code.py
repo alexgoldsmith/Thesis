@@ -20,3 +20,25 @@ for person in unique_persons:
     # Assign result back to original dataframe
     df.loc[df['unique_id'] == person, 'ever_occs_change'] = post_birth_occs_binary
 
+# Codes / labels translator
+occ_dict   = {'11' : 'Management',
+              '13' : 'Business and Finance',
+              '21' : 'Community and Social Service',
+              '25' : 'Education, Training, and Library',
+              '29' : 'Healthcare Practitioners and Technicians',
+              '31' : 'Healthcare Support',
+              '35' : 'Food Preparation and Servers',
+              '37' : 'Building and Grounds Cleaning and Maintenance',
+              '39' : 'Personal Care and Service',
+              '41' : 'Sales and Related Occupations',
+              '43' : 'Office and Administrative Support',
+              '51' : 'Production Occuptions'}
+
+# Occupation group regressions
+#group_models_results = [smf.ols(formula = 
+#    'LFP ~ C(rhcalyr) + C(tfipsst) + C(birth_recode) * policy',
+#    data = df[df['industry_pre_birth'] == i]).fit(cov_type = 'cluster',
+#    cov_kwds={'groups': df[df['industry_pre_birth'] == i]['ssuid']}) for i in occ_dict]
+
+# Summary of management regression
+#print(group_models_results[2].summary())
