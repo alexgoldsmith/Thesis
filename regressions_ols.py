@@ -40,7 +40,7 @@ joint_hypothesis = ('(C(birth_recode)[T.22.0]:policy = 0), '
                     '(C(birth_recode)[T.28.0]:policy = 0)')
 
 # Model Specification
-specification = 'LFP ~ C(rhcalyr) * C(tfipsst) + C(birth_recode) * policy'
+specification = 'LFP ~ C(rhcalyr) : C(tfipsst) + C(birth_recode) : C(tfipsst) + C(birth_recode) * policy'
 
 # Full sample regression
 model_1 = smf.ols(formula = specification, data = df)
@@ -48,7 +48,7 @@ results_1 = model_1.fit(cov_type='cluster', cov_kwds={'groups': df['ssuid']})
 #print(results_1.summary())
 ols_results['model_1'] = results_1.params
 f_test_1 = results_1.f_test(joint_hypothesis)
-#print(f_test_1)
+print(f_test_1)
 
 
 # College educated regression
@@ -57,7 +57,7 @@ results_2 = model_2.fit(cov_type='cluster', cov_kwds={'groups': df[df['eeducate'
 #print(results_2.summary())
 ols_results['model_2'] = results_2.params
 f_test_2 = results_2.f_test(joint_hypothesis)
-#print(f_test_2)
+print(f_test_2)
 
 
 # Less than college educated regression
@@ -66,7 +66,7 @@ results_3 = model_3.fit(cov_type='cluster', cov_kwds={'groups': df[df['eeducate'
 #print(results_3.summary())
 ols_results['model_3'] = results_3.params
 f_test_3 = results_3.f_test(joint_hypothesis)
-#print(f_test_3)
+print(f_test_3)
 
 
 # Blue collar regression
@@ -75,7 +75,7 @@ results_4 = model_4.fit(cov_type='cluster', cov_kwds={'groups': df[df['blue_coll
 #print(results_4.summary())
 ols_results['model_4'] = results_4.params
 f_test_4 = results_4.f_test(joint_hypothesis)
-#print(f_test_4)
+print(f_test_4)
 
 
 # White collar regression
@@ -84,7 +84,7 @@ results_5= model_5.fit(cov_type='cluster', cov_kwds={'groups': df[df['blue_colla
 #print(results_5.summary())
 ols_results['model_5'] = results_5.params
 f_test_5 = results_5.f_test(joint_hypothesis)
-#print(f_test_5)
+print(f_test_5)
 
 # Save coefficients from regressions
 ols_results.reset_index(inplace = True)

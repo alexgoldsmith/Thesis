@@ -13,7 +13,7 @@ fig, axes = plt.subplots(figsize = (10,12), nrows = 5)
 
 
 def coef_plot(ax, array):
-    ax.plot(list(range(-24, 25)), array[100:149], marker = 'o')
+    ax.plot(list(range(-24, 25)), array[-51:-2], marker = 'o')
     ax.set_xticks(list(range(-24, 25, 3)))
     ax.axhline(linestyle = '--')
     ax.set_ylabel('LFP')
@@ -33,4 +33,4 @@ axes[4].set_title('White Collar')
 
 fig.tight_layout(rect=[0, 0.03, 1, 0.95])
 fig.suptitle('Difference in Difference Coefficients', fontsize = 16)
-plt.show()
+fig.savefig('Figures/ols_coefficients2.png')
