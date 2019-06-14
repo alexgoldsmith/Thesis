@@ -87,7 +87,7 @@ df['birth_recode'] = df['birth_recode'].mask(df['months_since_birth'] > 24, 51)
 ## 2600-2960    : 27 Arts, Design, Entertainment, Sports, and Media Occupations
 ## 3000-3540    : 29 Healthcare Practitioners and Technical Occupations
 ## 3600-3650    : 31 Healthcare Support Occupations
-## 3700-3950    : 33 Personal Care and Service Occupations
+## 3700-3950    : 33 Protective Service Occupations
 ## 4000-4160    : 35 Food Preparation and Serving Related Occupations
 ## 4200-4250    : 37 Building and Grounds Cleaning and Maintenance Occupations
 ## 4300-4650    : 39 Personal Care and Service Occupations
