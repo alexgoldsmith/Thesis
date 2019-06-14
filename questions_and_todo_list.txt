@@ -1,0 +1,6 @@
+Paper Questions:
+
+Put figures in body of work or in appendix?
+
+To do:
+Run regressions segmented by worker class
