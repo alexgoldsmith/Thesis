@@ -56,8 +56,8 @@ df['working'].where(df['rmesr'] == 1, 0, inplace = True)
 df['looking'] = np.nan
 looking_codes = [5, 6, 7]
 not_looking_codes = [1, 2, 3, 4, 8]
-df['looking'].mask(df['rmesr'].isin(working_codes), 1, inplace = True)
-df['looking'].mask(df['rmesr'].isin(not_working_codes), 0, inplace = True)
+df['looking'].mask(df['rmesr'].isin(looking_codes), 1, inplace = True)
+df['looking'].mask(df['rmesr'].isin(not_looking_codes), 0, inplace = True)
 
 # Create variable to encode months passed since giving birth
 df['months_since_birth'] = (df['ref_date'].dt.year - df['birth_month'].dt.year) * 12 + \

@@ -17,3 +17,9 @@ sample_size_by_occ_group = df.groupby('industry_pre_birth')['unique_id'].nunique
 print(df['unique_id'].nunique())
 print(sample_size_by_occ_group.sum())
 
+
+variables = ['rhcalyr', 'tage', 'eeducate', 'months_since_birth']
+df2 = df.loc[:, variables]
+sum_stats = df2.describe().transpose().round(2)
+
+sum_stats.to_csv('summary_statistics.csv')
