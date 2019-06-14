@@ -7,7 +7,7 @@ Created on Wed Jun 12 20:28:02 2019
 import pandas as pd
 import matplotlib.pyplot as plt
 
-ols = pd.read_pickle('ols_results')
+ols = pd.read_pickle('results_lfp_ols')
 
 fig, axes = plt.subplots(figsize = (10,12), nrows = 5)
 
@@ -32,5 +32,5 @@ axes[4].set_title('White Collar')
 
 
 fig.tight_layout(rect=[0, 0.03, 1, 0.95])
-fig.suptitle('Difference in Difference Coefficients', fontsize = 16)
-fig.savefig('Figures/ols_coefficients2.png')
+fig.suptitle('LFP Difference in Difference Coefficients', fontsize = 16)
+fig.savefig('Figures/figure_lfp_ols.png')

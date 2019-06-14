@@ -62,7 +62,7 @@ fgrid.set_xlabels('Months Since Birth')
 plt.show()
 
 # Save figure
-fgrid.savefig('LFP_by_mode_occupation_group.png')
+fgrid.savefig('Figures/LFP_by_mode_occupation_group.png')
 
 '''Code for LFP by post birth occupation group'''
 # Create dataframe of only the 12 highest populated industries (in sample)
@@ -84,7 +84,7 @@ fgrid2.fig.suptitle('Labor Force Participation Pattern by Post Birth Occupation 
 fgrid2.set_xlabels('Months Since Birth')
 plt.show()
 
-fgrid2.savefig('LFP_by_post_birth_occupation_group.png')
+fgrid2.savefig('Figures/LFP_by_post_birth_occupation_group.png')
 
 '''Code for LFP by post birth occupation group'''
 # Create dataframe of only the 12 highest populated industries (in sample)
@@ -106,4 +106,4 @@ fgrid3.fig.suptitle('Labor Force Participation Pattern by Pre Birth Occupation G
 fgrid3.set_xlabels('Months Since Birth')
 plt.show()
 
-fgrid3.savefig('LFP_by_pre_birth_occupation_group.png')
+fgrid3.savefig('Figures/LFP_by_pre_birth_occupation_group.png')

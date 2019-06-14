@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Created on Sat Jun  8 20:34:41 2019
+Created on Thu Jun 13 20:36:41 2019
 
 @author: Alex
 """
@@ -26,7 +26,7 @@ joint_hypothesis = ('(C(birth_recode)[T.22.0]:policy = 0), '
                     '(C(birth_recode)[T.28.0]:policy = 0)')
 
 # Model Specification
-specification = 'LFP ~ C(rhcalyr) : C(tfipsst) + C(birth_recode) : C(tfipsst) + C(birth_recode) * policy'
+specification = 'working ~ C(rhcalyr) : C(tfipsst) + C(birth_recode) : C(tfipsst) + C(birth_recode) * policy'
 
 # Full sample regression
 model_1 = smf.ols(formula = specification, data = df)
@@ -74,4 +74,4 @@ print(f_test_5)
 
 # Save coefficients from regressions
 ols_results.reset_index(inplace = True)
-ols_results.to_pickle('results_lfp_ols')
+ols_results.to_pickle('results_working_ols')
