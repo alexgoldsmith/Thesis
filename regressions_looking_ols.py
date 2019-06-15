@@ -12,18 +12,22 @@ import os
 os.chdir('C:/Users/Alex/Git_Repositories/Thesis')
 df = pd.read_pickle('SIPP_Dataset_2')
 
+# Have to drop null values in variables of interest to fix a bug 
+df.dropna(subset = ['looking', 'rhcalyr', 'tfipsst', 'birth_recode', 'policy'],
+          inplace = True)
+
 # Initialize dataframe to store regression results
 headers = ['model_1', 'model_2', 'model_3', 'model_4', 'model_5']
 ols_results = pd.DataFrame(columns = headers)
 
-# Three month joint hypothesis
-joint_hypothesis = ('(C(birth_recode)[T.22.0]:policy = 0), '
-                    '(C(birth_recode)[T.23.0]:policy = 0), '
-                    '(C(birth_recode)[T.24.0]:policy = 0), '
-                    '(C(birth_recode)[T.25.0]:policy = 0), '
-                    '(C(birth_recode)[T.26.0]:policy = 0), '
-                    '(C(birth_recode)[T.27.0]:policy = 0), '
-                    '(C(birth_recode)[T.28.0]:policy = 0)')
+# Joint hypothesis 6 to 12 months after birth
+joint_hypothesis = ('(C(birth_recode)[T.31.0]:policy = 0), '
+                    '(C(birth_recode)[T.32.0]:policy = 0), '
+                    '(C(birth_recode)[T.33.0]:policy = 0), '
+                    '(C(birth_recode)[T.34.0]:policy = 0), '
+                    '(C(birth_recode)[T.35.0]:policy = 0), '
+                    '(C(birth_recode)[T.36.0]:policy = 0), '
+                    '(C(birth_recode)[T.37.0]:policy = 0)')
 
 # Model Specification
 specification = '''looking ~ C(rhcalyr) * C(tfipsst) + C(birth_recode) : C(tfipsst) + 

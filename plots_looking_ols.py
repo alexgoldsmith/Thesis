@@ -8,7 +8,7 @@ Created on Thu Jun 13 20:51:54 2019
 import pandas as pd
 import matplotlib.pyplot as plt
 
-ols = pd.read_pickle('results_working_ols')
+ols = pd.read_pickle('results_looking_ols')
 
 fig, axes = plt.subplots(figsize = (10,12), nrows = 5)
 
@@ -33,5 +33,5 @@ axes[4].set_title('White Collar')
 
 
 fig.tight_layout(rect=[0, 0.03, 1, 0.95])
-fig.suptitle('Employment Difference in Difference Coefficients', fontsize = 16)
-fig.savefig('Figures/figure_working_ols.png')
+fig.suptitle('Job Search Difference in Difference Coefficients', fontsize = 16)
+fig.savefig('Figures/figure_looking_ols.png')

@@ -11,10 +11,10 @@ import os
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-os.chdir('D:/Users/Alex/Git_Repositories/Thesis')
+os.chdir('C:/Users/Alex/Git_Repositories/Thesis')
 
 # Read dataset
-df = pd.read_pickle('SIPP_Dataset_3')
+df = pd.read_pickle('SIPP_Dataset_2')
 
 
 # National LFP pattern

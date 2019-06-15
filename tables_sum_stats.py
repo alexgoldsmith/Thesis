@@ -24,7 +24,7 @@ print(sample_size_by_occ_group.sum())
 variables = ['rhcalyr', 'tage', 'eeducate', 'months_since_birth']
 df2 = df.loc[:, variables]
 sum_stats = df2.describe().transpose().round(2)
-#sum_stats.to_csv('summary_statistics.csv')
+sum_stats.to_csv('summary_statistics.csv')
 
 # LFP variable counts
 df['rmesr'].value_counts(dropna = False, ascending = False)
