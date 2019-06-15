@@ -17,7 +17,7 @@ def coef_plot(ax, array):
     ax.plot(list(range(-24, 25)), array[-51:-2], marker = 'o')
     ax.set_xticks(list(range(-24, 25, 3)))
     ax.axhline(linestyle = '--')
-    ax.set_ylabel('LFP')
+    ax.set_ylabel('Employed')
     ax.set_xlabel('Months Since Birth')
 
 coef_plot(axes[0], ols['model_1'])

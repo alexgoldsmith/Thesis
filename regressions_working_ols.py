@@ -9,8 +9,8 @@ import pandas as pd
 import statsmodels.formula.api as smf
 import os
 
-os.chdir('D:/Users/Alex/Git_Repositories/Thesis')
-df = pd.read_pickle('SIPP_Dataset_3')
+os.chdir('C:/Users/Alex/Git_Repositories/Thesis')
+df = pd.read_pickle('SIPP_Dataset_2')
 
 # Initialize dataframe to store regression results
 headers = ['model_1', 'model_2', 'model_3', 'model_4', 'model_5']
@@ -26,7 +26,8 @@ joint_hypothesis = ('(C(birth_recode)[T.22.0]:policy = 0), '
                     '(C(birth_recode)[T.28.0]:policy = 0)')
 
 # Model Specification
-specification = 'working ~ C(rhcalyr) : C(tfipsst) + C(birth_recode) : C(tfipsst) + C(birth_recode) * policy'
+specification = '''working ~ C(rhcalyr) * C(tfipsst) + C(birth_recode) : C(tfipsst) + 
+                   + C(birth_recode) : C(rhcalyr) + C(birth_recode) * policy'''
 
 # Full sample regression
 model_1 = smf.ols(formula = specification, data = df)
