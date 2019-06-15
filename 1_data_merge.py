@@ -11,7 +11,7 @@ import numpy as np
 import os
 import glob
 
-os.chdir('D:/Users/Alex/Git_Repositories/Thesis/SIPP_Data')
+os.chdir('C:/Users/Alex/Git_Repositories/Thesis/SIPP_Data')
 
 # Create list of filenmaes
 datafiles = glob.glob('*.asc')
@@ -26,7 +26,7 @@ SIPP_addendum.drop(columns = 'RPYPER1', inplace = True)
 SIPP_addendum.rename(columns = {'SSUID': 'ssuid', 'SPANEL': 'spanel', 'SWAVE': 'swave',
                             'SREFMON': 'srefmon', 'EPPPNUM': 'epppnum'}, inplace = True)
 
-os.chdir('D:/Users/Alex/Git_Repositories/Thesis/P2016_1118_data')
+os.chdir('C:/Users/Alex/Git_Repositories/Thesis/Byker_Files')
 
 # Read base data
 SIPP_base = pd.read_stata('SIPP_Paid_Leave.dta')
@@ -49,7 +49,7 @@ SIPP_addendum.loc[:,['ssuid', 'spanel', 'swave', 'srefmon', 'epppnum']].head()
 df = pd.merge(SIPP_base, SIPP_addendum, on = ['ssuid', 'epppnum', 'spanel', 'swave', 'srefmon'],
               validate = '1:1')
 
-os.chdir('D:/Users/Alex/Git_Repositories/Thesis')
+os.chdir('C:/Users/Alex/Git_Repositories/Thesis')
 
 # Save dataframe to pickle
 df.to_pickle('SIPP_Dataset')

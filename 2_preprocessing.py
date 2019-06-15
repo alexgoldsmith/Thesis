@@ -101,12 +101,12 @@ df['birth_recode'] = df['birth_recode'].mask(df['months_since_birth'] > 24, 51)
 ## 9840         : 0 Unemployed Veterans
 
 
-bins = [0, 450, 970, 1250, 1570, 1970, 2070, 2170, 2570, 2970, 3550, 3670,
+bins_2004_2008 = [0, 450, 970, 1250, 1570, 1970, 2070, 2170, 2570, 2970, 3550, 3670,
         3970, 4170, 4270, 4670, 4970, 5950, 6150, 6950, 7630, 8970, 9770, np.inf]
 names = ['11', '13', '15', '17', '19', '21', '23', '25', '27', '29', '31',
          '33', '35', '37', '39', '41', '43', '45', '47', '49', '51', '53', '0']
 
-df['industry'] = pd.cut(df['TJBOCC1'], bins, labels = names)
+df['industry'] = pd.cut(df['TJBOCC1'], bins_2004_2008, labels = names)
  
 # Generate variable for mode, pre-birth, and post-birth occupation group
 unique_persons = df['unique_id'].unique()
