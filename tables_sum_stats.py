@@ -10,8 +10,8 @@ import pandas as pd
 import numpy as np
 import os
 
-os.chdir('D:/Users/Alex/Git_Repositories/Thesis')
-df = pd.read_pickle('SIPP_Dataset_3')
+os.chdir('C:/Users/Alex/Git_Repositories/Thesis')
+df = pd.read_pickle('SIPP_Dataset_2')
 
 sample_size_by_occ_group = df.groupby('industry_pre_birth')['unique_id'].nunique()
 
@@ -27,7 +27,7 @@ sum_stats = df2.describe().transpose().round(2)
 #sum_stats.to_csv('summary_statistics.csv')
 
 # LFP variable counts
-df['rmesr'].value_counts(dropna = True)
+df['rmesr'].value_counts(dropna = False, ascending = False)
 
 # Encode education as binary for college educated
 df['college'] = np.nan
