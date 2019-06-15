@@ -75,7 +75,7 @@ df['birth_recode'] = df['birth_recode'].mask(df['months_since_birth'] > 24, 51)
 # TJBOCC1 : Occupation classification code
 
 
-# Sector codebook (Uses Standard Occupational Classification System)
+# Occupation grouping 2004 & 2008 (Uses Standard Occupational Classification System)
 ## 10-430       : 11 Management Occupations
 ## 500-950      : 13 Business and Financtial Operations Occupations
 ## 1000-1240    : 15 Computer and Mathematical Occupations
@@ -100,13 +100,46 @@ df['birth_recode'] = df['birth_recode'].mask(df['months_since_birth'] > 24, 51)
 ## 9000-9750    : 53 Transportation and Material Moving Occupations
 ## 9840         : 0 Unemployed Veterans
 
+# Occupation grouping 1996 and 2001
+## 003-022 : 11 Executive, Administrative, and Managerial Occupations
+## 023-037 : 13 Management Related Occupations
+## 043-063 : 17 Architects and Engineers
+## 064-068 : 15 Mathematical and Computer Scientists
+## 069-083 : 19 Natural Scientists
+## 084-106 : 29 Health Diagnosing Occupations & Health Assesement and Treating Occupations & Therapists
+## 113-165 : 25 Teachers, Postsecondary & Teachers, Except Postsecondary & Librarians, Archivists, and Curators
+## 166-173 : 19 Social Scientists and Urban Planners
+## 174-177 : 21 Social, Recreation, and Religious Workers
+## 178-179 : 23 Layers and Judges
+## 183-199 : 27 Writers, Artists, Entertainers, and Athletes
+## 203-208 : 29 Health Technologists and Technicians
+## 213-218 : 17 Engineering and Related Technologists and Technicians
+## 223-225 : 19 Science Technicians
+
+
+bins_1996_2001 = [0, 22, 40, 63, 68, 83, 106, 165, 173, 177, 179, 200, 210, 220,
+                  np.inf]
+names_1996_2001 = ['11', '13', '17', '15', '19', '29', '25', 'change_to_19',
+                   '21', '23', '27', 'change_to_29', 'change_to_17', '0']
 
 bins_2004_2008 = [0, 450, 970, 1250, 1570, 1970, 2070, 2170, 2570, 2970, 3550, 3670,
         3970, 4170, 4270, 4670, 4970, 5950, 6150, 6950, 7630, 8970, 9770, np.inf]
-names = ['11', '13', '15', '17', '19', '21', '23', '25', '27', '29', '31',
+names_2004_2008 = ['11', '13', '15', '17', '19', '21', '23', '25', '27', '29', '31',
          '33', '35', '37', '39', '41', '43', '45', '47', '49', '51', '53', '0']
 
-df['industry'] = pd.cut(df['TJBOCC1'], bins_2004_2008, labels = names)
+
+conditional_1996_2001 = np.logical_or(df['spanel'] == 1996, df['spanel'] == 2001)
+conditional_2004_2008 = np.logical_or(df['spanel'] == 2004, df['spanel'] == 2008)
+df['industry'] = np.nan
+df.loc[conditional_1996_2001, 'industry'] = pd.cut(df.loc[conditional_1996_2001, 'TJBOCC1'], bins_1996_2001,
+  labels = names_1996_2001)
+df.loc[conditional_2004_2008, 'industry'] = pd.cut(df.loc[conditional_2004_2008, 'TJBOCC1'], bins_2004_2008,
+  labels = names_2004_2008)
+ 
+# Reassign
+df['industry'].mask(df['industry'] == 'change_to_19', '19', inplace = True)
+df['industry'].mask(df['industry'] == 'change_to_29', '19', inplace = True)
+df['industry'].mask(df['industry'] == 'change_to_19', '19', inplace = True)
  
 # Generate variable for mode, pre-birth, and post-birth occupation group
 unique_persons = df['unique_id'].unique()
