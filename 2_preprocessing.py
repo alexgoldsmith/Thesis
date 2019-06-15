@@ -115,12 +115,32 @@ df['birth_recode'] = df['birth_recode'].mask(df['months_since_birth'] > 24, 51)
 ## 203-208 : 29 Health Technologists and Technicians
 ## 213-218 : 17 Engineering and Related Technologists and Technicians
 ## 223-225 : 19 Science Technicians
-
+## 226-235 : other_1 Technicians, Except Health, Engineering, and Science
+## 243-290 : 41 Sales and Related Occupations
+## 303-391 : 43 Administrative Support Occupations, Including Clerical
+## 403-408 : other_2 Private Household Occupations
+## 413-427 : 33 Protective Service Occupations
+## 433-444 : 35 Food Preparation and Service Occupations
+## 445-447 : 31 Health Service Occupations
+## 448-455 : 37 Cleaning and Building Service Occupations, Except Household
+## 456-469 : 39 Personal Service Occupations
+## 473-499 : 45 Farming, Forestry, and Fishing Occupations
+## 503-549 : 49 Precision Product, Craft, and Repair Occupations
+## 553-617 : 47 Construction Trades & Extractive Occupations
+## 628-799 : 51 Precision Production Occupations & Operators, Fabricators, and Laborers
+## 803-865 : 53 Transportation and Material Moving Occupations
+## 866-874 : 47 Helpers, Construction and Extractive Occupations
+## 875-909 : 0 Freight, Stock, and Material Handlers & Military Occupations 
+##             & Experienced Unemployed Not Classified by Occupation
 
 bins_1996_2001 = [0, 22, 40, 63, 68, 83, 106, 165, 173, 177, 179, 200, 210, 220,
-                  np.inf]
+                  225, 240, 300, 400, 410, 430, 444, 447, 455, 470, 500, 550, 620,
+                  800, 865, 874, np.inf]
+# Strange names are because the pandas cut does not allow duplicate names
 names_1996_2001 = ['11', '13', '17', '15', '19', '29', '25', 'change_to_19',
-                   '21', '23', '27', 'change_to_29', 'change_to_17', '0']
+                   '21', '23', '27', 'change_to_29', 'change_to_17', 'also_to_19',
+                   'other_1', '41', '43', 'other_2', '33', '35', '31', '37', '39',
+                   '45', '49', '47', '51', '53', 'change_to_47', '0']
 
 bins_2004_2008 = [0, 450, 970, 1250, 1570, 1970, 2070, 2170, 2570, 2970, 3550, 3670,
         3970, 4170, 4270, 4670, 4970, 5950, 6150, 6950, 7630, 8970, 9770, np.inf]
@@ -138,8 +158,11 @@ df.loc[conditional_2004_2008, 'industry'] = pd.cut(df.loc[conditional_2004_2008,
  
 # Reassign
 df['industry'].mask(df['industry'] == 'change_to_19', '19', inplace = True)
-df['industry'].mask(df['industry'] == 'change_to_29', '19', inplace = True)
-df['industry'].mask(df['industry'] == 'change_to_19', '19', inplace = True)
+df['industry'].mask(df['industry'] == 'also_to_19', '19', inplace = True)
+df['industry'].mask(df['industry'] == 'change_to_29', '29', inplace = True)
+df['industry'].mask(df['industry'] == 'change_to_17', '17', inplace = True)
+df['industry'].mask(df['industry'] == 'change_to_47', '47', inplace = True)
+
  
 # Generate variable for mode, pre-birth, and post-birth occupation group
 unique_persons = df['unique_id'].unique()
