@@ -63,13 +63,21 @@ df['looking'].mask(df['rmesr'].isin(not_looking_codes), 0, inplace = True)
 df['months_since_birth'] = (df['ref_date'].dt.year - df['birth_month'].dt.year) * 12 + \
     (df['ref_date'].dt.month - df['birth_month'].dt.month)
 
-# Create variable with month = -24 as reference
+# Create variable with month -24 as reference
 df['birth_recode'] = np.nan
 df['birth_recode'] = df['birth_recode'].mask(df['months_since_birth'] >= -24,
                                              df['months_since_birth'] + 25)
 df['birth_recode'] = df['birth_recode'].mask(df['months_since_birth'] < -24, 50)
 df['birth_recode'] = df['birth_recode'].mask(df['months_since_birth'] > 24, 51)
 
+# Create variable with months -24 to -18 as reference period
+df['l_birth_recode'] = np.nan
+df['l_birth_recode'].mask(df['months_since_birth'] >= -24, df['months_since_birth'] + 25, inplace = True)
+df['l_birth_recode'].mask(df['months_since_birth'] < -24, 50, inplace = True)
+df['l_birth_recode'].mask(df['months_since_birth'] > 24, 51, inplace = True)
+df['l_birth_recode'].mask((df['months_since_birth'] <= -18) &
+                          (df['months_since_birth'] >= -24), 1, inplace = True)
+                                              
 
 # Create occupation group variable
 # TJBOCC1 : Occupation classification code
