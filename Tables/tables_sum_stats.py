@@ -36,3 +36,8 @@ df['college'].mask(df['eeducate'] < 44, 0, inplace = True)
 
 # Crosstab college and blue collar
 pd.crosstab(df['college'], df['blue_collar'], margins = True)
+
+# Table of unique individuals per state-year
+year_state_table = df.pivot_table(values='unique_id', index='rhcalyr', columns='tfipsst',
+                      aggfunc=pd.Series.nunique, margins = True)
+year_state_table.to_csv('year_state_table.csv')
