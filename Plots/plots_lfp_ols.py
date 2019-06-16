@@ -6,8 +6,10 @@ Created on Wed Jun 12 20:28:02 2019
 """
 import pandas as pd
 import matplotlib.pyplot as plt
+import os
 
-ols = pd.read_pickle('results_lfp_ols')
+os.chdir('C:/Users/Alex/Git_Repositories/Thesis')
+ols = pd.read_pickle('Results/results_lfp_ols')
 
 fig, axes = plt.subplots(figsize = (10,12), nrows = 5)
 

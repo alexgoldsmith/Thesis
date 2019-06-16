@@ -17,17 +17,17 @@ headers = ['model_1', 'model_2', 'model_3', 'model_4', 'model_5']
 ols_results = pd.DataFrame(columns = headers)
 
 # Three month joint hypothesis
-joint_hypothesis = ('(C(birth_recode)[22.0]:policy = 0), '
-                    '(C(birth_recode)[23.0]:policy = 0), '
-                    '(C(birth_recode)[24.0]:policy = 0), '
-                    '(C(birth_recode)[25.0]:policy = 0), '
-                    '(C(birth_recode)[26.0]:policy = 0), '
-                    '(C(birth_recode)[27.0]:policy = 0), '
-                    '(C(birth_recode)[28.0]:policy = 0)')
+joint_hypothesis = ('(C(l_birth_recode)[22.0]:policy = 0), '
+                    '(C(l_birth_recode)[23.0]:policy = 0), '
+                    '(C(l_birth_recode)[24.0]:policy = 0), '
+                    '(C(l_birth_recode)[25.0]:policy = 0), '
+                    '(C(l_birth_recode)[26.0]:policy = 0), '
+                    '(C(l_birth_recode)[27.0]:policy = 0), '
+                    '(C(l_birth_recode)[28.0]:policy = 0)')
 
 # Model Specification
-specification = '''LFP ~ C(rhcalyr) : C(tfipsst) + C(birth_recode) : C(tfipsst)
-                   + C(birth_recode) * C(rhcalyr) + C(birth_recode) : policy'''
+specification = '''LFP ~ C(rhcalyr) : C(tfipsst) + C(l_birth_recode) : C(tfipsst)
+                   + C(l_birth_recode) * C(rhcalyr) + C(l_birth_recode) : policy'''
 
 # Full sample regression
 model_1 = smf.ols(formula = specification, data = df)
@@ -75,4 +75,4 @@ print(f_test_5)
 
 # Save coefficients from regressions
 ols_results.reset_index(inplace = True)
-ols_results.to_pickle('Results/results_lfp_ols')
+ols_results.to_pickle('Results/results_lfp_ols_alt')

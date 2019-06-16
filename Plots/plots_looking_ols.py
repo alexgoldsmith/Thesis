@@ -7,8 +7,10 @@ Created on Thu Jun 13 20:51:54 2019
 
 import pandas as pd
 import matplotlib.pyplot as plt
+import os
 
-ols = pd.read_pickle('results_looking_ols')
+os.chdir('C:/Users/Alex/Git_Repositories/Thesis')
+ols = pd.read_pickle('Results/results_looking_ols')
 
 fig, axes = plt.subplots(figsize = (10,12), nrows = 5)
 
@@ -17,7 +19,7 @@ def coef_plot(ax, array):
     ax.plot(list(range(-24, 25)), array[-51:-2], marker = 'o')
     ax.set_xticks(list(range(-24, 25, 3)))
     ax.axhline(linestyle = '--')
-    ax.set_ylabel('Employed')
+    ax.set_ylabel('Looking')
     ax.set_xlabel('Months Since Birth')
 
 coef_plot(axes[0], ols['model_1'])

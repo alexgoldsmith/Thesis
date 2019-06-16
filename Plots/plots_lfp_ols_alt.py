@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 import os
 
 os.chdir('C:/Users/Alex/Git_Repositories/Thesis')
-ols = pd.read_pickle('Results/results_working_ols_alt')
+ols = pd.read_pickle('Results/results_lfp_ols_alt')
 
 fig, axes = plt.subplots(figsize = (10,12), nrows = 5)
 
@@ -35,5 +35,5 @@ axes[4].set_title('White Collar')
 
 
 fig.tight_layout(rect=[0, 0.03, 1, 0.95])
-fig.suptitle('Employment Difference in Difference Coefficients', fontsize = 16)
-fig.savefig('Figures/figure_working_ols_alt.png')
+fig.suptitle('LFP Difference in Difference Coefficients', fontsize = 16)
+fig.savefig('Figures/figure_lfp_ols_alt.png')
