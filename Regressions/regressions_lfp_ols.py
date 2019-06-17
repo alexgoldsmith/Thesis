@@ -9,14 +9,26 @@ import pandas as pd
 import statsmodels.formula.api as smf
 import os
 
-os.chdir('D:/Users/Alex/Git_Repositories/Thesis')
+os.chdir('C:/Users/Alex/Git_Repositories/Thesis')
 df = pd.read_pickle('SIPP_Dataset_2')
 
 # Initialize dataframe to store regression results
 headers = ['model_1', 'model_2', 'model_3', 'model_4', 'model_5']
 ols_results = pd.DataFrame(columns = headers)
 
-# Three month joint hypothesis
+# List of specifications
+spec_options = ['LFP ~ C(rhcalyr) : C(tfipsst) + C(birth_recode) : C(tfipsst) + C(birth_recode) * C(rhcalyr) + C(birth_recode) : policy',
+                'LFP ~ C(birth_recode) : C(tfipsst) + C(birth_recode) : C(rhcalyr) + C(birth_recode) : policy',
+                'LFP ~ C(rhcalyr) : C(tfipsst) + C(birth_recode) : policy',
+                'LFP ~ C(rhcalyr) + C(tfipsst) + C(birth_recode) : policy']
+
+# Choose specification
+specification = spec_options[0]
+
+# Initialize dataframe to store f-test results
+f_results = pd.DataFrame(columns = headers)
+
+# birth -3 to +3 joint hypothesis
 joint_hypothesis = ('(C(birth_recode)[22.0]:policy = 0), '
                     '(C(birth_recode)[23.0]:policy = 0), '
                     '(C(birth_recode)[24.0]:policy = 0), '
@@ -25,16 +37,13 @@ joint_hypothesis = ('(C(birth_recode)[22.0]:policy = 0), '
                     '(C(birth_recode)[27.0]:policy = 0), '
                     '(C(birth_recode)[28.0]:policy = 0)')
 
-# Model Specification
-specification = '''LFP ~ C(rhcalyr) : C(tfipsst) + C(birth_recode) : C(tfipsst)
-                   + C(birth_recode) * C(rhcalyr) + C(birth_recode) : policy'''
-
 # Full sample regression
 model_1 = smf.ols(formula = specification, data = df)
 results_1 = model_1.fit(cov_type='cluster', cov_kwds={'groups': df['ssuid']})
 #print(results_1.summary())
 ols_results['model_1'] = results_1.params
 f_test_1 = results_1.f_test(joint_hypothesis)
+f_results.loc[0,'model_1'] = f_test_1.pvalue
 print(f_test_1)
 
 
@@ -44,6 +53,7 @@ results_2 = model_2.fit(cov_type='cluster', cov_kwds={'groups': df[df['eeducate'
 #print(results_2.summary())
 ols_results['model_2'] = results_2.params
 f_test_2 = results_2.f_test(joint_hypothesis)
+f_results.loc[0,'model_2'] = f_test_2.pvalue
 print(f_test_2)
 
 
@@ -53,6 +63,7 @@ results_3 = model_3.fit(cov_type='cluster', cov_kwds={'groups': df[df['eeducate'
 #print(results_3.summary())
 ols_results['model_3'] = results_3.params
 f_test_3 = results_3.f_test(joint_hypothesis)
+f_results.loc[0,'model_3'] = f_test_3.pvalue
 print(f_test_3)
 
 
@@ -62,6 +73,7 @@ results_4 = model_4.fit(cov_type='cluster', cov_kwds={'groups': df[df['blue_coll
 #print(results_4.summary())
 ols_results['model_4'] = results_4.params
 f_test_4 = results_4.f_test(joint_hypothesis)
+f_results.loc[0,'model_4'] = f_test_4.pvalue
 print(f_test_4)
 
 
@@ -71,6 +83,7 @@ results_5= model_5.fit(cov_type='cluster', cov_kwds={'groups': df[df['blue_colla
 #print(results_5.summary())
 ols_results['model_5'] = results_5.params
 f_test_5 = results_5.f_test(joint_hypothesis)
+f_results.loc[0,'model_5'] = f_test_5.pvalue
 print(f_test_5)
 
 # Save coefficients from regressions

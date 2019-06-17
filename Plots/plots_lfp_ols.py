@@ -35,4 +35,5 @@ axes[4].set_title('White Collar')
 
 fig.tight_layout(rect=[0, 0.03, 1, 0.95])
 fig.suptitle('LFP Difference in Difference Coefficients', fontsize = 16)
+plt.show()
 fig.savefig('Figures/figure_lfp_ols.png')
