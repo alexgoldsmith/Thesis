@@ -9,7 +9,7 @@ import pandas as pd
 import statsmodels.formula.api as smf
 import os
 
-os.chdir('C:/Users/Alex/Git_Repositories/Thesis')
+os.chdir('D:/Users/Alex/Git_Repositories/Thesis')
 df = pd.read_pickle('SIPP_Dataset_2')
 
 # Initialize dataframe to store regression results
