@@ -63,19 +63,27 @@ df['looking'].mask(df['rmesr'].isin(not_looking_codes), 0, inplace = True)
 df['months_since_birth'] = (df['ref_date'].dt.year - df['birth_month'].dt.year) * 12 + \
     (df['ref_date'].dt.month - df['birth_month'].dt.month)
 
-# Create variable with month = -24 as reference
+# Create variable with month -24 as reference
 df['birth_recode'] = np.nan
 df['birth_recode'] = df['birth_recode'].mask(df['months_since_birth'] >= -24,
                                              df['months_since_birth'] + 25)
 df['birth_recode'] = df['birth_recode'].mask(df['months_since_birth'] < -24, 50)
 df['birth_recode'] = df['birth_recode'].mask(df['months_since_birth'] > 24, 51)
 
+# Create variable with months -24 to -18 as reference period
+df['l_birth_recode'] = np.nan
+df['l_birth_recode'].mask(df['months_since_birth'] >= -24, df['months_since_birth'] + 25, inplace = True)
+df['l_birth_recode'].mask(df['months_since_birth'] < -24, 50, inplace = True)
+df['l_birth_recode'].mask(df['months_since_birth'] > 24, 51, inplace = True)
+df['l_birth_recode'].mask((df['months_since_birth'] <= -18) &
+                          (df['months_since_birth'] >= -24), 1, inplace = True)
+                                              
 
 # Create occupation group variable
 # TJBOCC1 : Occupation classification code
 
 
-# Sector codebook (Uses Standard Occupational Classification System)
+# Occupation grouping 2004 & 2008 (Uses Standard Occupational Classification System)
 ## 10-430       : 11 Management Occupations
 ## 500-950      : 13 Business and Financtial Operations Occupations
 ## 1000-1240    : 15 Computer and Mathematical Occupations
@@ -100,13 +108,69 @@ df['birth_recode'] = df['birth_recode'].mask(df['months_since_birth'] > 24, 51)
 ## 9000-9750    : 53 Transportation and Material Moving Occupations
 ## 9840         : 0 Unemployed Veterans
 
+# Occupation grouping 1996 and 2001
+## 003-022 : 11 Executive, Administrative, and Managerial Occupations
+## 023-037 : 13 Management Related Occupations
+## 043-063 : 17 Architects and Engineers
+## 064-068 : 15 Mathematical and Computer Scientists
+## 069-083 : 19 Natural Scientists
+## 084-106 : 29 Health Diagnosing Occupations & Health Assesement and Treating Occupations & Therapists
+## 113-165 : 25 Teachers, Postsecondary & Teachers, Except Postsecondary & Librarians, Archivists, and Curators
+## 166-173 : 19 Social Scientists and Urban Planners
+## 174-177 : 21 Social, Recreation, and Religious Workers
+## 178-179 : 23 Layers and Judges
+## 183-199 : 27 Writers, Artists, Entertainers, and Athletes
+## 203-208 : 29 Health Technologists and Technicians
+## 213-218 : 17 Engineering and Related Technologists and Technicians
+## 223-225 : 19 Science Technicians
+## 226-235 : other_1 Technicians, Except Health, Engineering, and Science
+## 243-290 : 41 Sales and Related Occupations
+## 303-391 : 43 Administrative Support Occupations, Including Clerical
+## 403-408 : other_2 Private Household Occupations
+## 413-427 : 33 Protective Service Occupations
+## 433-444 : 35 Food Preparation and Service Occupations
+## 445-447 : 31 Health Service Occupations
+## 448-455 : 37 Cleaning and Building Service Occupations, Except Household
+## 456-469 : 39 Personal Service Occupations
+## 473-499 : 45 Farming, Forestry, and Fishing Occupations
+## 503-549 : 49 Precision Product, Craft, and Repair Occupations
+## 553-617 : 47 Construction Trades & Extractive Occupations
+## 628-799 : 51 Precision Production Occupations & Operators, Fabricators, and Laborers
+## 803-865 : 53 Transportation and Material Moving Occupations
+## 866-874 : 47 Helpers, Construction and Extractive Occupations
+## 875-909 : 0 Freight, Stock, and Material Handlers & Military Occupations 
+##             & Experienced Unemployed Not Classified by Occupation
 
-bins = [0, 450, 970, 1250, 1570, 1970, 2070, 2170, 2570, 2970, 3550, 3670,
+bins_1996_2001 = [0, 22, 40, 63, 68, 83, 106, 165, 173, 177, 179, 200, 210, 220,
+                  225, 240, 300, 400, 410, 430, 444, 447, 455, 470, 500, 550, 620,
+                  800, 865, 874, np.inf]
+# Strange names are because the pandas cut does not allow duplicate names
+names_1996_2001 = ['11', '13', '17', '15', '19', '29', '25', 'change_to_19',
+                   '21', '23', '27', 'change_to_29', 'change_to_17', 'also_to_19',
+                   'other_1', '41', '43', 'other_2', '33', '35', '31', '37', '39',
+                   '45', '49', '47', '51', '53', 'change_to_47', '0']
+
+bins_2004_2008 = [0, 450, 970, 1250, 1570, 1970, 2070, 2170, 2570, 2970, 3550, 3670,
         3970, 4170, 4270, 4670, 4970, 5950, 6150, 6950, 7630, 8970, 9770, np.inf]
-names = ['11', '13', '15', '17', '19', '21', '23', '25', '27', '29', '31',
+names_2004_2008 = ['11', '13', '15', '17', '19', '21', '23', '25', '27', '29', '31',
          '33', '35', '37', '39', '41', '43', '45', '47', '49', '51', '53', '0']
 
-df['industry'] = pd.cut(df['TJBOCC1'], bins, labels = names)
+
+conditional_1996_2001 = np.logical_or(df['spanel'] == 1996, df['spanel'] == 2001)
+conditional_2004_2008 = np.logical_or(df['spanel'] == 2004, df['spanel'] == 2008)
+df['industry'] = np.nan
+df.loc[conditional_1996_2001, 'industry'] = pd.cut(df.loc[conditional_1996_2001, 'TJBOCC1'], bins_1996_2001,
+  labels = names_1996_2001)
+df.loc[conditional_2004_2008, 'industry'] = pd.cut(df.loc[conditional_2004_2008, 'TJBOCC1'], bins_2004_2008,
+  labels = names_2004_2008)
+ 
+# Reassign
+df['industry'].mask(df['industry'] == 'change_to_19', '19', inplace = True)
+df['industry'].mask(df['industry'] == 'also_to_19', '19', inplace = True)
+df['industry'].mask(df['industry'] == 'change_to_29', '29', inplace = True)
+df['industry'].mask(df['industry'] == 'change_to_17', '17', inplace = True)
+df['industry'].mask(df['industry'] == 'change_to_47', '47', inplace = True)
+
  
 # Generate variable for mode, pre-birth, and post-birth occupation group
 unique_persons = df['unique_id'].unique()
@@ -139,6 +203,11 @@ for person in unique_persons:
         # Get last value in array and assign it to df varible
         pre_birth_occ = pre_birth_occs.values[-1]
         df['industry_pre_birth'].mask(df['unique_id'] == person, pre_birth_occ, inplace = True)
+
+# Generate dummy for college educated
+df['college'] = np.nan
+df['college'].mask(df['eeducate'] >= 44, 1, inplace = True)
+df['college'].mask(df['eeducate'] < 44, 0, inplace = True)
 
 # Generate dummy for blue collar occupation
 blue_collar_groups = ['33', '35', '37', '39', '45', '47', '49', '51', '53']

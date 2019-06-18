@@ -26,10 +26,8 @@ SIPP_addendum.drop(columns = 'RPYPER1', inplace = True)
 SIPP_addendum.rename(columns = {'SSUID': 'ssuid', 'SPANEL': 'spanel', 'SWAVE': 'swave',
                             'SREFMON': 'srefmon', 'EPPPNUM': 'epppnum'}, inplace = True)
 
-os.chdir('D:/Users/Alex/Git_Repositories/Thesis/P2016_1118_data')
-
 # Read base data
-SIPP_base = pd.read_stata('SIPP_Paid_Leave.dta')
+SIPP_base = pd.read_stata('Byker_Files/SIPP_Paid_Leave.dta')
 
 # Reassign datatypes
 #SIPP_addendum['ssuid'] = SIPP_addendum['ssuid'].astype('object')
@@ -48,8 +46,6 @@ SIPP_addendum.loc[:,['ssuid', 'spanel', 'swave', 'srefmon', 'epppnum']].head()
 # Merge dataframes, keep intersection
 df = pd.merge(SIPP_base, SIPP_addendum, on = ['ssuid', 'epppnum', 'spanel', 'swave', 'srefmon'],
               validate = '1:1')
-
-os.chdir('D:/Users/Alex/Git_Repositories/Thesis')
 
 # Save dataframe to pickle
 df.to_pickle('SIPP_Dataset')
