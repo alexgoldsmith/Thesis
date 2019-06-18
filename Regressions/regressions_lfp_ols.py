@@ -17,7 +17,9 @@ headers = ['model_1', 'model_2', 'model_3', 'model_4', 'model_5']
 ols_results = pd.DataFrame(columns = headers)
 
 # List of specifications
-spec_options = ['LFP ~ C(rhcalyr) : C(tfipsst) + C(birth_recode) : C(tfipsst) + C(birth_recode) * C(rhcalyr) + C(birth_recode) : policy',
+spec_options = ['LFP ~ C(unique_id) + C(rhcalyr) + C(birth_recode) + '
+                'C(birth_recode) : C(rhcalyr) + C(birth_recode) : C(tfipsst) + '
+                'C(birth_recode) : policy',
                 'LFP ~ C(birth_recode) : C(tfipsst) + C(birth_recode) : C(rhcalyr) + C(birth_recode) : policy',
                 'LFP ~ C(rhcalyr) : C(tfipsst) + C(birth_recode) : policy',
                 'LFP ~ C(rhcalyr) + C(tfipsst) + C(birth_recode) : policy']
@@ -29,11 +31,13 @@ specification = spec_options[0]
 f_results = pd.DataFrame(columns = headers)
 
 joint_hypothesis = str()
-for i in range(25,25+7): #Input range of months here (birth occurs in month 25)
+for i in range(25-3,25+4): #Input range of months here (birth occurs in month 25)
     joint_hypothesis += 'C(birth_recode)[' + str(i) + '.0]:policy = 0,'
 joint_hypothesis = joint_hypothesis[:-1] # Delete trailing comma
-print(joint_hypothesis)
-    
+
+df.dropna(subset = ['LFP', 'rhcalyr', 'tfipsst', 'birth_recode', 'policy'],
+          inplace = True)
+
 # Full sample regression
 model_1 = smf.ols(formula = specification, data = df)
 results_1 = model_1.fit(cov_type='cluster', cov_kwds={'groups': df['ssuid']})
@@ -55,8 +59,8 @@ print(f_test_2)
 
 
 # Less than college educated regression
-model_3 = smf.ols(formula = specification, data = df[df['eeducate'] < 44])
-results_3 = model_3.fit(cov_type='cluster', cov_kwds={'groups': df[df['eeducate'] < 44]['ssuid']})
+model_3 = smf.ols(formula = specification, data = df[df['college'] == 0])
+results_3 = model_3.fit(cov_type='cluster', cov_kwds={'groups': df[df['college'] == 0]['ssuid']})
 #print(results_3.summary())
 ols_results['model_3'] = results_3.params
 f_test_3 = results_3.f_test(joint_hypothesis)

@@ -12,7 +12,7 @@ import os
 os.chdir('C:/Users/Alex/Git_Repositories/Thesis')
 df = pd.read_pickle('SIPP_Dataset_2')
 
-# Have to drop null values in variables of interest to fix a bug 
+# Drop null rows
 df.dropna(subset = ['looking', 'rhcalyr', 'tfipsst', 'birth_recode', 'policy'],
           inplace = True)
 
