@@ -29,15 +29,18 @@ sum_stats.to_csv('summary_statistics.csv')
 # LFP variable counts
 df['rmesr'].value_counts(dropna = False, ascending = False)
 
-# Encode education as binary for college educated
-df['college'] = np.nan
-df['college'].mask(df['eeducate'] >= 44, 1, inplace = True)
-df['college'].mask(df['eeducate'] < 44, 0, inplace = True)
+# Crosstab college and blue collar observations
+college_collar_obs = pd.crosstab(df['college'], df['blue_collar'], margins = True)
 
-# Crosstab college and blue collar
-pd.crosstab(df['college'], df['blue_collar'], margins = True)
+# Crosstab college and blue collar individuals
+college_collar_ind = df.pivot_table(values='unique_id', index='college', columns='blue_collar',
+                      aggfunc=pd.Series.nunique, margins = True)
 
 # Table of unique individuals per state-year
 year_state_table = df.pivot_table(values='unique_id', index='rhcalyr', columns='tfipsst',
                       aggfunc=pd.Series.nunique, margins = True)
 year_state_table.to_csv('year_state_table.csv')
+
+# Table of unique individuals for months since birth - policy combinations
+birth_policy_table = df.pivot_table(values='unique_id', index='months_since_birth',
+                                    columns='policy', aggfunc=pd.Series.nunique).loc[-24:24,:]

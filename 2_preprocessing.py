@@ -10,7 +10,7 @@ import pandas as pd
 import numpy as np
 import os
 
-os.chdir('D:/Users/Alex/Git_Repositories/Thesis')
+os.chdir('C:/Users/Alex/Git_Repositories/Thesis')
 df = pd.read_pickle('SIPP_Dataset')
 
 # Convert missing values
@@ -203,6 +203,11 @@ for person in unique_persons:
         # Get last value in array and assign it to df varible
         pre_birth_occ = pre_birth_occs.values[-1]
         df['industry_pre_birth'].mask(df['unique_id'] == person, pre_birth_occ, inplace = True)
+
+# Generate dummy for college educated
+df['college'] = np.nan
+df['college'].mask(df['eeducate'] >= 44, 1, inplace = True)
+df['college'].mask(df['eeducate'] < 44, 0, inplace = True)
 
 # Generate dummy for blue collar occupation
 blue_collar_groups = ['33', '35', '37', '39', '45', '47', '49', '51', '53']

@@ -28,15 +28,12 @@ specification = spec_options[0]
 # Initialize dataframe to store f-test results
 f_results = pd.DataFrame(columns = headers)
 
-# birth -3 to +3 joint hypothesis
-joint_hypothesis = ('(C(birth_recode)[22.0]:policy = 0), '
-                    '(C(birth_recode)[23.0]:policy = 0), '
-                    '(C(birth_recode)[24.0]:policy = 0), '
-                    '(C(birth_recode)[25.0]:policy = 0), '
-                    '(C(birth_recode)[26.0]:policy = 0), '
-                    '(C(birth_recode)[27.0]:policy = 0), '
-                    '(C(birth_recode)[28.0]:policy = 0)')
-
+joint_hypothesis = str()
+for i in range(25,25+7): #Input range of months here (birth occurs in month 25)
+    joint_hypothesis += 'C(birth_recode)[' + str(i) + '.0]:policy = 0,'
+joint_hypothesis = joint_hypothesis[:-1] # Delete trailing comma
+print(joint_hypothesis)
+    
 # Full sample regression
 model_1 = smf.ols(formula = specification, data = df)
 results_1 = model_1.fit(cov_type='cluster', cov_kwds={'groups': df['ssuid']})
