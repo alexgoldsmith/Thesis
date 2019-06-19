@@ -17,15 +17,13 @@ headers = ['model_1', 'model_2', 'model_3', 'model_4', 'model_5']
 ols_results = pd.DataFrame(columns = headers)
 
 # List of specifications
-spec_options = ['LFP ~ C(unique_id) + C(rhcalyr) + C(birth_recode) + '
-                'C(birth_recode) : C(rhcalyr) + C(birth_recode) : C(tfipsst) + '
-                'C(birth_recode) : policy',
-                'LFP ~ C(birth_recode) : C(tfipsst) + C(birth_recode) : C(rhcalyr) + C(birth_recode) : policy',
-                'LFP ~ C(rhcalyr) : C(tfipsst) + C(birth_recode) : policy',
-                'LFP ~ C(rhcalyr) + C(tfipsst) + C(birth_recode) : policy']
+spec_options = ['LFP ~ C(birth_recode) : (C(tfipsst) + C(rhcalyr) + policy)',
+                'LFP ~ C(tfipsst) + C(rhcalyr) + C(birth_recode) : (C(tfipsst) + C(rhcalyr) + policy)',
+                'LFP ~ C(tfipsst) : C(rhcalyr) + C(birth_recode) : (C(tfipsst) + C(rhcalyr) + policy)',
+                'LFP ~ C(tfipsst) * C(rhcalyr) + C(birth_recode) : (C(tfipsst) + C(rhcalyr) + policy)']
 
 # Choose specification
-specification = spec_options[0]
+specification = spec_options[3]
 
 # Initialize dataframe to store f-test results
 f_results = pd.DataFrame(columns = headers)
@@ -89,4 +87,4 @@ print(f_test_5)
 
 # Save coefficients from regressions
 ols_results.reset_index(inplace = True)
-ols_results.to_pickle('Results/results_lfp_ols')
+ols_results.to_pickle('Results/results_lfp_ols_3')
