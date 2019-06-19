@@ -63,33 +63,27 @@ results_5= model_5.fit(cov_type='cluster', cov_kwds={'groups': df[df['blue_colla
 #print(results_5.summary())
 ols_results['model_5'] = results_5.params
 
-# Initialize dataframe to store f-test results
-f_results = pd.DataFrame(columns = headers)
+
 # Construct joint hypothesis
 joint_hypothesis = str()
-for i in range(25, 25+7): #Input range of months here (birth occurs in month 25)
+for i in range(25-3, 25+4): #Input range of months here (birth occurs in month 25)
     joint_hypothesis += 'C(birth_recode)[' + str(i) + '.0]:policy = 0,'
 joint_hypothesis = joint_hypothesis[:-1] # Delete trailing comma
 
 # F-tests
 f_test_1 = results_1.f_test(joint_hypothesis)
-f_results.loc[0,'model_1'] = f_test_1.pvalue
 print(f_test_1)
 
 f_test_2 = results_2.f_test(joint_hypothesis)
-f_results.loc[0,'model_2'] = f_test_2.pvalue
 print(f_test_2)
 
 f_test_3 = results_3.f_test(joint_hypothesis)
-f_results.loc[0,'model_3'] = f_test_3.pvalue
 print(f_test_3)
 
 f_test_4 = results_4.f_test(joint_hypothesis)
-f_results.loc[0,'model_4'] = f_test_4.pvalue
 print(f_test_4)
 
 f_test_5 = results_5.f_test(joint_hypothesis)
-f_results.loc[0,'model_5'] = f_test_5.pvalue
 print(f_test_5)
 
 # Save coefficients from regressions
