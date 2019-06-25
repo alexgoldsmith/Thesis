@@ -13,7 +13,10 @@ import os
 os.chdir('C:/Users/Alex/Git_Repositories/Thesis')
 df = pd.read_pickle('SIPP_Dataset_2')
 
-sample_size_by_occ_group = df.groupby('industry_pre_birth')['unique_id'].nunique()
+# Counts and proportions of occupation groups
+occ_group_table = df.groupby('industry_pre_birth')[['unique_id']].nunique()
+occ_group_table['prop'] = occ_group_table['unique_id'] / occ_group_table['unique_id'].sum()
+
 
 # Number of individuals in sample
 print(df['unique_id'].nunique())
