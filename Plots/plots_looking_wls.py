@@ -10,16 +10,16 @@ import matplotlib.pyplot as plt
 import os
 
 os.chdir('C:/Users/Alex/Git_Repositories/Thesis')
-ols = pd.read_pickle('Results/results_working_ols_alt')
+ols = pd.read_pickle('Results/results_looking_wls_FE_end_weights')
 
 fig, axes = plt.subplots(figsize = (10,12), nrows = 5)
 
 
 def coef_plot(ax, array):
-    ax.plot(list(range(-17, 25)), array[-44:-2], marker = 'o')
+    ax.plot(list(range(-24, 25)), array[-51:-2], marker = 'o')
     ax.set_xticks(list(range(-24, 25, 3)))
     ax.axhline(linestyle = '--')
-    ax.set_ylabel('Employed')
+    ax.set_ylabel('Looking')
     ax.set_xlabel('Months Since Birth')
 
 coef_plot(axes[0], ols['model_1'])
@@ -35,5 +35,5 @@ axes[4].set_title('White Collar')
 
 
 fig.tight_layout(rect=[0, 0.03, 1, 0.95])
-fig.suptitle('Employment Difference in Difference Coefficients', fontsize = 16)
-fig.savefig('Figures/figure_working_ols_alt.png')
+fig.suptitle('Job Search Difference in Difference Coefficients', fontsize = 16)
+fig.savefig('Figures/figure_looking_wls_FE_end_weights.png')
