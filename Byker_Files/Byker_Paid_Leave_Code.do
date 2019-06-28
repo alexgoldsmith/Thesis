@@ -16,7 +16,7 @@ set matsize 10000
 set more off, perm
 
 *data directory (where posted datasets are stored)
-global datafiles "D:\Users\Alex\Git_Repositories\Thesis\P2016_1118_data"
+global datafiles "D:\Users\Alex\Git_Repositories\Thesis\Byker_Files"
 
 
 * Dataset contains observations for women aged 24-45 who gave birth in CA, NJ, NY, FL, or TX during one of SIPP panels (1996, 2001, 2004 or 2008)
