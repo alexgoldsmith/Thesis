@@ -42,3 +42,18 @@ occ_dict   = {'11' : 'Management',
 
 # Summary of management regression
 #print(group_models_results[2].summary())
+
+
+
+
+df = pd.read_pickle('SIPP_Dataset_2')
+
+# Generate constant within panel weights
+df['end_date'] = df.groupby('unique_id').ref_date.transform('max')
+
+df['end_weight'] = np.nan
+df['end_weight'].mask(df['ref_date'] == df['end_date'], df['wpfinwgt'], inplace = True)
+df['end_weight'] = df.groupby('unique_id')['end_weight'].transform('max')
+
+
+

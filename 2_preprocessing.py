@@ -216,6 +216,12 @@ df['blue_collar'] = np.nan
 df['blue_collar'].mask(df['industry_pre_birth'].isin(blue_collar_groups), 1, inplace = True)
 df['blue_collar'].mask(df['industry_pre_birth'].isin(white_collar_groups), 0, inplace = True)
 
+# Generate constant within panel weights
+df['end_date'] = df.groupby('unique_id').ref_date.transform('max')
+df['end_weight'] = np.nan
+df['end_weight'].mask(df['ref_date'] == df['end_date'], df['wpfinwgt'], inplace = True)
+df['end_weight'] = df.groupby('unique_id')['end_weight'].transform('max')
+
 # Save dataframe to pickle
 df.to_pickle('SIPP_Dataset_2')
 

@@ -30,38 +30,36 @@ specification = spec_options[4]
 df.dropna(subset = ['LFP', 'rhcalyr', 'tfipsst', 'birth_recode', 'policy'],
           inplace = True)
 
-#wpfinwgt
-
 # Full sample regression
-model_1 = sm.WLS.from_formula(formula = specification, data = df, weights = df['wpfinwgt'])
+model_1 = sm.WLS.from_formula(formula = specification, data = df, weights = df['end_weight'])
 results_1 = model_1.fit(cov_type='cluster', cov_kwds={'groups': df['unique_id']})
 #print(results_1.summary())
 ols_results['model_1'] = results_1.params
 
 
 # College educated regression
-model_2 = sm.WLS.from_formula(formula = specification, data = df[df['college'] == 1], weights = df[df['college'] == 1]['wpfinwgt'])
+model_2 = sm.WLS.from_formula(formula = specification, data = df[df['college'] == 1], weights = df[df['college'] == 1]['end_weight'])
 results_2 = model_2.fit(cov_type='cluster', cov_kwds={'groups': df[df['college'] == 1]['unique_id']})
 #print(results_2.summary())
 ols_results['model_2'] = results_2.params
 
 
 # Less than college educated regression
-model_3 = sm.WLS.from_formula(formula = specification, data = df[df['college'] == 0], weights = df[df['college'] == 0]['wpfinwgt'])
+model_3 = sm.WLS.from_formula(formula = specification, data = df[df['college'] == 0], weights = df[df['college'] == 0]['end_weight'])
 results_3 = model_3.fit(cov_type='cluster', cov_kwds={'groups': df[df['college'] == 0]['unique_id']})
 #print(results_3.summary())
 ols_results['model_3'] = results_3.params
 
 
 # Blue collar regression
-model_4 = sm.WLS.from_formula(formula = specification, data = df[df['blue_collar'] == 1], weights = df[df['blue_collar'] == 1]['wpfinwgt'])
+model_4 = sm.WLS.from_formula(formula = specification, data = df[df['blue_collar'] == 1], weights = df[df['blue_collar'] == 1]['end_weight'])
 results_4 = model_4.fit(cov_type='cluster', cov_kwds={'groups': df[df['blue_collar'] == 1]['unique_id']})
 #print(results_4.summary())
 ols_results['model_4'] = results_4.params
 
 
 # White collar regression
-model_5 = sm.WLS.from_formula(formula = specification, data = df[df['blue_collar'] == 0], weights = df[df['blue_collar'] == 0]['wpfinwgt'])
+model_5 = sm.WLS.from_formula(formula = specification, data = df[df['blue_collar'] == 0], weights = df[df['blue_collar'] == 0]['end_weight'])
 results_5= model_5.fit(cov_type='cluster', cov_kwds={'groups': df[df['blue_collar'] == 0]['unique_id']})
 #print(results_5.summary())
 ols_results['model_5'] = results_5.params
@@ -91,4 +89,4 @@ print(f_test_5)
 
 # Save coefficients from regressions
 ols_results.reset_index(inplace = True)
-ols_results.to_pickle('Results/results_lfp_wls_FE')
+ols_results.to_pickle('Results/results_lfp_wls_FE_end_weights')
