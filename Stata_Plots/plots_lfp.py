@@ -28,9 +28,9 @@ axes[1].set_title('College Educated')
 coef_plot(axes[2], ols['b_X3'])
 axes[2].set_title('Less than College')
 coef_plot(axes[3], ols['b_X4'])
-axes[3].set_title('Blue Collar')
+axes[3].set_title('White Collar')
 coef_plot(axes[4], ols['b_X5'])
-axes[4].set_title('White Collar')
+axes[4].set_title('Blue Collar')
 
 
 fig.tight_layout(rect=[0, 0.03, 1, 0.95])

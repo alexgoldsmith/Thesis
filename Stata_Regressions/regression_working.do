@@ -10,7 +10,7 @@ global datafiles "D:\Users\Alex\Git_Repositories\Thesis"
 clear
 set obs 49
 gen time = _n -25
-save "$datafiles/Stata_Results/results_lfp.dta", replace emptyok
+save "$datafiles/Stata_Results/results_working.dta", replace emptyok
  
 ***************** Event-Study DD estimates for full sample and by education	  
 foreach i of numlist 1 2 3 4 5 {
@@ -20,13 +20,13 @@ local X2  " i.rhcalyr i.lBirth i.rhcalyr#i.state i.lBirth#i.state i.lBirth#i.rhc
 local X3  " i.rhcalyr i.lBirth i.rhcalyr#i.state i.lBirth#i.state i.lBirth#i.rhcalyr _LlBiXpos_2_1 _LlBiXpos_8_1-_LlBiXpos_50_1 [pweight=end_weight] if  lt_college==1 "
 local X4  " i.rhcalyr i.lBirth i.rhcalyr#i.state i.lBirth#i.state i.lBirth#i.rhcalyr _LlBiXpos_2_1 _LlBiXpos_8_1-_LlBiXpos_50_1 [pweight=end_weight] if  blue_collar==0 "
 local X5  " i.rhcalyr i.lBirth i.rhcalyr#i.state i.lBirth#i.state i.lBirth#i.rhcalyr _LlBiXpos_2_1 _LlBiXpos_8_1-_LlBiXpos_50_1 [pweight=end_weight] if  blue_collar==1 "
-qui xtreg rm_lfp `X`i'', fe  vce(cluster sippid)
+qui xtreg working `X`i'', fe  vce(cluster sippid)
 
 di "joint test for mth -3 to +3:"
 qui test _LlBiXpos_22_1 _LlBiXpos_23_1 _LlBiXpos_24_1 _LlBiXpos_25_1 _LlBiXpos_26_1 _LlBiXpos_27_1 _LlBiXpos_28_1
 di r(p)
 
-use "$datafiles/Stata_Results/results_lfp.dta", clear
+use "$datafiles/Stata_Results/results_working.dta", clear
 qui {
          gen b_X`i'=.
 		 		 forval j=1/49{       
@@ -40,5 +40,5 @@ qui {
 			}
 			}
           }
-		save "$datafiles/Stata_Results/results_lfp.dta", replace  
+		save "$datafiles/Stata_Results/results_working.dta", replace  
 }
