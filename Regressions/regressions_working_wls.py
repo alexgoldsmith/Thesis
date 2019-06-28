@@ -67,7 +67,7 @@ ols_results['model_5'] = results_5.params
 
 # Construct joint hypothesis
 joint_hypothesis = str()
-for i in range(25-3, 25+4): #Input range of months here (birth occurs in month 25)
+for i in range(25+6, 25+13): #Input range of months here (birth occurs in month 25)
     joint_hypothesis += 'C(birth_recode)[' + str(i) + '.0]:policy = 0,'
 joint_hypothesis = joint_hypothesis[:-1] # Delete trailing comma
 

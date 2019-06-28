@@ -205,9 +205,12 @@ for person in unique_persons:
         df['industry_pre_birth'].mask(df['unique_id'] == person, pre_birth_occ, inplace = True)
 
 # Generate dummy for college educated
+df['max_edu'] = df.groupby('unique_id')['eeducate'].transform('max')        
 df['college'] = np.nan
-df['college'].mask(df['eeducate'] >= 44, 1, inplace = True)
-df['college'].mask(df['eeducate'] < 44, 0, inplace = True)
+df['college'].mask(df['max_edu'] >= 44, 1, inplace = True)
+df['college'].mask(df['max_edu'] < 44, 0, inplace = True)
+
+
 
 # Generate dummy for blue collar occupation
 blue_collar_groups = ['33', '35', '37', '39', '45', '47', '49', '51', '53']
