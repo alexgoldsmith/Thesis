@@ -10,7 +10,7 @@ import os
 
 os.chdir('C:/Users/Alex/Git_Repositories/Thesis')
 
-ols = pd.read_stata('Stata_Results/results_lfp.dta')
+ols = pd.read_stata('Stata_Results/results_working.dta')
 
 fig, axes = plt.subplots(figsize = (10,12), nrows = 5)
 
@@ -35,6 +35,6 @@ axes[4].set_title('Blue Collar')
 
 
 fig.tight_layout(rect=[0, 0.03, 1, 0.95])
-fig.suptitle('LFP Difference in Difference Coefficients', fontsize = 16)
+fig.suptitle('Employment Difference in Difference Coefficients', fontsize = 16)
 plt.show()
-fig.savefig('Stata_Figures/figure_lfp.png')
+fig.savefig('Stata_Figures/figure_working.png')
