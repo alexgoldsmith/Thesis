@@ -10,12 +10,15 @@ import pandas as pd
 import numpy as np
 import os
 
-os.chdir('C:/Users/Alex/Git_Repositories/Thesis')
+os.chdir('D:/Users/Alex/Git_Repositories/Thesis')
 df = pd.read_pickle('SIPP_Dataset_2')
 
 # Counts and proportions of occupation groups
 occ_group_table = df.groupby('industry_pre_birth')[['unique_id']].nunique()
-occ_group_table['prop'] = occ_group_table['unique_id'] / occ_group_table['unique_id'].sum()
+occ_group_table['prop'] = occ_group_table['unique_id'] / occ_group_table['unique_id'].sum()*100
+
+# Median education by occupation group
+edu_occ_table = df.groupby('industry_pre_birth')[['eeducate']].median()
 
 
 # Number of individuals in sample
@@ -33,7 +36,7 @@ sum_stats.to_csv('summary_statistics.csv')
 df['rmesr'].value_counts(dropna = False, ascending = False)
 
 # Crosstab college and blue collar observations
-college_collar_obs = pd.crosstab(df['college'], df['blue_collar'], margins = True)
+college_collar_obs = pd.crosstab(df['college'], df['blue_collar']).apply(lambda r: r/r.sum(), axis=1)
 
 # Crosstab college and blue collar individuals
 college_collar_ind = df.pivot_table(values='unique_id', index='college', columns='blue_collar',
