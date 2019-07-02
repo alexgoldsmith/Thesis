@@ -13,27 +13,23 @@ import os
 os.chdir('D:/Users/Alex/Git_Repositories/Thesis')
 df = pd.read_pickle('SIPP_Dataset_2')
 
+
+## Table 4
 # Counts and proportions of occupation groups
 occ_group_table = df.groupby('industry_pre_birth')[['unique_id']].nunique()
 occ_group_table['prop'] = occ_group_table['unique_id'] / occ_group_table['unique_id'].sum()*100
-
 # Median education by occupation group
-edu_occ_table = df.groupby('industry_pre_birth')[['eeducate']].median()
-
+edu_occ_median = df.groupby('industry_pre_birth')[['eeducate']].median()
+# Percent college graduate by occupation group
+edu_occ_prop = pd.crosstab(df['industry_pre_birth'], df['college']).apply(lambda r: r/r.sum(), axis=1)
 
 # Number of individuals in sample
 print(df['unique_id'].nunique())
 # Number of individuals with data for pre-birth occupation group
 print(sample_size_by_occ_group.sum())
 
-# Basic Summary statistics
-variables = ['rhcalyr', 'tage', 'eeducate', 'months_since_birth']
-df2 = df.loc[:, variables]
-sum_stats = df2.describe().transpose().round(2)
-sum_stats.to_csv('summary_statistics.csv')
-
 # LFP variable counts
-df['rmesr'].value_counts(dropna = False, ascending = False)
+table_3 = df['rmesr'].value_counts(dropna = False, ascending = False, normalize = True)
 
 # Crosstab college and blue collar observations
 college_collar_obs = pd.crosstab(df['college'], df['blue_collar']).apply(lambda r: r/r.sum(), axis=1)
