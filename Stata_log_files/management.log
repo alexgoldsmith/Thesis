@@ -1,0 +1,666 @@
+-------------------------------------------------------------------------------------------
+      name:  <unnamed>
+       log:  D:\Users\Alex\Git_Repositories\Thesis\Stata_log_files\management.log
+  log type:  text
+ opened on:   3 Jul 2019, 11:47:16
+
+. 
+end of do-file
+
+. do "C:\Users\Alex\AppData\Local\Temp\STD3c34_000000.tmp"
+
+. use  "$datafiles\Stata_Regressions\US_Paid_leave_analysis_altered.dta", clear
+file \Stata_Regressions\US_Paid_leave_analysis_altered.dta not found
+r(601);
+
+end of do-file
+
+r(601);
+
+. do "C:\Users\Alex\AppData\Local\Temp\STD3c34_000000.tmp"
+
+. global datafiles "D:\Users\Alex\Git_Repositories\Thesis"
+
+. 
+end of do-file
+
+. do "C:\Users\Alex\AppData\Local\Temp\STD3c34_000000.tmp"
+
+. use  "$datafiles\Stata_Regressions\US_Paid_leave_analysis_altered.dta", clear
+
+. 
+end of do-file
+
+. do "C:\Users\Alex\AppData\Local\Temp\STD3c34_000000.tmp"
+
+. global X "i.rhcalyr i.lBirth i.rhcalyr#i.state i.lBirth#i.state i.lBirth#i.rhcalyr _LlBiX
+> pos_2_1 _LlBiXpos_8_1-_LlBiXpos_50_1"
+
+. 
+end of do-file
+
+. do "C:\Users\Alex\AppData\Local\Temp\STD3c34_000000.tmp"
+
+. xtset
+       panel variable:  sippid (unbalanced)
+        time variable:  months, 1 to 48
+                delta:  1 unit
+
+. 
+end of do-file
+
+. do "C:\Users\Alex\AppData\Local\Temp\STD3c34_000000.tmp"
+
+. foreach i in rm_lfp working looking  {
+  2.         foreach j in 11  {
+  3.                 quietly xtreg `i' $X [pweight=end_weight] if industry_pre_birth=="`j'"
+> ,fe vce(cluster sippid)
+  4.                 estimates save Stata_ster/`i'_`j',replace 
+  5.         }       
+  6. }
+(note: file Stata_ster/rm_lfp_11.ster not found)
+file Stata_ster/rm_lfp_11.ster saved
+(note: file Stata_ster/working_11.ster not found)
+file Stata_ster/working_11.ster saved
+(note: file Stata_ster/looking_11.ster not found)
+file Stata_ster/looking_11.ster saved
+
+. 
+end of do-file
+
+. do "C:\Users\Alex\AppData\Local\Temp\STD3c34_000000.tmp"
+
+. global window_m3_p3 "_LlBiXpos_22_1 _LlBiXpos_23_1 _LlBiXpos_24_1 _LlBiXpos_25_1 _LlBiXpo
+> s_26_1 _LlBiXpos_27_1 _LlBiXpos_28_1"
+
+. global window_m0_p6 "_LlBiXpos_25_1 _LlBiXpos_26_1 _LlBiXpos_27_1 _LlBiXpos_28_1 _LlBiXpo
+> s_29_1 _LlBiXpos_30_1 _LlBiXpos_31_1"
+
+. 
+end of do-file
+
+. do "C:\Users\Alex\AppData\Local\Temp\STD3c34_000000.tmp"
+
+. matrix b_all = J(49,1,.) 
+
+. 
+end of do-file
+
+. do "C:\Users\Alex\AppData\Local\Temp\STD3c34_000000.tmp"
+
+. foreach j in 11 {
+  2.         foreach i in rm_lfp working looking {
+  3.             /* read in the estimates */
+.                 estimates use Stata_ster/`i'_`j'
+  4.                 /* store the coefficients in a column vector that you create and name 
+> b`i'_`j' */
+.                 matrix b`i'_`j'=_b[_LlBiXpos_2_1] \ _b[_LlBiXpos_8_1] \ _b[_LlBiXpos_9_1]
+  5.                 matrix list b`i'_`j'
+  6.                 forvalues k=10(1)50 {
+  7.                 /* collect all of the coefficients into the matrix b_all */
+.                         matrix b`i'_`j' = b`i'_`j' \ _b[_LlBiXpos_`k'_1]
+  8.                         global rnames = "$rnames" + "m`k'"
+  9.                 }
+ 10.                 *matrix b_all = b_all , b`i'_`j'
+.                 foreach k in window_m3_p3 window_m0_p6 {
+ 11.                         test "$`k'" 
+ 12.                         display "F-test of window `k' for occupation `j' and dependent
+>  variable `i'"
+ 13.                         matrix F_`i'_`j'_`k'=r(F)
+ 14.                         matrix p_`i'_`j'_`k'=r(p)
+ 15.                 }
+ 16.         }
+ 17. }
+
+brm_lfp_11[3,1]
+            c1
+r1   .09632747
+r2  -.02030402
+r3   .00424935
+
+ ( 1)  _LlBiXpos_22_1 = 0
+ ( 2)  _LlBiXpos_23_1 = 0
+ ( 3)  _LlBiXpos_24_1 = 0
+ ( 4)  _LlBiXpos_25_1 = 0
+ ( 5)  _LlBiXpos_26_1 = 0
+ ( 6)  _LlBiXpos_27_1 = 0
+ ( 7)  _LlBiXpos_28_1 = 0
+
+       F(  7,   130) =    0.52
+            Prob > F =    0.8212
+F-test of window window_m3_p3 for occupation 11 and dependent variable rm_lfp
+
+ ( 1)  _LlBiXpos_25_1 = 0
+ ( 2)  _LlBiXpos_26_1 = 0
+ ( 3)  _LlBiXpos_27_1 = 0
+ ( 4)  _LlBiXpos_28_1 = 0
+ ( 5)  _LlBiXpos_29_1 = 0
+ ( 6)  _LlBiXpos_30_1 = 0
+ ( 7)  _LlBiXpos_31_1 = 0
+
+       F(  7,   130) =    0.70
+            Prob > F =    0.6683
+F-test of window window_m0_p6 for occupation 11 and dependent variable rm_lfp
+
+bworking_11[3,1]
+            c1
+r1  -.02394329
+r2   .28851218
+r3   .23327201
+
+ ( 1)  _LlBiXpos_22_1 = 0
+ ( 2)  _LlBiXpos_23_1 = 0
+ ( 3)  _LlBiXpos_24_1 = 0
+ ( 4)  _LlBiXpos_25_1 = 0
+ ( 5)  _LlBiXpos_26_1 = 0
+ ( 6)  _LlBiXpos_27_1 = 0
+ ( 7)  _LlBiXpos_28_1 = 0
+
+       F(  7,   130) =    1.11
+            Prob > F =    0.3585
+F-test of window window_m3_p3 for occupation 11 and dependent variable working
+
+ ( 1)  _LlBiXpos_25_1 = 0
+ ( 2)  _LlBiXpos_26_1 = 0
+ ( 3)  _LlBiXpos_27_1 = 0
+ ( 4)  _LlBiXpos_28_1 = 0
+ ( 5)  _LlBiXpos_29_1 = 0
+ ( 6)  _LlBiXpos_30_1 = 0
+ ( 7)  _LlBiXpos_31_1 = 0
+
+       F(  7,   130) =    0.81
+            Prob > F =    0.5833
+F-test of window window_m0_p6 for occupation 11 and dependent variable working
+
+blooking_11[3,1]
+            c1
+r1     .043589
+r2  -.10768868
+r3  -.14844784
+
+ ( 1)  _LlBiXpos_22_1 = 0
+ ( 2)  _LlBiXpos_23_1 = 0
+ ( 3)  _LlBiXpos_24_1 = 0
+ ( 4)  _LlBiXpos_25_1 = 0
+ ( 5)  _LlBiXpos_26_1 = 0
+ ( 6)  _LlBiXpos_27_1 = 0
+ ( 7)  _LlBiXpos_28_1 = 0
+
+       F(  7,   130) =    0.73
+            Prob > F =    0.6486
+F-test of window window_m3_p3 for occupation 11 and dependent variable looking
+
+ ( 1)  _LlBiXpos_25_1 = 0
+ ( 2)  _LlBiXpos_26_1 = 0
+ ( 3)  _LlBiXpos_27_1 = 0
+ ( 4)  _LlBiXpos_28_1 = 0
+ ( 5)  _LlBiXpos_29_1 = 0
+ ( 6)  _LlBiXpos_30_1 = 0
+ ( 7)  _LlBiXpos_31_1 = 0
+
+       F(  7,   130) =    1.06
+            Prob > F =    0.3957
+F-test of window window_m0_p6 for occupation 11 and dependent variable looking
+
+. 
+end of do-file
+
+. do "C:\Users\Alex\AppData\Local\Temp\STD3c34_000000.tmp"
+
+.                 matrix list b`i'_`j'
+matrix b_ not found
+r(111);
+
+end of do-file
+
+r(111);
+
+. list matrix
+variable matrix not found
+r(111);
+
+. matrix list
+matrix name required
+r(100);
+
+. matrix b_all
+matrix operation not found
+r(501);
+
+. matrix list b_all
+
+b_all[49,1]
+     c1
+ r1   .
+ r2   .
+ r3   .
+ r4   .
+ r5   .
+ r6   .
+ r7   .
+ r8   .
+ r9   .
+r10   .
+r11   .
+r12   .
+r13   .
+r14   .
+r15   .
+r16   .
+r17   .
+r18   .
+r19   .
+r20   .
+r21   .
+r22   .
+r23   .
+r24   .
+r25   .
+r26   .
+r27   .
+r28   .
+r29   .
+r30   .
+r31   .
+r32   .
+r33   .
+r34   .
+r35   .
+r36   .
+r37   .
+r38   .
+r39   .
+r40   .
+r41   .
+r42   .
+r43   .
+r44   .
+r45   .
+r46   .
+r47   .
+r48   .
+r49   .
+
+. matrix list p_working_11_window_m3_p3
+
+symmetric p_working_11_window_m3_p3[1,1]
+           c1
+r1  .35851942
+
+. matrix list brm_lfp_11
+
+brm_lfp_11[44,1]
+             c1
+ r1   .09632747
+ r2  -.02030402
+ r3   .00424935
+ r4   .10214544
+ r5  -.08930753
+ r6  -.12255494
+ r7  -.06806734
+ r8  -.05164408
+ r9   .01424894
+r10   .00514176
+r11   .14140907
+r12   .10494487
+r13    .0574423
+r14   .06379912
+r15   .09332889
+r16   .16682844
+r17   .19442771
+r18   .11721758
+r19   .18349021
+r20    .1187179
+r21   .15248794
+r22   .13585543
+r23   .22237314
+r24   .18005793
+r25   .21322807
+r26   .29683574
+r27   .17408511
+r28   .13963858
+r29   .22285819
+r30   .00911179
+r31    .1527961
+r32   .32003446
+r33    .3988692
+r34   .33298964
+r35   .23083791
+r36   .22712783
+r37   .03197385
+r38   .21551361
+r39   .13720933
+r40    .1571409
+r41   .13715088
+r42   .25045447
+r43   .39857286
+r44   .24062464
+
+. do "C:\Users\Alex\AppData\Local\Temp\STD3c34_000000.tmp"
+
+. matrix b_all = J(49,1,.) 
+
+. foreach j in 11 {
+  2.         foreach i in rm_lfp working looking {
+  3.             /* read in the estimates */
+.                 estimates use Stata_ster/`i'_`j'
+  4.                 /* store the coefficients in a column vector that you create and name 
+> b`i'_`j' */
+.                 matrix b`i'_`j'=_b[_LlBiXpos_2_1] \ _b[_LlBiXpos_8_1] \ _b[_LlBiXpos_9_1]
+  5.                 matrix list b`i'_`j'
+  6.                 forvalues k=10(1)50 {
+  7.                 /* collect all of the coefficients into the matrix b_all */
+.                         matrix b`i'_`j' = b`i'_`j' \ _b[_LlBiXpos_`k'_1]
+  8.                         global rnames = "$rnames" + "m`k'"
+  9.                 }
+ 10.                 *matrix b_all = b_all , b`i'_`j'
+.                 foreach k in m3_p3 m0_p6 {
+ 11.                         test "$`k'" 
+ 12.                         display "F-test of window `k' for occupation `j' and dependent
+>  variable `i'"
+ 13.                         matrix F_`i'_`j'_`k'=r(F)
+ 14.                         matrix p_`i'_`j'_`k'=r(p)
+ 15.                 }
+ 16.         }
+ 17. }
+
+brm_lfp_11[3,1]
+            c1
+r1   .09632747
+r2  -.02030402
+r3   .00424935
+varlist not allowed
+r(101);
+
+end of do-file
+
+r(101);
+
+. do "C:\Users\Alex\AppData\Local\Temp\STD3c34_000000.tmp"
+
+. foreach j in 11 {
+  2.         foreach i in rm_lfp working looking {
+  3.             /* read in the estimates */
+.                 estimates use Stata_ster/`i'_`j'
+  4.                 /* store the coefficients in a column vector that you create and name 
+> b`i'_`j' */
+.                 matrix b`i'_`j'=_b[_LlBiXpos_2_1] \ _b[_LlBiXpos_8_1] \ _b[_LlBiXpos_9_1]
+  5.                 matrix list b`i'_`j'
+  6.                 forvalues k=10(1)50 {
+  7.                 /* collect all of the coefficients into the matrix b_all */
+.                         matrix b`i'_`j' = b`i'_`j' \ _b[_LlBiXpos_`k'_1]
+  8.                         global rnames = "$rnames" + "m`k'"
+  9.                 }
+ 10.                 *matrix b_all = b_all , b`i'_`j'
+.                 foreach k in m3_p3 m0_p6 {
+ 11.                         test "$`k'" 
+ 12.                         display "F-test of window `k' for occupation `j' and dependent
+>  variable `i'"
+ 13.                         matrix F_`i'_`j'_`k'=r(F)
+ 14.                         matrix p_`i'_`j'_`k'=r(p)
+ 15.                 }
+ 16.         }
+ 17. }
+
+brm_lfp_11[3,1]
+            c1
+r1   .09632747
+r2  -.02030402
+r3   .00424935
+varlist not allowed
+r(101);
+
+end of do-file
+
+r(101);
+
+. do "C:\Users\Alex\AppData\Local\Temp\STD3c34_000000.tmp"
+
+. matrix b_all = J(49,1,.) 
+
+. foreach j in 11 {
+  2.         foreach i in rm_lfp working looking {
+  3.             /* read in the estimates */
+.                 estimates use Stata_ster/`i'_`j'
+  4.                 /* store the coefficients in a column vector that you create and name 
+> b`i'_`j' */
+.                 matrix b`i'_`j'=_b[_LlBiXpos_2_1] \ _b[_LlBiXpos_8_1] \ _b[_LlBiXpos_9_1]
+  5.                 matrix list b`i'_`j'
+  6.                 forvalues k=10(1)50 {
+  7.                 /* collect all of the coefficients into the matrix b_all */
+.                         matrix b`i'_`j' = b`i'_`j' \ _b[_LlBiXpos_`k'_1]
+  8.                         *global rnames = "$rnames" + "m`k'"
+.                 }
+  9.                 *matrix b_all = b_all , b`i'_`j'
+.                 foreach k in m3_p3 m0_p6 {
+ 10.                         test "$`k'" 
+ 11.                         display "F-test of window `k' for occupation `j' and dependent
+>  variable `i'"
+ 12.                         matrix F_`i'_`j'_`k'=r(F)
+ 13.                         matrix p_`i'_`j'_`k'=r(p)
+ 14.                 }
+ 15.         }
+ 16. }
+
+brm_lfp_11[3,1]
+            c1
+r1   .09632747
+r2  -.02030402
+r3   .00424935
+varlist not allowed
+r(101);
+
+end of do-file
+
+r(101);
+
+. do "C:\Users\Alex\AppData\Local\Temp\STD3c34_000000.tmp"
+
+. foreach j in 11 {
+  2.         foreach i in rm_lfp working looking {
+  3.             /* read in the estimates */
+.                 estimates use Stata_ster/`i'_`j'
+  4.                 /* store the coefficients in a column vector that you create and name 
+> b`i'_`j' */
+.                 matrix b`i'_`j'=_b[_LlBiXpos_2_1] \ _b[_LlBiXpos_8_1] \ _b[_LlBiXpos_9_1]
+  5.                 matrix list b`i'_`j'
+  6.                 forvalues k=10(1)50 {
+  7.                 /* collect all of the coefficients into the matrix b_all */
+.                         matrix b`i'_`j' = b`i'_`j' \ _b[_LlBiXpos_`k'_1]
+  8.                         *global rnames = "$rnames" + "m`k'"
+.                 }
+  9.                 *matrix b_all = b_all , b`i'_`j'
+.                 foreach k in m3_p3 m0_p6 {
+ 10.                         test "$`k'" 
+ 11.                         display "F-test of window `k' for occupation `j' and dependent
+>  variable `i'"
+ 12.                         matrix F_`i'_`j'_`k'=r(F)
+ 13.                         matrix p_`i'_`j'_`k'=r(p)
+ 14.                 }
+ 15.         }
+ 16. }
+
+brm_lfp_11[3,1]
+            c1
+r1   .09632747
+r2  -.02030402
+r3   .00424935
+varlist not allowed
+r(101);
+
+end of do-file
+
+r(101);
+
+. do "C:\Users\Alex\AppData\Local\Temp\STD3c34_000000.tmp"
+
+. foreach j in 11 {
+  2.         foreach i in rm_lfp working looking {
+  3.             /* read in the estimates */
+.                 estimates use Stata_ster/`i'_`j'
+  4.                 /* store the coefficients in a column vector that you create and name 
+> b`i'_`j' */
+.                 matrix b`i'_`j'=_b[_LlBiXpos_2_1] \ _b[_LlBiXpos_8_1] \ _b[_LlBiXpos_9_1]
+  5.                 matrix list b`i'_`j'
+  6.                 forvalues k=10(1)50 {
+  7.                 /* collect all of the coefficients into the matrix b_all */
+.                         *matrix b`i'_`j' = b`i'_`j' \ _b[_LlBiXpos_`k'_1]
+.                         *global rnames = "$rnames" + "m`k'"
+.                 }
+  8.                 *matrix b_all = b_all , b`i'_`j'
+.                 foreach k in m3_p3 m0_p6 {
+  9.                         test "$`k'" 
+ 10.                         display "F-test of window `k' for occupation `j' and dependent
+>  variable `i'"
+ 11.                         matrix F_`i'_`j'_`k'=r(F)
+ 12.                         matrix p_`i'_`j'_`k'=r(p)
+ 13.                 }
+ 14.         }
+ 15. }
+
+brm_lfp_11[3,1]
+            c1
+r1   .09632747
+r2  -.02030402
+r3   .00424935
+varlist not allowed
+r(101);
+
+end of do-file
+
+r(101);
+
+. do "C:\Users\Alex\AppData\Local\Temp\STD3c34_000000.tmp"
+
+. foreach j in 11 {
+  2.         foreach i in rm_lfp working looking {
+  3.             /* read in the estimates */
+.                 estimates use Stata_ster/`i'_`j'
+  4.                 /* store the coefficients in a column vector that you create and name 
+> b`i'_`j' */
+.                 matrix b`i'_`j'=_b[_LlBiXpos_2_1] \ _b[_LlBiXpos_8_1] \ _b[_LlBiXpos_9_1]
+  5.                 matrix list b`i'_`j'
+  6.                 forvalues k=10(1)50 {
+  7.                 /* collect all of the coefficients into the matrix b_all */
+.                         *matrix b`i'_`j' = b`i'_`j' \ _b[_LlBiXpos_`k'_1]
+.                         *global rnames = "$rnames" + "m`k'"
+.                 }
+  8.                 *matrix b_all = b_all , b`i'_`j'
+.                 foreach k in m3_p3 m0_p6 {
+  9.                         test "$`k'" 
+ 10.                         display "F-test of window `k' for occupation `j' and dependent
+>  variable `i'"
+ 11.                         matrix F_`i'_`j'_`k'=r(F)
+ 12.                         matrix p_`i'_`j'_`k'=r(p)
+ 13.                 }
+ 14.         }
+ 15. }
+
+brm_lfp_11[3,1]
+            c1
+r1   .09632747
+r2  -.02030402
+r3   .00424935
+varlist not allowed
+r(101);
+
+end of do-file
+
+r(101);
+
+. do "C:\Users\Alex\AppData\Local\Temp\STD3c34_000000.tmp"
+
+. foreach j in 11 {
+  2.         foreach i in rm_lfp working looking {
+  3.             /* read in the estimates */
+.                 estimates use Stata_ster/`i'_`j'
+  4.                 /* store the coefficients in a column vector that you create and name 
+> b`i'_`j' */
+.                 matrix b`i'_`j'=_b[_LlBiXpos_2_1] \ _b[_LlBiXpos_8_1] \ _b[_LlBiXpos_9_1]
+  5.                 matrix list b`i'_`j'
+  6.                 forvalues k=10(1)50 {
+  7.                 /* collect all of the coefficients into the matrix b_all */
+.                         matrix b`i'_`j' = b`i'_`j' \ _b[_LlBiXpos_`k'_1]
+  8.                         *global rnames = "$rnames" + "m`k'"
+.                 }
+  9.                 *matrix b_all = b_all , b`i'_`j'
+.                 foreach k in m3_p3 m0_p6 {
+ 10.                         test "$`k'" 
+ 11.                         display "F-test of window `k' for occupation `j' and dependent
+>  variable `i'"
+ 12.                         matrix F_`i'_`j'_`k'=r(F)
+ 13.                         matrix p_`i'_`j'_`k'=r(p)
+ 14.                 }
+ 15.         }
+ 16. }
+
+brm_lfp_11[3,1]
+            c1
+r1   .09632747
+r2  -.02030402
+r3   .00424935
+varlist not allowed
+r(101);
+
+end of do-file
+
+r(101);
+
+. do "C:\Users\Alex\AppData\Local\Temp\STD3c34_000000.tmp"
+
+. foreach i in rm_lfp working looking  {
+  2.         foreach j in 13 15 17 19  {
+  3.                 quietly xtreg `i' $X [pweight=end_weight] if industry_pre_birth=="`j'"
+> ,fe vce(cluster sippid)
+  4.                 estimates save Stata_ster/`i'_`j',replace 
+  5.         }       
+  6. }
+(note: file Stata_ster/rm_lfp_13.ster not found)
+file Stata_ster/rm_lfp_13.ster saved
+(note: file Stata_ster/rm_lfp_15.ster not found)
+file Stata_ster/rm_lfp_15.ster saved
+(note: file Stata_ster/rm_lfp_17.ster not found)
+file Stata_ster/rm_lfp_17.ster saved
+(note: file Stata_ster/rm_lfp_19.ster not found)
+file Stata_ster/rm_lfp_19.ster saved
+(note: file Stata_ster/working_13.ster not found)
+file Stata_ster/working_13.ster saved
+(note: file Stata_ster/working_15.ster not found)
+file Stata_ster/working_15.ster saved
+(note: file Stata_ster/working_17.ster not found)
+file Stata_ster/working_17.ster saved
+(note: file Stata_ster/working_19.ster not found)
+file Stata_ster/working_19.ster saved
+(note: file Stata_ster/looking_13.ster not found)
+file Stata_ster/looking_13.ster saved
+(note: file Stata_ster/looking_15.ster not found)
+file Stata_ster/looking_15.ster saved
+(note: file Stata_ster/looking_17.ster not found)
+file Stata_ster/looking_17.ster saved
+(note: file Stata_ster/looking_19.ster not found)
+file Stata_ster/looking_19.ster saved
+
+. 
+end of do-file
+
+. do "C:\Users\Alex\AppData\Local\Temp\STD3c34_000000.tmp"
+
+. foreach i in rm_lfp working looking  {
+  2.         foreach j in 21 23 25 27 29 31  {
+  3.                 quietly xtreg `i' $X [pweight=end_weight] if industry_pre_birth=="`j'"
+> ,fe vce(cluster sippid)
+  4.                 estimates save Stata_ster/`i'_`j',replace 
+  5.         }       
+  6. }
+(note: file Stata_ster/rm_lfp_21.ster not found)
+file Stata_ster/rm_lfp_21.ster saved
+(note: file Stata_ster/rm_lfp_23.ster not found)
+file Stata_ster/rm_lfp_23.ster saved
+(note: file Stata_ster/rm_lfp_25.ster not found)
+file Stata_ster/rm_lfp_25.ster saved
+(note: file Stata_ster/rm_lfp_27.ster not found)
+file Stata_ster/rm_lfp_27.ster saved
+(note: file Stata_ster/rm_lfp_29.ster not found)
+file Stata_ster/rm_lfp_29.ster saved
+(note: file Stata_ster/rm_lfp_31.ster not found)
+file Stata_ster/rm_lfp_31.ster saved
