@@ -21,9 +21,17 @@ xtset
 
 /* run fixed effects regressions, sippid is the cross-sectional unit */
 foreach i in rm_lfp working looking  {
-	foreach j in 11  {
+	foreach j in 11 13 15 17 19 21 23 25 27 29 31 33 35 37 39 41 43 45 47 49 51 53  {
 		quietly xtreg `i' $X [pweight=end_weight] if industry_pre_birth=="`j'",fe vce(cluster sippid)
 		estimates save Stata_ster/`i'_`j',replace 
+	} 	
+}
+
+/* run unweighted effects regressions, sippid is the cross-sectional unit */
+foreach i in rm_lfp working looking {
+	foreach j in 11 13 15 17 19 21 23 25 27 29 31 33 35 37 39 41 43 45 47 49 51 53  {
+		quietly xtreg `i' $X if industry_pre_birth=="`j'",fe vce(cluster sippid)
+		estimates save Stata_ster/`i'_`j'_unweighted, replace 
 	} 	
 }
 
@@ -54,24 +62,7 @@ foreach j in 11 {
 	}
 }
 
-
-
-    Rename rows and columns of matrix
-
-        matname A namelist [, rows(range) columns(range) explicit]
-
+*Rename rows and columns of matrix
+*matname A namelist [, rows(range) columns(range) explicit]
 
 log close
-
-/*
-testing the loop code 
-
-foreach i in rm_lfp working looking {
-	foreach j in 11 43 {
-		summarize `i' if industry_pre_birth=="`j'"
-		reg `i' if industry_pre_birth=="`j'"
-		estimates save Stata_ster/`i'_`j',replace
-	}
-}
-
-

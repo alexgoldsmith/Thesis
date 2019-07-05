@@ -664,3 +664,257 @@ file Stata_ster/rm_lfp_27.ster saved
 file Stata_ster/rm_lfp_29.ster saved
 (note: file Stata_ster/rm_lfp_31.ster not found)
 file Stata_ster/rm_lfp_31.ster saved
+(note: file Stata_ster/working_21.ster not found)
+file Stata_ster/working_21.ster saved
+(note: file Stata_ster/working_23.ster not found)
+file Stata_ster/working_23.ster saved
+(note: file Stata_ster/working_25.ster not found)
+file Stata_ster/working_25.ster saved
+(note: file Stata_ster/working_27.ster not found)
+file Stata_ster/working_27.ster saved
+(note: file Stata_ster/working_29.ster not found)
+file Stata_ster/working_29.ster saved
+(note: file Stata_ster/working_31.ster not found)
+file Stata_ster/working_31.ster saved
+(note: file Stata_ster/looking_21.ster not found)
+file Stata_ster/looking_21.ster saved
+(note: file Stata_ster/looking_23.ster not found)
+file Stata_ster/looking_23.ster saved
+(note: file Stata_ster/looking_25.ster not found)
+file Stata_ster/looking_25.ster saved
+(note: file Stata_ster/looking_27.ster not found)
+file Stata_ster/looking_27.ster saved
+(note: file Stata_ster/looking_29.ster not found)
+file Stata_ster/looking_29.ster saved
+(note: file Stata_ster/looking_31.ster not found)
+file Stata_ster/looking_31.ster saved
+
+. 
+end of do-file
+
+. do "C:\Users\Alex\AppData\Local\Temp\STD3c34_000000.tmp"
+
+. foreach i in rm_lfp working looking  {
+  2.         foreach j in 33 35 37 39 41 43 45 47 49 51 53  {
+  3.                 quietly xtreg `i' $X [pweight=end_weight] if industry_pre_birth=="`j'"
+> ,fe vce(cluster sippid)
+  4.                 estimates save Stata_ster/`i'_`j',replace 
+  5.         }       
+  6. }
+(note: file Stata_ster/rm_lfp_33.ster not found)
+file Stata_ster/rm_lfp_33.ster saved
+(note: file Stata_ster/rm_lfp_35.ster not found)
+file Stata_ster/rm_lfp_35.ster saved
+(note: file Stata_ster/rm_lfp_37.ster not found)
+file Stata_ster/rm_lfp_37.ster saved
+(note: file Stata_ster/rm_lfp_39.ster not found)
+file Stata_ster/rm_lfp_39.ster saved
+(note: file Stata_ster/rm_lfp_41.ster not found)
+file Stata_ster/rm_lfp_41.ster saved
+(note: file Stata_ster/rm_lfp_43.ster not found)
+file Stata_ster/rm_lfp_43.ster saved
+(note: file Stata_ster/rm_lfp_45.ster not found)
+file Stata_ster/rm_lfp_45.ster saved
+(note: file Stata_ster/rm_lfp_47.ster not found)
+file Stata_ster/rm_lfp_47.ster saved
+(note: file Stata_ster/rm_lfp_49.ster not found)
+file Stata_ster/rm_lfp_49.ster saved
+(note: file Stata_ster/rm_lfp_51.ster not found)
+file Stata_ster/rm_lfp_51.ster saved
+(note: file Stata_ster/rm_lfp_53.ster not found)
+file Stata_ster/rm_lfp_53.ster saved
+(note: file Stata_ster/working_33.ster not found)
+file Stata_ster/working_33.ster saved
+(note: file Stata_ster/working_35.ster not found)
+file Stata_ster/working_35.ster saved
+(note: file Stata_ster/working_37.ster not found)
+file Stata_ster/working_37.ster saved
+(note: file Stata_ster/working_39.ster not found)
+file Stata_ster/working_39.ster saved
+(note: file Stata_ster/working_41.ster not found)
+file Stata_ster/working_41.ster saved
+(note: file Stata_ster/working_43.ster not found)
+file Stata_ster/working_43.ster saved
+(note: file Stata_ster/working_45.ster not found)
+file Stata_ster/working_45.ster saved
+(note: file Stata_ster/working_47.ster not found)
+file Stata_ster/working_47.ster saved
+(note: file Stata_ster/working_49.ster not found)
+file Stata_ster/working_49.ster saved
+(note: file Stata_ster/working_51.ster not found)
+file Stata_ster/working_51.ster saved
+(note: file Stata_ster/working_53.ster not found)
+file Stata_ster/working_53.ster saved
+(note: file Stata_ster/looking_33.ster not found)
+file Stata_ster/looking_33.ster saved
+(note: file Stata_ster/looking_35.ster not found)
+file Stata_ster/looking_35.ster saved
+(note: file Stata_ster/looking_37.ster not found)
+file Stata_ster/looking_37.ster saved
+(note: file Stata_ster/looking_39.ster not found)
+file Stata_ster/looking_39.ster saved
+(note: file Stata_ster/looking_41.ster not found)
+file Stata_ster/looking_41.ster saved
+(note: file Stata_ster/looking_43.ster not found)
+file Stata_ster/looking_43.ster saved
+(note: file Stata_ster/looking_45.ster not found)
+file Stata_ster/looking_45.ster saved
+(note: file Stata_ster/looking_47.ster not found)
+file Stata_ster/looking_47.ster saved
+(note: file Stata_ster/looking_49.ster not found)
+file Stata_ster/looking_49.ster saved
+(note: file Stata_ster/looking_51.ster not found)
+file Stata_ster/looking_51.ster saved
+(note: file Stata_ster/looking_53.ster not found)
+file Stata_ster/looking_53.ster saved
+
+. 
+end of do-file
+
+. do "C:\Users\Alex\AppData\Local\Temp\STD3c34_000000.tmp"
+
+. foreach i in rm_lfp working looking {
+  2.         foreach j in 11 13 15 17 19 21 23 25 27 29 31 33 35 37 39 41 43 45 47 49 51 53
+>   {
+  3.                 quietly xtreg `i' $X if industry_pre_birth=="`j'",fe vce(cluster sippi
+> d)
+  4.                 estimates save Stata_ster/`i'_`j'_unweighted, replace 
+  5.         }       
+  6. }
+(note: file Stata_ster/rm_lfp_11_unweighted.ster not found)
+file Stata_ster/rm_lfp_11_unweighted.ster saved
+(note: file Stata_ster/rm_lfp_13_unweighted.ster not found)
+file Stata_ster/rm_lfp_13_unweighted.ster saved
+(note: file Stata_ster/rm_lfp_15_unweighted.ster not found)
+file Stata_ster/rm_lfp_15_unweighted.ster saved
+(note: file Stata_ster/rm_lfp_17_unweighted.ster not found)
+file Stata_ster/rm_lfp_17_unweighted.ster saved
+(note: file Stata_ster/rm_lfp_19_unweighted.ster not found)
+file Stata_ster/rm_lfp_19_unweighted.ster saved
+(note: file Stata_ster/rm_lfp_21_unweighted.ster not found)
+file Stata_ster/rm_lfp_21_unweighted.ster saved
+(note: file Stata_ster/rm_lfp_23_unweighted.ster not found)
+file Stata_ster/rm_lfp_23_unweighted.ster saved
+(note: file Stata_ster/rm_lfp_25_unweighted.ster not found)
+file Stata_ster/rm_lfp_25_unweighted.ster saved
+(note: file Stata_ster/rm_lfp_27_unweighted.ster not found)
+file Stata_ster/rm_lfp_27_unweighted.ster saved
+(note: file Stata_ster/rm_lfp_29_unweighted.ster not found)
+file Stata_ster/rm_lfp_29_unweighted.ster saved
+(note: file Stata_ster/rm_lfp_31_unweighted.ster not found)
+file Stata_ster/rm_lfp_31_unweighted.ster saved
+(note: file Stata_ster/rm_lfp_33_unweighted.ster not found)
+file Stata_ster/rm_lfp_33_unweighted.ster saved
+(note: file Stata_ster/rm_lfp_35_unweighted.ster not found)
+file Stata_ster/rm_lfp_35_unweighted.ster saved
+(note: file Stata_ster/rm_lfp_37_unweighted.ster not found)
+file Stata_ster/rm_lfp_37_unweighted.ster saved
+(note: file Stata_ster/rm_lfp_39_unweighted.ster not found)
+file Stata_ster/rm_lfp_39_unweighted.ster saved
+(note: file Stata_ster/rm_lfp_41_unweighted.ster not found)
+file Stata_ster/rm_lfp_41_unweighted.ster saved
+(note: file Stata_ster/rm_lfp_43_unweighted.ster not found)
+file Stata_ster/rm_lfp_43_unweighted.ster saved
+(note: file Stata_ster/rm_lfp_45_unweighted.ster not found)
+file Stata_ster/rm_lfp_45_unweighted.ster saved
+(note: file Stata_ster/rm_lfp_47_unweighted.ster not found)
+file Stata_ster/rm_lfp_47_unweighted.ster saved
+(note: file Stata_ster/rm_lfp_49_unweighted.ster not found)
+file Stata_ster/rm_lfp_49_unweighted.ster saved
+(note: file Stata_ster/rm_lfp_51_unweighted.ster not found)
+file Stata_ster/rm_lfp_51_unweighted.ster saved
+(note: file Stata_ster/rm_lfp_53_unweighted.ster not found)
+file Stata_ster/rm_lfp_53_unweighted.ster saved
+(note: file Stata_ster/working_11_unweighted.ster not found)
+file Stata_ster/working_11_unweighted.ster saved
+(note: file Stata_ster/working_13_unweighted.ster not found)
+file Stata_ster/working_13_unweighted.ster saved
+(note: file Stata_ster/working_15_unweighted.ster not found)
+file Stata_ster/working_15_unweighted.ster saved
+(note: file Stata_ster/working_17_unweighted.ster not found)
+file Stata_ster/working_17_unweighted.ster saved
+(note: file Stata_ster/working_19_unweighted.ster not found)
+file Stata_ster/working_19_unweighted.ster saved
+(note: file Stata_ster/working_21_unweighted.ster not found)
+file Stata_ster/working_21_unweighted.ster saved
+(note: file Stata_ster/working_23_unweighted.ster not found)
+file Stata_ster/working_23_unweighted.ster saved
+(note: file Stata_ster/working_25_unweighted.ster not found)
+file Stata_ster/working_25_unweighted.ster saved
+(note: file Stata_ster/working_27_unweighted.ster not found)
+file Stata_ster/working_27_unweighted.ster saved
+(note: file Stata_ster/working_29_unweighted.ster not found)
+file Stata_ster/working_29_unweighted.ster saved
+(note: file Stata_ster/working_31_unweighted.ster not found)
+file Stata_ster/working_31_unweighted.ster saved
+(note: file Stata_ster/working_33_unweighted.ster not found)
+file Stata_ster/working_33_unweighted.ster saved
+(note: file Stata_ster/working_35_unweighted.ster not found)
+file Stata_ster/working_35_unweighted.ster saved
+(note: file Stata_ster/working_37_unweighted.ster not found)
+file Stata_ster/working_37_unweighted.ster saved
+(note: file Stata_ster/working_39_unweighted.ster not found)
+file Stata_ster/working_39_unweighted.ster saved
+(note: file Stata_ster/working_41_unweighted.ster not found)
+file Stata_ster/working_41_unweighted.ster saved
+(note: file Stata_ster/working_43_unweighted.ster not found)
+file Stata_ster/working_43_unweighted.ster saved
+(note: file Stata_ster/working_45_unweighted.ster not found)
+file Stata_ster/working_45_unweighted.ster saved
+(note: file Stata_ster/working_47_unweighted.ster not found)
+file Stata_ster/working_47_unweighted.ster saved
+(note: file Stata_ster/working_49_unweighted.ster not found)
+file Stata_ster/working_49_unweighted.ster saved
+(note: file Stata_ster/working_51_unweighted.ster not found)
+file Stata_ster/working_51_unweighted.ster saved
+(note: file Stata_ster/working_53_unweighted.ster not found)
+file Stata_ster/working_53_unweighted.ster saved
+(note: file Stata_ster/looking_11_unweighted.ster not found)
+file Stata_ster/looking_11_unweighted.ster saved
+(note: file Stata_ster/looking_13_unweighted.ster not found)
+file Stata_ster/looking_13_unweighted.ster saved
+(note: file Stata_ster/looking_15_unweighted.ster not found)
+file Stata_ster/looking_15_unweighted.ster saved
+(note: file Stata_ster/looking_17_unweighted.ster not found)
+file Stata_ster/looking_17_unweighted.ster saved
+(note: file Stata_ster/looking_19_unweighted.ster not found)
+file Stata_ster/looking_19_unweighted.ster saved
+(note: file Stata_ster/looking_21_unweighted.ster not found)
+file Stata_ster/looking_21_unweighted.ster saved
+(note: file Stata_ster/looking_23_unweighted.ster not found)
+file Stata_ster/looking_23_unweighted.ster saved
+(note: file Stata_ster/looking_25_unweighted.ster not found)
+file Stata_ster/looking_25_unweighted.ster saved
+(note: file Stata_ster/looking_27_unweighted.ster not found)
+file Stata_ster/looking_27_unweighted.ster saved
+(note: file Stata_ster/looking_29_unweighted.ster not found)
+file Stata_ster/looking_29_unweighted.ster saved
+(note: file Stata_ster/looking_31_unweighted.ster not found)
+file Stata_ster/looking_31_unweighted.ster saved
+(note: file Stata_ster/looking_33_unweighted.ster not found)
+file Stata_ster/looking_33_unweighted.ster saved
+(note: file Stata_ster/looking_35_unweighted.ster not found)
+file Stata_ster/looking_35_unweighted.ster saved
+(note: file Stata_ster/looking_37_unweighted.ster not found)
+file Stata_ster/looking_37_unweighted.ster saved
+(note: file Stata_ster/looking_39_unweighted.ster not found)
+file Stata_ster/looking_39_unweighted.ster saved
+(note: file Stata_ster/looking_41_unweighted.ster not found)
+file Stata_ster/looking_41_unweighted.ster saved
+(note: file Stata_ster/looking_43_unweighted.ster not found)
+file Stata_ster/looking_43_unweighted.ster saved
+(note: file Stata_ster/looking_45_unweighted.ster not found)
+file Stata_ster/looking_45_unweighted.ster saved
+(note: file Stata_ster/looking_47_unweighted.ster not found)
+file Stata_ster/looking_47_unweighted.ster saved
+(note: file Stata_ster/looking_49_unweighted.ster not found)
+file Stata_ster/looking_49_unweighted.ster saved
+(note: file Stata_ster/looking_51_unweighted.ster not found)
+file Stata_ster/looking_51_unweighted.ster saved
+(note: file Stata_ster/looking_53_unweighted.ster not found)
+file Stata_ster/looking_53_unweighted.ster saved
+
+. 
+end of do-file
+
+. exit, clear
