@@ -3,13 +3,13 @@ set maxvar 32000
 set matsize 10000
 set more off, perm
 
-cd D:\Users\Alex\Git_Repositories\Thesis
+cd C:\Users\Alex\Git_Repositories\Thesis
 
 capture log close
 log using Stata_log_files\management.log,replace 
 
 *data directory (where posted datasets are stored)
-global datafiles "D:\Users\Alex\Git_Repositories\Thesis"
+global datafiles "C:\Users\Alex\Git_Repositories\Thesis"
 
 use  "$datafiles\Stata_Regressions\US_Paid_leave_analysis_altered.dta", clear
 
