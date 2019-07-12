@@ -25,20 +25,20 @@ def coef_plot(ax, array_1, array_2):
     ax.set_xlabel('Months Since Birth')
     ax.legend(loc = 'upper left')
 
-coef_plot(axes[0], ols['b_rm_lfp_X1'], wls['b_rm_lfp_X1'])
+coef_plot(axes[0], ols['b_working_X1'], wls['b_working_X1'])
 axes[0].set_title('Full Sample')
-coef_plot(axes[1], ols['b_rm_lfp_X2'], wls['b_rm_lfp_X2'])
+coef_plot(axes[1], ols['b_working_X2'], wls['b_working_X2'])
 axes[1].set_title('College Educated')
-coef_plot(axes[2], ols['b_rm_lfp_X3'], wls['b_rm_lfp_X3'])
+coef_plot(axes[2], ols['b_working_X3'], wls['b_working_X3'])
 axes[2].set_title('Less than College')
-coef_plot(axes[3], ols['b_rm_lfp_X4'], wls['b_rm_lfp_X4'])
+coef_plot(axes[3], ols['b_working_X4'], wls['b_working_X4'])
 axes[3].set_title('White Collar')
-coef_plot(axes[4], ols['b_rm_lfp_X5'], wls['b_rm_lfp_X5'])
+coef_plot(axes[4], ols['b_working_X5'], wls['b_working_X5'])
 axes[4].set_title('Blue Collar')
 
 
 
 fig.tight_layout(rect=[0, 0.03, 1, 0.95])
-fig.suptitle('LFP Difference in Difference Coefficients', fontsize = 16)
+fig.suptitle('Employment Difference in Difference Coefficients', fontsize = 16)
 plt.show()
-fig.savefig('Stata_Figures/figure_lfp_unweighted.png')
+fig.savefig('Stata_Figures/figure_working_unweighted.png')
