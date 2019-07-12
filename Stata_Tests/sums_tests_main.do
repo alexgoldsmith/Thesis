@@ -15,6 +15,10 @@ save "$datafiles/Stata_Results/sums_values_main_weighted.dta", replace emptyok
 
 clear
 set obs 15
+save "$datafiles/Stata_Results/sums_values_main_unweighted.dta", replace emptyok
+
+clear
+set obs 15
 save "$datafiles/Stata_Results/sums_tests_main_weighted.dta", replace emptyok
 
 clear
@@ -48,13 +52,13 @@ foreach y in rm_lfp working looking  {
 	foreach i of numlist 1 2 3 4 5 {
 		use "$datafiles/Stata_Results/sums_values_main_weighted.dta", clear
 		estimates use Stata_ster/`y'_model_`i'_weighted
-		quietly gen p_`y'_`i'=.
+		quietly gen sum_`y'_`i'=.
 		local k = 0
 		foreach j in m17_m12 m15_m9 m12_m6 m9_m3 m6_p0 m3_p3 m0_p6 p3_p9 p6_p12 p9_p15 p12_p18 p15_p21 p18_p24 m17_p0 m0_p24 {
 			*display "F-test of window `j' for model `i' and dependent variable `y'"
 			quietly lincom "$`j'"
 			local k = `k' + 1
-			quietly replace p_`y'_`i' = r(estimate) in `k'
+			quietly replace sum_`y'_`i' = r(estimate) in `k'
 			}
 		save "$datafiles/Stata_Results/sums_values_main_weighted.dta", replace
 	}  
@@ -82,13 +86,13 @@ foreach y in rm_lfp working looking  {
 	foreach i of numlist 1 2 3 4 5 {
 		use "$datafiles/Stata_Results/sums_values_main_unweighted.dta", clear
 		estimates use Stata_ster/`y'_model_`i'_unweighted
-		quietly gen p_`y'_`i'=.
+		quietly gen sum_`y'_`i'=.
 		local k = 0
 		foreach j in m17_m12 m15_m9 m12_m6 m9_m3 m6_p0 m3_p3 m0_p6 p3_p9 p6_p12 p9_p15 p12_p18 p15_p21 p18_p24 m17_p0 m0_p24 {
 			*display "F-test of window `j' for model `i' and dependent variable `y'"
 			quietly lincom "$`j'"
 			local k = `k' + 1
-			quietly replace p_`y'_`i' = r(estimate) in `k'
+			quietly replace sum_`y'_`i' = r(estimate) in `k'
 			}
 		save "$datafiles/Stata_Results/sums_values_main_unweighted.dta", replace
 	}  
